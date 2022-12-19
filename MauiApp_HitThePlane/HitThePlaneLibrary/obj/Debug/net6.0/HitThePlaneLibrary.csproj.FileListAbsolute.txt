@@ -1,0 +1,12 @@
+C:\Users\xPr1e\source\repos\MauiApp_HitThePlane\HitThePlaneLibrary\bin\Debug\net6.0\HitThePlaneLibrary.deps.json
+C:\Users\xPr1e\source\repos\MauiApp_HitThePlane\HitThePlaneLibrary\bin\Debug\net6.0\HitThePlaneLibrary.dll
+C:\Users\xPr1e\source\repos\MauiApp_HitThePlane\HitThePlaneLibrary\bin\Debug\net6.0\HitThePlaneLibrary.pdb
+C:\Users\xPr1e\source\repos\MauiApp_HitThePlane\HitThePlaneLibrary\obj\Debug\net6.0\HitThePlaneLibrary.csproj.AssemblyReference.cache
+C:\Users\xPr1e\source\repos\MauiApp_HitThePlane\HitThePlaneLibrary\obj\Debug\net6.0\HitThePlaneLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\xPr1e\source\repos\MauiApp_HitThePlane\HitThePlaneLibrary\obj\Debug\net6.0\HitThePlaneLibrary.AssemblyInfoInputs.cache
+C:\Users\xPr1e\source\repos\MauiApp_HitThePlane\HitThePlaneLibrary\obj\Debug\net6.0\HitThePlaneLibrary.AssemblyInfo.cs
+C:\Users\xPr1e\source\repos\MauiApp_HitThePlane\HitThePlaneLibrary\obj\Debug\net6.0\HitThePlaneLibrary.csproj.CoreCompileInputs.cache
+C:\Users\xPr1e\source\repos\MauiApp_HitThePlane\HitThePlaneLibrary\obj\Debug\net6.0\HitThePlaneLibrary.dll
+C:\Users\xPr1e\source\repos\MauiApp_HitThePlane\HitThePlaneLibrary\obj\Debug\net6.0\refint\HitThePlaneLibrary.dll
+C:\Users\xPr1e\source\repos\MauiApp_HitThePlane\HitThePlaneLibrary\obj\Debug\net6.0\HitThePlaneLibrary.pdb
+C:\Users\xPr1e\source\repos\MauiApp_HitThePlane\HitThePlaneLibrary\obj\Debug\net6.0\ref\HitThePlaneLibrary.dll
