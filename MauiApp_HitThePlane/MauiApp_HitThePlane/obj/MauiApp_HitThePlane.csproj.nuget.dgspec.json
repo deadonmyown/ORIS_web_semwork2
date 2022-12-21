@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\MauiApp_HitThePlane.csproj": {}
+    "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\MauiApp_HitThePlane.csproj": {}
   },
   "projects": {
-    "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj": {
+    "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj",
-        "projectName": "HitThePlaneLibrary",
-        "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj",
+        "projectUniqueName": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj",
+        "projectName": "GameLibrary",
+        "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj",
         "packagesPath": "C:\\Users\\xPr1e\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\HitThePlaneLibrary\\obj\\",
+        "outputPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -65,14 +65,75 @@
         }
       }
     },
-    "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\MauiApp_HitThePlane.csproj": {
+    "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\MauiApp_HitThePlane.csproj",
-        "projectName": "MauiApp_HitThePlane",
-        "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\MauiApp_HitThePlane.csproj",
+        "projectUniqueName": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj",
+        "projectName": "HitThePlaneLibrary",
+        "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj",
         "packagesPath": "C:\\Users\\xPr1e\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\obj\\",
+        "outputPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\xPr1e\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/feed/dotnet-core/package/nuget/Microsoft.NET.Sdk.IL": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\MauiApp_HitThePlane.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\MauiApp_HitThePlane.csproj",
+        "projectName": "MauiApp_HitThePlane",
+        "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\MauiApp_HitThePlane.csproj",
+        "packagesPath": "C:\\Users\\xPr1e\\.nuget\\packages\\",
+        "outputPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -99,68 +160,80 @@
           "net6.0-android31.0": {
             "targetAlias": "net6.0-android",
             "projectReferences": {
-              "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj": {
-                "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj"
+              "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj": {
+                "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj"
               },
-              "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
-                "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
+              "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj": {
+                "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj"
               },
-              "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
-                "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj"
+              "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
+                "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
               },
-              "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
-                "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
+              "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
+                "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj"
+              },
+              "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
+                "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
               }
             }
           },
           "net6.0-ios16.1": {
             "targetAlias": "net6.0-ios",
             "projectReferences": {
-              "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj": {
-                "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj"
+              "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj": {
+                "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj"
               },
-              "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
-                "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
+              "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj": {
+                "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj"
               },
-              "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
-                "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj"
+              "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
+                "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
               },
-              "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
-                "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
+              "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
+                "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj"
+              },
+              "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
+                "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
               }
             }
           },
           "net6.0-maccatalyst16.1": {
             "targetAlias": "net6.0-maccatalyst",
             "projectReferences": {
-              "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj": {
-                "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj"
+              "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj": {
+                "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj"
               },
-              "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
-                "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
+              "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj": {
+                "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj"
               },
-              "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
-                "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj"
+              "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
+                "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
               },
-              "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
-                "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
+              "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
+                "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj"
+              },
+              "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
+                "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
               }
             }
           },
           "net6.0-windows10.0.19041": {
             "targetAlias": "net6.0-windows10.0.19041.0",
             "projectReferences": {
-              "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj": {
-                "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj"
+              "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj": {
+                "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj"
               },
-              "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
-                "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
+              "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj": {
+                "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj"
               },
-              "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
-                "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj"
+              "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
+                "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
               },
-              "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
-                "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
+              "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
+                "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj"
+              },
+              "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
+                "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
               }
             }
           }
@@ -184,6 +257,10 @@
               "target": "Package",
               "version": "[6.0.548, )",
               "autoReferenced": true
+            },
+            "SharpHook": {
+              "target": "Package",
+              "version": "[4.0.0, )"
             }
           },
           "imports": [
@@ -287,6 +364,10 @@
               "version": "[6.0.548, )",
               "autoReferenced": true
             },
+            "SharpHook": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
             "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",
               "version": "[6.0.1, )",
@@ -369,6 +450,10 @@
               "target": "Package",
               "version": "[6.0.548, )",
               "autoReferenced": true
+            },
+            "SharpHook": {
+              "target": "Package",
+              "version": "[4.0.0, )"
             },
             "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",
@@ -459,6 +544,10 @@
               "target": "Package",
               "version": "[10.0.22000.194, )",
               "autoReferenced": true
+            },
+            "SharpHook": {
+              "target": "Package",
+              "version": "[4.0.0, )"
             }
           },
           "imports": [
@@ -558,16 +647,16 @@
         }
       }
     },
-    "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
+    "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj",
+        "projectUniqueName": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj",
         "projectName": "TCPClient",
-        "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj",
+        "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj",
         "frameworks": {
           "net45": {
             "projectReferences": {
-              "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
-                "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
+              "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
+                "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
               }
             }
           }
@@ -577,16 +666,16 @@
         "net45": {}
       }
     },
-    "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
+    "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj",
+        "projectUniqueName": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj",
         "projectName": "TCPServer",
-        "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj",
+        "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj",
         "frameworks": {
           "net45": {
             "projectReferences": {
-              "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
-                "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
+              "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
+                "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
               }
             }
           }
@@ -596,11 +685,11 @@
         "net45": {}
       }
     },
-    "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
+    "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj",
+        "projectUniqueName": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj",
         "projectName": "XProtocol",
-        "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj",
+        "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj",
         "frameworks": {
           "net45": {
             "projectReferences": {}

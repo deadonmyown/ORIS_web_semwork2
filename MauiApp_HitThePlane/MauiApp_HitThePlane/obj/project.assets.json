@@ -195,6 +195,60 @@
           }
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-arm/native/libuiohook.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/libuiohook.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-x64/native/libuiohook.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-arm64/native/libuiohook.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/libuiohook.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-arm/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-arm"
+          },
+          "runtimes/win-arm64/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -1942,6 +1996,16 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -2182,6 +2246,25 @@
           }
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/linux-arm/native/libuiohook.so": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -3929,6 +4012,16 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -4169,6 +4262,25 @@
           }
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/linux-arm64/native/libuiohook.so": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -5916,6 +6028,16 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -6156,6 +6278,25 @@
           }
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/linux-x64/native/libuiohook.so": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -7903,6 +8044,16 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -8143,6 +8294,22 @@
           }
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -9890,6 +10057,16 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -10130,6 +10307,22 @@
           }
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -11877,6 +12070,16 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -12117,6 +12320,22 @@
           }
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -13864,6 +14083,16 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -14104,6 +14333,25 @@
           }
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/win-x64/native/uiohook.dll": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -15853,6 +16101,16 @@
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
       },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
+        }
+      },
       "HitThePlaneLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -16069,6 +16327,60 @@
           }
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-arm/native/libuiohook.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/libuiohook.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-x64/native/libuiohook.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-arm64/native/libuiohook.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/libuiohook.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-arm/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-arm"
+          },
+          "runtimes/win-arm64/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -16110,6 +16422,16 @@
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -16328,6 +16650,25 @@
           }
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/linux-arm/native/libuiohook.so": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -16369,6 +16710,16 @@
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -16587,6 +16938,25 @@
           }
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/linux-arm64/native/libuiohook.so": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -16628,6 +16998,16 @@
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -16846,6 +17226,25 @@
           }
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/linux-x64/native/libuiohook.so": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -16887,6 +17286,16 @@
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -17105,6 +17514,22 @@
           }
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -17146,6 +17571,16 @@
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -17364,6 +17799,22 @@
           }
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -17405,6 +17856,16 @@
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -17623,6 +18084,22 @@
           }
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -17664,6 +18141,16 @@
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -17882,6 +18369,25 @@
           }
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/win-x64/native/uiohook.dll": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -17923,6 +18429,16 @@
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -18141,6 +18657,60 @@
           }
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-arm/native/libuiohook.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/libuiohook.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-x64/native/libuiohook.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-arm64/native/libuiohook.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/libuiohook.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-arm/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-arm"
+          },
+          "runtimes/win-arm64/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -18182,6 +18752,16 @@
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -18400,6 +18980,25 @@
           }
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/linux-arm/native/libuiohook.so": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -18441,6 +19040,16 @@
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -18659,6 +19268,25 @@
           }
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/linux-arm64/native/libuiohook.so": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -18700,6 +19328,16 @@
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -18918,6 +19556,25 @@
           }
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/linux-x64/native/libuiohook.so": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -18959,6 +19616,16 @@
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -19177,6 +19844,22 @@
           }
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -19218,6 +19901,16 @@
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -19436,6 +20129,22 @@
           }
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -19477,6 +20186,16 @@
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -19695,6 +20414,22 @@
           }
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -19736,6 +20471,16 @@
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -19954,6 +20699,25 @@
           }
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/win-x64/native/uiohook.dll": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -19995,6 +20759,16 @@
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -20346,6 +21120,60 @@
           }
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-arm/native/libuiohook.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/libuiohook.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-x64/native/libuiohook.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-arm64/native/libuiohook.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/libuiohook.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-arm/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-arm"
+          },
+          "runtimes/win-arm64/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/uiohook.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -20379,6 +21207,16 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -20702,6 +21540,25 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/linux-arm/native/libuiohook.so": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -20735,6 +21592,16 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -21058,6 +21925,25 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/linux-arm64/native/libuiohook.so": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -21091,6 +21977,16 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -21414,6 +22310,25 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/linux-x64/native/libuiohook.so": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -21447,6 +22362,16 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -21770,6 +22695,22 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -21803,6 +22744,16 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -22126,6 +23077,22 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -22159,6 +23126,16 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -22482,6 +23459,22 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -22515,6 +23508,16 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -22844,6 +23847,25 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "SharpHook/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/win-x64/native/uiohook.dll": {}
+        },
+        "build": {
+          "build/SharpHook.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -22877,6 +23899,16 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "GameLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GameLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameLibrary.dll": {}
         }
       },
       "HitThePlaneLibrary/1.0.0": {
@@ -23997,6 +25029,38 @@
         "tools/net5.0/zh-TW/Microsoft.Build.Msix.resources.dll",
         "tools/x64/GenXbf.dll",
         "tools/x86/GenXbf.dll"
+      ]
+    },
+    "SharpHook/4.0.0": {
+      "sha512": "OMVZmf8ZQVrjNGpdNIIsmZfsU6Vr9gmLG14CEAVz8X0lI+wOSbBbvJrKM4QHn35c7OchV/ZlTzmwB3ys8T9exQ==",
+      "type": "package",
+      "path": "sharphook/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "build/SharpHook.targets",
+        "icon.png",
+        "lib/net461/SharpHook.dll",
+        "lib/net461/SharpHook.xml",
+        "lib/net6.0/SharpHook.dll",
+        "lib/net6.0/SharpHook.xml",
+        "lib/net7.0/SharpHook.dll",
+        "lib/net7.0/SharpHook.xml",
+        "lib/netstandard2.0/SharpHook.dll",
+        "lib/netstandard2.0/SharpHook.xml",
+        "runtimes/linux-arm/native/libuiohook.so",
+        "runtimes/linux-arm64/native/libuiohook.so",
+        "runtimes/linux-x64/native/libuiohook.so",
+        "runtimes/osx-arm64/native/libuiohook.dylib",
+        "runtimes/osx-x64/native/libuiohook.dylib",
+        "runtimes/win-arm/native/uiohook.dll",
+        "runtimes/win-arm64/native/uiohook.dll",
+        "runtimes/win-x64/native/uiohook.dll",
+        "runtimes/win-x86/native/uiohook.dll",
+        "sharphook.4.0.0.nupkg.sha512",
+        "sharphook.nuspec"
       ]
     },
     "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -25920,6 +26984,11 @@
         "xamarin.kotlinx.coroutines.core.jvm.nuspec"
       ]
     },
+    "GameLibrary/1.0.0": {
+      "type": "project",
+      "path": "../GameLibrary/GameLibrary.csproj",
+      "msbuildProject": "../GameLibrary/GameLibrary.csproj"
+    },
     "HitThePlaneLibrary/1.0.0": {
       "type": "project",
       "path": "../HitThePlaneLibrary/HitThePlaneLibrary.csproj",
@@ -25943,36 +27012,44 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-android31.0": [
+      "GameLibrary >= 1.0.0",
       "HitThePlaneLibrary >= 1.0.0",
       "Microsoft.Maui.Dependencies >= 6.0.548",
       "Microsoft.Maui.Extensions >= 6.0.548",
+      "SharpHook >= 4.0.0",
       "TCPClient >= 1.0.0",
       "TCPServer >= 1.0.0",
       "XProtocol >= 1.0.0"
     ],
     "net6.0-ios16.1": [
+      "GameLibrary >= 1.0.0",
       "HitThePlaneLibrary >= 1.0.0",
       "Microsoft.Maui.Dependencies >= 6.0.548",
       "Microsoft.Maui.Extensions >= 6.0.548",
+      "SharpHook >= 4.0.0",
       "System.Runtime.InteropServices.NFloat.Internal >= 6.0.1",
       "TCPClient >= 1.0.0",
       "TCPServer >= 1.0.0",
       "XProtocol >= 1.0.0"
     ],
     "net6.0-maccatalyst16.1": [
+      "GameLibrary >= 1.0.0",
       "HitThePlaneLibrary >= 1.0.0",
       "Microsoft.Maui.Dependencies >= 6.0.548",
       "Microsoft.Maui.Extensions >= 6.0.548",
+      "SharpHook >= 4.0.0",
       "System.Runtime.InteropServices.NFloat.Internal >= 6.0.1",
       "TCPClient >= 1.0.0",
       "TCPServer >= 1.0.0",
       "XProtocol >= 1.0.0"
     ],
     "net6.0-windows10.0.19041": [
+      "GameLibrary >= 1.0.0",
       "HitThePlaneLibrary >= 1.0.0",
       "Microsoft.Maui.Dependencies >= 6.0.548",
       "Microsoft.Maui.Extensions >= 6.0.548",
       "Microsoft.Windows.SDK.BuildTools >= 10.0.22000.194",
+      "SharpHook >= 4.0.0",
       "TCPClient >= 1.0.0",
       "TCPServer >= 1.0.0",
       "XProtocol >= 1.0.0"
@@ -25985,11 +27062,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\MauiApp_HitThePlane.csproj",
+      "projectUniqueName": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\MauiApp_HitThePlane.csproj",
       "projectName": "MauiApp_HitThePlane",
-      "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\MauiApp_HitThePlane.csproj",
+      "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\MauiApp_HitThePlane.csproj",
       "packagesPath": "C:\\Users\\xPr1e\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\obj\\",
+      "outputPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
@@ -26016,68 +27093,80 @@
         "net6.0-android31.0": {
           "targetAlias": "net6.0-android",
           "projectReferences": {
-            "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj": {
-              "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj"
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj"
             },
-            "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
-              "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj"
             },
-            "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
-              "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj"
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
             },
-            "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
-              "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj"
+            },
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
             }
           }
         },
         "net6.0-ios16.1": {
           "targetAlias": "net6.0-ios",
           "projectReferences": {
-            "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj": {
-              "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj"
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj"
             },
-            "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
-              "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj"
             },
-            "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
-              "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj"
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
             },
-            "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
-              "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj"
+            },
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
             }
           }
         },
         "net6.0-maccatalyst16.1": {
           "targetAlias": "net6.0-maccatalyst",
           "projectReferences": {
-            "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj": {
-              "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj"
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj"
             },
-            "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
-              "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj"
             },
-            "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
-              "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj"
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
             },
-            "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
-              "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj"
+            },
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
             }
           }
         },
         "net6.0-windows10.0.19041": {
           "targetAlias": "net6.0-windows10.0.19041.0",
           "projectReferences": {
-            "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj": {
-              "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj"
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj"
             },
-            "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
-              "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj"
             },
-            "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
-              "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj"
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
             },
-            "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
-              "projectPath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj"
+            },
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
             }
           }
         }
@@ -26101,6 +27190,10 @@
             "target": "Package",
             "version": "[6.0.548, )",
             "autoReferenced": true
+          },
+          "SharpHook": {
+            "target": "Package",
+            "version": "[4.0.0, )"
           }
         },
         "imports": [
@@ -26204,6 +27297,10 @@
             "version": "[6.0.548, )",
             "autoReferenced": true
           },
+          "SharpHook": {
+            "target": "Package",
+            "version": "[4.0.0, )"
+          },
           "System.Runtime.InteropServices.NFloat.Internal": {
             "target": "Package",
             "version": "[6.0.1, )",
@@ -26286,6 +27383,10 @@
             "target": "Package",
             "version": "[6.0.548, )",
             "autoReferenced": true
+          },
+          "SharpHook": {
+            "target": "Package",
+            "version": "[4.0.0, )"
           },
           "System.Runtime.InteropServices.NFloat.Internal": {
             "target": "Package",
@@ -26376,6 +27477,10 @@
             "target": "Package",
             "version": "[10.0.22000.194, )",
             "autoReferenced": true
+          },
+          "SharpHook": {
+            "target": "Package",
+            "version": "[4.0.0, )"
           }
         },
         "imports": [

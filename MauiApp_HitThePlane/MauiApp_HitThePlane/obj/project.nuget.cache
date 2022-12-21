@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bAesbUVIr/qUdwrc4/OlkXH5uG0zmU4Dhzle8zldhVpnSh5tKWp+1td95Ps/uzVQBO6RNf9txcUlle+GEbWh4g==",
+  "dgSpecHash": "GzG9ZkFOB+sh+C0tuOGOGYShHHKbqRN82lV7oXHlfv1FBWtchZ5Dt3vlxzNnW77UD+t4cObN+InnifOhJMJwrQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\xPr1e\\source\\repos\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\MauiApp_HitThePlane.csproj",
+  "projectFilePath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\MauiApp_HitThePlane.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\xPr1e\\.nuget\\packages\\googlegson\\2.9.0.1\\googlegson.2.9.0.1.nupkg.sha512",
     "C:\\Users\\xPr1e\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
@@ -20,6 +20,7 @@
     "C:\\Users\\xPr1e\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\6.0.501\\microsoft.maui.graphics.win2d.winui.desktop.6.0.501.nupkg.sha512",
     "C:\\Users\\xPr1e\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22000.194\\microsoft.windows.sdk.buildtools.10.0.22000.194.nupkg.sha512",
     "C:\\Users\\xPr1e\\.nuget\\packages\\microsoft.windowsappsdk\\1.1.3\\microsoft.windowsappsdk.1.1.3.nupkg.sha512",
+    "C:\\Users\\xPr1e\\.nuget\\packages\\sharphook\\4.0.0\\sharphook.4.0.0.nupkg.sha512",
     "C:\\Users\\xPr1e\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\xPr1e\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\xPr1e\\.nuget\\packages\\system.runtime.interopservices.nfloat.internal\\6.0.1\\system.runtime.interopservices.nfloat.internal.6.0.1.nupkg.sha512",

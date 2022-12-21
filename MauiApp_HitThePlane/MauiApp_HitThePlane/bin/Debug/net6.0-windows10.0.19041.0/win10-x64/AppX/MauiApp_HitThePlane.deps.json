@@ -9,10 +9,12 @@
     ".NETCoreApp,Version=v6.0/win10-x64": {
       "MauiApp_HitThePlane/1.0": {
         "dependencies": {
+          "GameLibrary": "1.0.0",
           "HitThePlaneLibrary": "1.0.0",
           "Microsoft.Maui.Dependencies": "6.0.548",
           "Microsoft.Maui.Extensions": "6.0.548",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22000.194",
+          "SharpHook": "4.0.0",
           "TCPClient": "1.0.0",
           "TCPServer": "1.0.0",
           "XProtocol": "1.0.0",
@@ -1106,12 +1108,30 @@
           }
         }
       },
+      "SharpHook/4.0.0": {
+        "runtime": {
+          "lib/net6.0/SharpHook.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        },
+        "native": {
+          "runtimes/win-x64/native/uiohook.dll": {
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
+      "GameLibrary/1.0.0": {
+        "runtime": {
+          "GameLibrary.dll": {}
+        }
+      },
       "HitThePlaneLibrary/1.0.0": {
         "runtime": {
           "HitThePlaneLibrary.dll": {}
@@ -1276,6 +1296,13 @@
       "path": "microsoft.windowsappsdk/1.1.3",
       "hashPath": "microsoft.windowsappsdk.1.1.3.nupkg.sha512"
     },
+    "SharpHook/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OMVZmf8ZQVrjNGpdNIIsmZfsU6Vr9gmLG14CEAVz8X0lI+wOSbBbvJrKM4QHn35c7OchV/ZlTzmwB3ys8T9exQ==",
+      "path": "sharphook/4.0.0",
+      "hashPath": "sharphook.4.0.0.nupkg.sha512"
+    },
     "System.Diagnostics.DiagnosticSource/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1289,6 +1316,11 @@
       "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
       "path": "system.runtime.compilerservices.unsafe/6.0.0",
       "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    },
+    "GameLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "HitThePlaneLibrary/1.0.0": {
       "type": "project",
