@@ -35,7 +35,7 @@ namespace MAUILibrary
             Health = health;
             Speed = speed;
             MaxSpeed = maxSpeed;
-            GameObject= gameObject;
+            GameObject = gameObject;
             SpeedBoost = speedBoost;
             AngleChange = angleChange;
         }

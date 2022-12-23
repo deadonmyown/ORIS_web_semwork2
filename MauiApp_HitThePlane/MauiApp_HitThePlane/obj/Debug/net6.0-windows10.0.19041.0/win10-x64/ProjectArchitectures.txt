@@ -1,2 +1,2 @@
-C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\MauiApp_HitThePlane\MauiApp_HitThePlane.csproj;x64
-C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\MAUILibrary\MAUILibrary.csproj;neutral
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\MauiApp_HitThePlane\MauiApp_HitThePlane.csproj;x64
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\MAUILibrary\MAUILibrary.csproj;neutral

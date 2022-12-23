@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SharpHook;
+﻿using SharpHook;
 
 namespace MAUILibrary
 {
@@ -13,14 +8,20 @@ namespace MAUILibrary
         {
             if (player != null)
             {
-                if (keyboardInput.RawEvent.Keyboard.KeyCode == SharpHook.Native.KeyCode.VcW)
-                    player.Rotation = 1;
-                else if (keyboardInput.RawEvent.Keyboard.KeyCode == SharpHook.Native.KeyCode.VcS)
-                    player.Rotation = -1;
-                else if (keyboardInput.RawEvent.Keyboard.KeyCode == SharpHook.Native.KeyCode.VcLeftShift)
+                switch (keyboardInput.RawEvent.Keyboard.KeyCode)
                 {
-                    player.Speed = Math.Max(0, player.Speed - player.SpeedBoost);
-                    player.IsFreezing = true;
+                    case SharpHook.Native.KeyCode.VcW:
+                        player.Rotation = 1;
+                        break;
+
+                    case SharpHook.Native.KeyCode.VcS:
+                        player.Rotation = -1;
+                        break;
+
+                    case SharpHook.Native.KeyCode.VcLeftShift:
+                        player.Speed = Math.Max(0, player.Speed - player.SpeedBoost);
+                        player.IsFreezing = true;
+                        break;
                 }
             }
         }

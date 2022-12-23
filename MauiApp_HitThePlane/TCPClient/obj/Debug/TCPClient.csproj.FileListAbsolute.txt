@@ -28,3 +28,14 @@ C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\obj\De
 C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\obj\Debug\TCPClient.csproj.CopyComplete
 C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\obj\Debug\TCPClient.exe
 C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\obj\Debug\TCPClient.pdb
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\bin\Debug\TCPClient.exe.config
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\bin\Debug\TCPClient.exe
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\bin\Debug\TCPClient.pdb
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\bin\Debug\XProtocol.dll
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\bin\Debug\XProtocol.pdb
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\obj\Debug\TCPClient.csproj.AssemblyReference.cache
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\obj\Debug\TCPClient.csproj.SuggestedBindingRedirects.cache
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\obj\Debug\TCPClient.csproj.CoreCompileInputs.cache
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\obj\Debug\TCPClient.csproj.CopyComplete
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\obj\Debug\TCPClient.exe
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\obj\Debug\TCPClient.pdb

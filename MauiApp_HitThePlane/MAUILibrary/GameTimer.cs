@@ -36,7 +36,7 @@ namespace MAUILibrary
         }
 
         public void Stop()
-        {   
+        {
             Running = false;
         }
     }

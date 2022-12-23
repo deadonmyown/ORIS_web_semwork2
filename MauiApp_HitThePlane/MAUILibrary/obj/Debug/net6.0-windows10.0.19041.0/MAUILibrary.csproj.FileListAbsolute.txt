@@ -10,3 +10,15 @@ C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\MAUILibrary\obj\
 C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\MAUILibrary\obj\Debug\net6.0-windows10.0.19041.0\refint\MAUILibrary.dll
 C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\MAUILibrary\obj\Debug\net6.0-windows10.0.19041.0\MAUILibrary.pdb
 C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\MAUILibrary\obj\Debug\net6.0-windows10.0.19041.0\ref\MAUILibrary.dll
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\MAUILibrary\bin\Debug\net6.0-windows10.0.19041.0\MAUILibrary.deps.json
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\MAUILibrary\bin\Debug\net6.0-windows10.0.19041.0\MAUILibrary.dll
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\MAUILibrary\bin\Debug\net6.0-windows10.0.19041.0\MAUILibrary.pdb
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\MAUILibrary\obj\Debug\net6.0-windows10.0.19041.0\MAUILibrary.csproj.AssemblyReference.cache
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\MAUILibrary\obj\Debug\net6.0-windows10.0.19041.0\MAUILibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\MAUILibrary\obj\Debug\net6.0-windows10.0.19041.0\MAUILibrary.AssemblyInfoInputs.cache
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\MAUILibrary\obj\Debug\net6.0-windows10.0.19041.0\MAUILibrary.AssemblyInfo.cs
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\MAUILibrary\obj\Debug\net6.0-windows10.0.19041.0\MAUILibrary.csproj.CoreCompileInputs.cache
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\MAUILibrary\obj\Debug\net6.0-windows10.0.19041.0\MAUILibrary.dll
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\MAUILibrary\obj\Debug\net6.0-windows10.0.19041.0\refint\MAUILibrary.dll
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\MAUILibrary\obj\Debug\net6.0-windows10.0.19041.0\MAUILibrary.pdb
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\MAUILibrary\obj\Debug\net6.0-windows10.0.19041.0\ref\MAUILibrary.dll

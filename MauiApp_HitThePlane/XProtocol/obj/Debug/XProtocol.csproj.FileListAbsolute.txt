@@ -10,3 +10,9 @@ C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\XProtocol\obj\De
 C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\XProtocol\obj\Debug\XProtocol.csproj.CoreCompileInputs.cache
 C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\XProtocol\obj\Debug\XProtocol.dll
 C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\XProtocol\obj\Debug\XProtocol.pdb
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\XProtocol\bin\Debug\XProtocol.dll
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\XProtocol\bin\Debug\XProtocol.pdb
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\XProtocol\obj\Debug\XProtocol.csproj.AssemblyReference.cache
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\XProtocol\obj\Debug\XProtocol.csproj.CoreCompileInputs.cache
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\XProtocol\obj\Debug\XProtocol.dll
+D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\XProtocol\obj\Debug\XProtocol.pdb

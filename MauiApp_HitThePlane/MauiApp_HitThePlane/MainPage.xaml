@@ -3,9 +3,59 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:windows="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.WindowsSpecific;assembly=Microsoft.Maui.Controls"
              x:Class="MauiApp_HitThePlane.MainPage"
-             BackgroundColor="LightSkyBlue">
+             BackgroundColor="LightSkyBlue"
+             Background="black">
 
-    <ScrollView>
+    <AbsoluteLayout WidthRequest="680"
+                    HeightRequest="400">
+
+        <VerticalStackLayout Spacing="25"
+                             Padding="30,0"
+                             VerticalOptions="Center">
+
+
+
+        </VerticalStackLayout>
+
+        <Image Source="scene.png"
+               AbsoluteLayout.LayoutBounds="0, 0, 680, 400" />
+
+        <Image  x:Name="plane_1"
+                Source="green_plane.png"
+                AbsoluteLayout.LayoutBounds="50, 100, 100, 40" />
+
+        <Image  x:Name="plane_2"
+                Source="red_plane.png"
+                AbsoluteLayout.LayoutBounds="50, 150, 100, 40" />
+
+        <Image x:Name="projectile"
+               Source="explosion.gif"
+               AbsoluteLayout.LayoutBounds="50, 150, 30, 30" />
+
+        <Entry x:Name="PlayerText"
+               Background="blue"
+               AbsoluteLayout.LayoutBounds="200, 150" />
+        <Button x:Name="PlayerBtn"
+                Text="Click me"
+                Clicked="OnAddPlayerClicked"
+                Background="blue"
+                AbsoluteLayout.LayoutBounds="200, 100" />
+
+        <Button x:Name="StartBtn"
+                Text="Start timer"
+                Clicked="StartTimer"
+                AbsoluteLayout.LayoutBounds="300, 100, 100, 40" />
+
+        <Button x:Name="StopBtn"
+                Text="Stop timer"
+                Clicked="StopTimer"
+                AbsoluteLayout.LayoutBounds="300, 150, 100, 40" />
+
+    </AbsoluteLayout>
+</ContentPage>
+
+
+<!--<ScrollView>
         <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
@@ -31,7 +81,6 @@
 
             <Rectangle x:Name="plane_1" Fill="LightGreen" WidthRequest="100" HeightRequest="40" Margin="10" />
             <Rectangle x:Name="plane_2" Fill="LightPink" WidthRequest="100" HeightRequest="40" RadiusX="15" RadiusY="15" Margin="10" />
-            <Rectangle x:Name="projectile" Fill="LightPink" WidthRequest="20" HeightRequest="15" RadiusX="15" RadiusY="15" Margin="10" />
 
             <HorizontalStackLayout 
                 HorizontalOptions="Center">
@@ -71,6 +120,4 @@
                     VerticalOptions="End"/>
             </HorizontalStackLayout>
         </VerticalStackLayout>
-    </ScrollView>
-
-</ContentPage>
+    </ScrollView>-->
