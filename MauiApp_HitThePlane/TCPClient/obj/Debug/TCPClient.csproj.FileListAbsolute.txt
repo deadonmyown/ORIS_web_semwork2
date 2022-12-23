@@ -18,3 +18,13 @@ C:\Users\xPr1e\source\repos\MauiApp_HitThePlane\TCPClient\obj\Debug\TCPClient.cs
 C:\Users\xPr1e\source\repos\MauiApp_HitThePlane\TCPClient\obj\Debug\TCPClient.csproj.CopyComplete
 C:\Users\xPr1e\source\repos\MauiApp_HitThePlane\TCPClient\obj\Debug\TCPClient.exe
 C:\Users\xPr1e\source\repos\MauiApp_HitThePlane\TCPClient\obj\Debug\TCPClient.pdb
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\bin\Debug\TCPClient.exe.config
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\bin\Debug\TCPClient.exe
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\bin\Debug\TCPClient.pdb
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\bin\Debug\XProtocol.dll
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\bin\Debug\XProtocol.pdb
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\obj\Debug\TCPClient.csproj.AssemblyReference.cache
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\obj\Debug\TCPClient.csproj.CoreCompileInputs.cache
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\obj\Debug\TCPClient.csproj.CopyComplete
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\obj\Debug\TCPClient.exe
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\obj\Debug\TCPClient.pdb

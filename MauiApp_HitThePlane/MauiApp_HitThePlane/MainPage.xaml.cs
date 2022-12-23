@@ -18,8 +18,6 @@ public partial class MainPage : ContentPage
     public string Host { get; } = "127.0.0.1";
     public int Port { get; } = 4910;
     public XClient Client { get; } = new();
-    public StreamReader? Reader { get; private set; }
-    public StreamWriter? Writer { get; private set; }
 
     public string PlayerName { get; private set; }
 
@@ -108,15 +106,15 @@ public partial class MainPage : ContentPage
         base.OnAppearing();
 
         StartTimer(this, EventArgs.Empty);
-        await CreateHookInstance();
+        //await CreateHookInstance();
     }
 
     protected override void OnDisappearing()
     {
         StopTimer(this, EventArgs.Empty);
-        if (_hook != null)
-            _hook.Dispose();
         base.OnDisappearing();
+        /*if (_hook != null)
+            _hook.Dispose();*/
     }
 
     private async Task CreateHookInstance()

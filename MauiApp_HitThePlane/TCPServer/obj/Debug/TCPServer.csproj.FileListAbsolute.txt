@@ -18,3 +18,13 @@ C:\Users\xPr1e\source\repos\MauiApp_HitThePlane\TCPServer\obj\Debug\TCPServer.cs
 C:\Users\xPr1e\source\repos\MauiApp_HitThePlane\TCPServer\obj\Debug\TCPServer.csproj.CopyComplete
 C:\Users\xPr1e\source\repos\MauiApp_HitThePlane\TCPServer\obj\Debug\TCPServer.exe
 C:\Users\xPr1e\source\repos\MauiApp_HitThePlane\TCPServer\obj\Debug\TCPServer.pdb
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPServer\bin\Debug\TCPServer.exe.config
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPServer\bin\Debug\TCPServer.exe
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPServer\bin\Debug\TCPServer.pdb
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPServer\bin\Debug\XProtocol.dll
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPServer\bin\Debug\XProtocol.pdb
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPServer\obj\Debug\TCPServer.csproj.AssemblyReference.cache
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPServer\obj\Debug\TCPServer.csproj.CoreCompileInputs.cache
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPServer\obj\Debug\TCPServer.csproj.CopyComplete
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPServer\obj\Debug\TCPServer.exe
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPServer\obj\Debug\TCPServer.pdb
