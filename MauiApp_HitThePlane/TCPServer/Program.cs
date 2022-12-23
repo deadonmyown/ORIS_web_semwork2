@@ -10,7 +10,7 @@ namespace TCPServer
             Console.ForegroundColor = ConsoleColor.White;
 
             var server = new XServer();
-            server.Start();
+            server.Start(2, 4910);
             server.AcceptClients();
         }
     }

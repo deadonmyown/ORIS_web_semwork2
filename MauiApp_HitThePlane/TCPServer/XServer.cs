@@ -7,8 +7,11 @@ namespace TCPServer
 {
     public class XServer
     {
+        public int MaxPlayers { get; private set; }
+        public int Port { get; private set; }
+
         private readonly Socket _socket;
-        private readonly List<ConnectedClient> _clients;
+        private readonly Dictionary<int, ConnectedClient> _clients;
 
         private bool _listening;
         private bool _stopListening;
@@ -19,19 +22,22 @@ namespace TCPServer
             var ipAddress = ipHostInfo.AddressList[0];
 
             _socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            _clients = new List<ConnectedClient>();
+            _clients = new Dictionary<int, ConnectedClient>();
         }
 
-        public void Start()
+        public void Start(int maxPlayer, int port)
         {
             if (_listening)
             {
                 throw new Exception("Server is already listening incoming requests.");
             }
 
+            MaxPlayers= maxPlayer;
+            Port= port;
+
             Console.WriteLine("Start server");
 
-            _socket.Bind(new IPEndPoint(IPAddress.Any, 4910));
+            _socket.Bind(new IPEndPoint(IPAddress.Any, Port));
             _socket.Listen(10);
 
             _listening = true;
@@ -70,7 +76,14 @@ namespace TCPServer
                 Console.WriteLine($"[!] Accepted client from {(IPEndPoint) client.RemoteEndPoint}");
 
                 var c = new ConnectedClient(client);
-                _clients.Add(c);
+                for (int i = 1; i <= MaxPlayers; i++)
+                {
+                    if (!_clients.ContainsKey(i) || !_clients.TryGetValue(i, out _))
+                    {
+                        _clients.Add(i, c);
+                        break;
+                    }
+                }
             }
         }
     }
