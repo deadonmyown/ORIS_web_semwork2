@@ -1136,6 +1136,7 @@
       },
       "TCPClient/1.0.0": {
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "runtime": {

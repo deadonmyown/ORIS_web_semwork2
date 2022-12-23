@@ -2,6 +2,8 @@
 using TCPClient;
 using MAUILibrary;
 using SharpHook;
+using XProtocol.Serializator;
+using XProtocol;
 
 namespace MauiApp_HitThePlane;
 
@@ -30,7 +32,12 @@ public partial class MainPage : ContentPage
 
     private async void OnAddPlayerClicked(object sender, EventArgs e)
 	{
-        //Client.Connect(Host, Port);
+        Client.OnPacketRecieve += OnPacketRecieve;
+        Client.Connect(Host, Port);
+
+        _player = new Player(PlayerName, 100, 700, 1000, Client.ClientID, new GameObject(this, "player", "foreground", Client.ClientID == 1 ? plane_1 : plane_2), 25, 20);
+        _playerController = new PlayerController() { Player = _player, UpdateTime = Time.Instance.IntervalMs };
+
 
         var button = sender as Button;
         button.IsEnabled = false;
@@ -41,16 +48,55 @@ public partial class MainPage : ContentPage
         PlayerText.IsVisible = false;
 		Nickname.Text = PlayerName;
 
-		_player = new Player(PlayerName, 100, 700, 1000, 1, new GameObject(this, "player", "foreground", plane_1), 25, 20);
-        _playerController = new PlayerController() { Player = _player, UpdateTime = Time.Instance.IntervalMs };
-
         _timer = new GameTimer();
-        _timer.Start(_playerController.UpdateTime, _playerController.Update);
+        //_timer.Start(_playerController.UpdateTime, _playerController.Update);
+        _timer.Start(_playerController.UpdateTime, Update);
 
         await CreateHookInstance();
     }
 
-	private void StartTimer(object sender, EventArgs e)
+    private void OnPacketRecieve(byte[] packet)
+    {
+        var parsed = XPacket.Parse(packet);
+
+        if (parsed != null)
+        {
+            ProcessIncomingPacket(parsed);
+        }
+    }
+
+    private void ProcessIncomingPacket(XPacket packet)
+    {
+        var type = XPacketTypeManager.GetTypeFromPacket(packet);
+
+        switch (type)
+        {
+            case XPacketType.Player:
+                ProcessPlayer(packet);
+                break;
+            case XPacketType.Unknown:
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
+        }
+    }
+
+    private void ProcessPlayer(XPacket packet)
+    {
+        var player = XPacketConverter.Deserialize<XPacketPlayer>(packet);
+        Application.Current.Dispatcher.DispatchAsync(new Action(() => { _player.GameObject.Controller.TranslationX = player.PosX; _player.GameObject.Controller.TranslationY = player.PosY; }));
+        //Console.WriteLine($"PosX: {Math.Round(player.PosX, 3)} PosY: {Math.Round(player.PosY, 3)} PlayerID: {player.Index}");
+    }
+
+    private void Update()
+    {
+        //Console.WriteLine("Update Function");
+        Client.QueuePacketSendUpdate(XPacketConverter.Serialize(XPacketType.Player,
+            new XPacketPlayer { PosX = _player.GameObject.Controller.TranslationX, PosY = _player.GameObject.Controller.TranslationY, Speed = _player.Speed, Rotation = _player.GameObject.Controller.Rotation, DeltaTime = Time.Instance.DeltaTime, Index = _player.PlayerId })
+            .ToPacket());
+    }
+
+    private void StartTimer(object sender, EventArgs e)
 	{
         if (_timer != null && !_timer.Running)
         {
@@ -106,15 +152,15 @@ public partial class MainPage : ContentPage
         base.OnAppearing();
 
         StartTimer(this, EventArgs.Empty);
-        //await CreateHookInstance();
+        await CreateHookInstance();
     }
 
     protected override void OnDisappearing()
     {
         StopTimer(this, EventArgs.Empty);
         base.OnDisappearing();
-        /*if (_hook != null)
-            _hook.Dispose();*/
+        if (_hook != null)
+            _hook.Dispose();
     }
 
     private async Task CreateHookInstance()

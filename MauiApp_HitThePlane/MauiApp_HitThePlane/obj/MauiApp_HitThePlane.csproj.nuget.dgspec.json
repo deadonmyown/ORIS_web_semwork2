@@ -945,6 +945,9 @@
         "frameworks": {
           "net45": {
             "projectReferences": {
+              "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
+                "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj"
+              },
               "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
                 "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
               }

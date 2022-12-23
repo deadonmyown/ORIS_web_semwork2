@@ -5,11 +5,16 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using System.Threading.Tasks;
+using TCPServer;
 
 namespace TCPClient
 {
     public class XClient
     {
+        private static readonly object Locker = new object();
+
+        public int ClientID { get; private set; }
+
         public Action<byte[]> OnPacketRecieve { get; set; }
 
         private readonly Queue<byte[]> _packetSendingQueue = new Queue<byte[]>();
@@ -24,6 +29,9 @@ namespace TCPClient
 
         public void Connect(IPEndPoint server)
         {
+            lock (Locker)
+                ClientID = XServer.Clients.Count + 1;
+
             _serverEndPoint = server;
 
             var ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());  
@@ -44,6 +52,16 @@ namespace TCPClient
             }
 
             _packetSendingQueue.Enqueue(packet);
+        }
+
+        public void QueuePacketSendUpdate(byte[] packet)
+        {
+            if (packet.Length > 256)
+            {
+                throw new Exception("Max packet size is 256 bytes.");
+            }
+            if (_packetSendingQueue.Count == 0 || !Enumerable.SequenceEqual(packet, _packetSendingQueue.Peek()))
+                _packetSendingQueue.Enqueue(packet);
         }
 
         private void RecievePackets()
@@ -69,14 +87,14 @@ namespace TCPClient
             {
                 if (_packetSendingQueue.Count == 0)
                 {
-                    Thread.Sleep(100);
+                    Thread.Sleep(10);
                     continue;
                 }
 
                 var packet = _packetSendingQueue.Dequeue();
                 _socket.Send(packet);
 
-                Thread.Sleep(100);
+                Thread.Sleep(10);
             }
         }
     }

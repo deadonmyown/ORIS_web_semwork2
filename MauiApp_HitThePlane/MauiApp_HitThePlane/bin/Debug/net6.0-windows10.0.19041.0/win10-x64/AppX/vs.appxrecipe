@@ -29,29 +29,29 @@
     <AppXManifest Include="C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\MauiApp_HitThePlane\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-12-23T15:15:36.604</Modified>
+      <Modified>2022-12-23T19:05:54.042</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\MauiApp_HitThePlane\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-12-23T15:15:35.856</Modified>
+      <Modified>2022-12-23T19:05:53.210</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\MauiApp_HitThePlane\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\MauiApp_HitThePlane.runtimeconfig.json">
       <PackagePath>MauiApp_HitThePlane.runtimeconfig.json</PackagePath>
-      <Modified>2022-12-22T21:17:34.994</Modified>
+      <Modified>2022-12-23T18:57:24.443</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\MauiApp_HitThePlane\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\MauiApp_HitThePlane.dll">
       <PackagePath>MauiApp_HitThePlane.dll</PackagePath>
-      <Modified>2022-12-23T15:15:34.872</Modified>
+      <Modified>2022-12-23T19:05:51.982</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\MAUILibrary\bin\Debug\net6.0-windows10.0.19041.0\MAUILibrary.dll">
       <PackagePath>MAUILibrary.dll</PackagePath>
-      <Modified>2022-12-23T00:15:10.061</Modified>
+      <Modified>2022-12-23T15:41:19.276</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\MauiApp_HitThePlane\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MauiApp_HitThePlane.exe</PackagePath>
-      <Modified>2022-12-23T15:15:34.912</Modified>
+      <Modified>2022-12-23T19:05:52.021</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\xPr1e\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.12\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1075,15 +1075,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\bin\Debug\TCPClient.exe">
       <PackagePath>TCPClient.exe</PackagePath>
-      <Modified>2022-12-23T15:11:45.953</Modified>
+      <Modified>2022-12-23T18:43:42.913</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPServer\bin\Debug\TCPServer.exe">
       <PackagePath>TCPServer.exe</PackagePath>
-      <Modified>2022-12-23T15:11:49.495</Modified>
+      <Modified>2022-12-23T18:39:12.924</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\XProtocol\bin\Debug\XProtocol.dll">
       <PackagePath>XProtocol.dll</PackagePath>
-      <Modified>2022-12-23T15:11:45.656</Modified>
+      <Modified>2022-12-23T18:28:12.576</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\bin\Debug\TCPClient.exe.config">
       <PackagePath>TCPClient.exe.config</PackagePath>
@@ -1095,7 +1095,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\MauiApp_HitThePlane\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\MauiApp_HitThePlane.deps.json">
       <PackagePath>MauiApp_HitThePlane.deps.json</PackagePath>
-      <Modified>2022-12-23T15:15:36.364</Modified>
+      <Modified>2022-12-23T19:05:53.699</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\xPr1e\.nuget\packages\microsoft.maui.controls.ref.win\6.0.548\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

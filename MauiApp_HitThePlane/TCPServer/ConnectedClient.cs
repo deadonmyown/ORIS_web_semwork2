@@ -81,11 +81,13 @@ namespace TCPServer
             Console.WriteLine("Received player packet.");
 
             var player = XPacketConverter.Deserialize<XPacketPlayer>(packet);
-            player.PosX += 1;
+
+            player.PosX = player.PosX + player.Speed * Math.Cos(player.Rotation * Math.PI / 180) * player.DeltaTime;
+            player.PosY = player.PosY + player.Speed * Math.Sin(player.Rotation * Math.PI / 180) * player.DeltaTime;
 
             Console.WriteLine("Answering...");
 
-            QueuePacketSend(XPacketConverter.Serialize(XPacketType.Player, player).ToPacket());
+            SendPacketsToAll(XPacketConverter.Serialize(XPacketType.Player, player).ToPacket());
         }
 
         public void QueuePacketSend(byte[] packet)
@@ -104,14 +106,24 @@ namespace TCPServer
             {
                 if (_packetSendingQueue.Count == 0)
                 {
-                    Thread.Sleep(100);
+                    Thread.Sleep(10);
                     continue;
                 }
 
                 var packet = _packetSendingQueue.Dequeue();
                 Client.Send(packet);
 
-                Thread.Sleep(100);
+                Thread.Sleep(10);
+            }
+        }
+
+        private void SendPacketsToAll(byte[] packet)
+        {
+            foreach (var kvp in XServer.Clients)
+            {
+                var index = kvp.Key;
+                var client = kvp.Value;
+                client.Client.Send(packet);
             }
         }
     }

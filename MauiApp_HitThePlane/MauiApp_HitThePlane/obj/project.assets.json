@@ -2014,6 +2014,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -4023,6 +4024,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -6032,6 +6034,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -8041,6 +8044,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -10047,6 +10051,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -12053,6 +12058,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -14059,6 +14065,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -16068,6 +16075,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -16385,6 +16393,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -16667,6 +16676,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -16949,6 +16959,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -17231,6 +17242,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -17510,6 +17522,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -17789,6 +17802,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -18068,6 +18082,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -18350,6 +18365,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -18667,6 +18683,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -18949,6 +18966,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -19231,6 +19249,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -19513,6 +19532,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -19792,6 +19812,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -20071,6 +20092,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -20350,6 +20372,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -20632,6 +20655,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -21073,6 +21097,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -21451,6 +21476,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -21829,6 +21855,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -22207,6 +22234,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -22582,6 +22610,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -22957,6 +22986,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -23332,6 +23362,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
@@ -23716,6 +23747,7 @@
       "TCPClient/1.0.0": {
         "type": "project",
         "dependencies": {
+          "TCPServer": "1.0.0",
           "XProtocol": "1.0.0"
         },
         "compile": {
