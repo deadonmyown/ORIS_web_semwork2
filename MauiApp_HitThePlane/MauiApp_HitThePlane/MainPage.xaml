@@ -31,6 +31,7 @@
 
             <Rectangle x:Name="plane_1" Fill="LightGreen" WidthRequest="100" HeightRequest="40" Margin="10" />
             <Rectangle x:Name="plane_2" Fill="LightPink" WidthRequest="100" HeightRequest="40" RadiusX="15" RadiusY="15" Margin="10" />
+            <Rectangle x:Name="projectile" Fill="LightPink" WidthRequest="20" HeightRequest="15" RadiusX="15" RadiusY="15" Margin="10" />
 
             <HorizontalStackLayout 
                 HorizontalOptions="Center">

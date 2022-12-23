@@ -9,8 +9,7 @@
     ".NETCoreApp,Version=v6.0/win10-x64": {
       "MauiApp_HitThePlane/1.0": {
         "dependencies": {
-          "GameLibrary": "1.0.0",
-          "HitThePlaneLibrary": "1.0.0",
+          "MAUILibrary": "1.0.0",
           "Microsoft.Maui.Dependencies": "6.0.548",
           "Microsoft.Maui.Extensions": "6.0.548",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22000.194",
@@ -1127,14 +1126,12 @@
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
+        "dependencies": {
+          "SharpHook": "4.0.0"
+        },
         "runtime": {
-          "GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "runtime": {
-          "HitThePlaneLibrary.dll": {}
+          "MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -1317,12 +1314,7 @@
       "path": "system.runtime.compilerservices.unsafe/6.0.0",
       "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
     },
-    "GameLibrary/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "HitThePlaneLibrary/1.0.0": {
+    "MAUILibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

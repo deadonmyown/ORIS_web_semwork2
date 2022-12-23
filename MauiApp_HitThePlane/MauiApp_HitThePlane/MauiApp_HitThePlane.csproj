@@ -53,8 +53,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\GameLibrary\GameLibrary.csproj" />
-	  <ProjectReference Include="..\HitThePlaneLibrary\HitThePlaneLibrary.csproj" />
+	  <ProjectReference Include="..\MAUILibrary\MAUILibrary.csproj" />
 	  <ProjectReference Include="..\TCPClient\TCPClient.csproj" />
 	  <ProjectReference Include="..\TCPServer\TCPServer.csproj" />
 	  <ProjectReference Include="..\XProtocol\XProtocol.csproj" />

@@ -34,6 +34,9 @@
     <AppxPackagedFile Include="C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\MauiApp_HitThePlane\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\MauiApp_HitThePlane.dll">
       <PackagePath>MauiApp_HitThePlane.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\MAUILibrary\bin\Debug\net6.0-windows10.0.19041.0\MAUILibrary.dll">
+      <PackagePath>MAUILibrary.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\MauiApp_HitThePlane\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MauiApp_HitThePlane.exe</PackagePath>
     </AppxPackagedFile>
@@ -801,12 +804,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\xPr1e\.nuget\packages\sharphook\4.0.0\runtimes\win-x64\native\uiohook.dll">
       <PackagePath>uiohook.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\GameLibrary\bin\Debug\net6.0\GameLibrary.dll">
-      <PackagePath>GameLibrary.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlaneLibrary\bin\Debug\net6.0\HitThePlaneLibrary.dll">
-      <PackagePath>HitThePlaneLibrary.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClient\bin\Debug\TCPClient.exe">
       <PackagePath>TCPClient.exe</PackagePath>

@@ -1998,24 +1998,17 @@
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -4014,24 +4007,17 @@
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -6030,24 +6016,17 @@
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -8046,24 +8025,17 @@
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -10059,24 +10031,17 @@
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -12072,24 +12037,17 @@
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -14085,24 +14043,17 @@
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -16101,24 +16052,17 @@
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -16424,24 +16368,18 @@
           }
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -16712,24 +16650,18 @@
           }
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -17000,24 +16932,18 @@
           }
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -17288,24 +17214,18 @@
           }
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -17573,24 +17493,18 @@
           }
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -17858,24 +17772,18 @@
           }
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -18143,24 +18051,18 @@
           }
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -18431,24 +18333,18 @@
           }
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -18754,24 +18650,18 @@
           }
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -19042,24 +18932,18 @@
           }
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -19330,24 +19214,18 @@
           }
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -19618,24 +19496,18 @@
           }
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -19903,24 +19775,18 @@
           }
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -20188,24 +20054,18 @@
           }
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -20473,24 +20333,18 @@
           }
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -20761,24 +20615,18 @@
           }
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0",
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -21209,24 +21057,17 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -21594,24 +21435,17 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -21979,24 +21813,17 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -22364,24 +22191,17 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -22746,24 +22566,17 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -23128,24 +22941,17 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -23510,24 +23316,17 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -23901,24 +23700,17 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "GameLibrary/1.0.0": {
+      "MAUILibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpHook": "4.0.0"
+        },
         "compile": {
-          "bin/placeholder/GameLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GameLibrary.dll": {}
-        }
-      },
-      "HitThePlaneLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HitThePlaneLibrary.dll": {}
+          "bin/placeholder/MAUILibrary.dll": {}
         }
       },
       "TCPClient/1.0.0": {
@@ -26984,15 +26776,10 @@
         "xamarin.kotlinx.coroutines.core.jvm.nuspec"
       ]
     },
-    "GameLibrary/1.0.0": {
+    "MAUILibrary/1.0.0": {
       "type": "project",
-      "path": "../GameLibrary/GameLibrary.csproj",
-      "msbuildProject": "../GameLibrary/GameLibrary.csproj"
-    },
-    "HitThePlaneLibrary/1.0.0": {
-      "type": "project",
-      "path": "../HitThePlaneLibrary/HitThePlaneLibrary.csproj",
-      "msbuildProject": "../HitThePlaneLibrary/HitThePlaneLibrary.csproj"
+      "path": "../MAUILibrary/MAUILibrary.csproj",
+      "msbuildProject": "../MAUILibrary/MAUILibrary.csproj"
     },
     "TCPClient/1.0.0": {
       "type": "project",
@@ -27012,8 +26799,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-android31.0": [
-      "GameLibrary >= 1.0.0",
-      "HitThePlaneLibrary >= 1.0.0",
+      "MAUILibrary >= 1.0.0",
       "Microsoft.Maui.Dependencies >= 6.0.548",
       "Microsoft.Maui.Extensions >= 6.0.548",
       "SharpHook >= 4.0.0",
@@ -27022,8 +26808,7 @@
       "XProtocol >= 1.0.0"
     ],
     "net6.0-ios16.1": [
-      "GameLibrary >= 1.0.0",
-      "HitThePlaneLibrary >= 1.0.0",
+      "MAUILibrary >= 1.0.0",
       "Microsoft.Maui.Dependencies >= 6.0.548",
       "Microsoft.Maui.Extensions >= 6.0.548",
       "SharpHook >= 4.0.0",
@@ -27033,8 +26818,7 @@
       "XProtocol >= 1.0.0"
     ],
     "net6.0-maccatalyst16.1": [
-      "GameLibrary >= 1.0.0",
-      "HitThePlaneLibrary >= 1.0.0",
+      "MAUILibrary >= 1.0.0",
       "Microsoft.Maui.Dependencies >= 6.0.548",
       "Microsoft.Maui.Extensions >= 6.0.548",
       "SharpHook >= 4.0.0",
@@ -27044,8 +26828,7 @@
       "XProtocol >= 1.0.0"
     ],
     "net6.0-windows10.0.19041": [
-      "GameLibrary >= 1.0.0",
-      "HitThePlaneLibrary >= 1.0.0",
+      "MAUILibrary >= 1.0.0",
       "Microsoft.Maui.Dependencies >= 6.0.548",
       "Microsoft.Maui.Extensions >= 6.0.548",
       "Microsoft.Windows.SDK.BuildTools >= 10.0.22000.194",
@@ -27093,11 +26876,8 @@
         "net6.0-android31.0": {
           "targetAlias": "net6.0-android",
           "projectReferences": {
-            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj": {
-              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj"
-            },
-            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj": {
-              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj"
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj"
             },
             "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
               "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
@@ -27113,11 +26893,8 @@
         "net6.0-ios16.1": {
           "targetAlias": "net6.0-ios",
           "projectReferences": {
-            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj": {
-              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj"
-            },
-            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj": {
-              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj"
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj"
             },
             "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
               "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
@@ -27133,11 +26910,8 @@
         "net6.0-maccatalyst16.1": {
           "targetAlias": "net6.0-maccatalyst",
           "projectReferences": {
-            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj": {
-              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj"
-            },
-            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj": {
-              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj"
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj"
             },
             "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
               "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
@@ -27153,11 +26927,8 @@
         "net6.0-windows10.0.19041": {
           "targetAlias": "net6.0-windows10.0.19041.0",
           "projectReferences": {
-            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj": {
-              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\GameLibrary\\GameLibrary.csproj"
-            },
-            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj": {
-              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlaneLibrary\\HitThePlaneLibrary.csproj"
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj"
             },
             "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
               "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
