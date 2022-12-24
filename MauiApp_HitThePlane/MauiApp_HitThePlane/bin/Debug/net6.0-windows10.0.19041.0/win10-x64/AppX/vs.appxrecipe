@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\MauiApp_HitThePlane\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-12-23T19:11:38.155</Modified>
+      <Modified>2022-12-23T21:11:56.762</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\MauiApp_HitThePlane\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-12-23T19:11:37.613</Modified>
+      <Modified>2022-12-23T21:11:56.185</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\MauiApp_HitThePlane\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\MauiApp_HitThePlane.runtimeconfig.json">
       <PackagePath>MauiApp_HitThePlane.runtimeconfig.json</PackagePath>
@@ -44,15 +44,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\MauiApp_HitThePlane\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\MauiApp_HitThePlane.dll">
       <PackagePath>MauiApp_HitThePlane.dll</PackagePath>
-      <Modified>2022-12-23T19:11:36.542</Modified>
+      <Modified>2022-12-23T21:11:55.218</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\MAUILibrary\bin\Debug\net6.0-windows10.0.19041.0\MAUILibrary.dll">
       <PackagePath>MAUILibrary.dll</PackagePath>
-      <Modified>2022-12-23T19:05:37.223</Modified>
+      <Modified>2022-12-23T19:29:55.888</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\MauiApp_HitThePlane\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MauiApp_HitThePlane.exe</PackagePath>
-      <Modified>2022-12-23T19:11:36.549</Modified>
+      <Modified>2022-12-23T21:11:55.225</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anis\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.11\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1096,7 +1096,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\MauiApp_HitThePlane\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\MauiApp_HitThePlane.deps.json">
       <PackagePath>MauiApp_HitThePlane.deps.json</PackagePath>
-      <Modified>2022-12-23T19:11:37.860</Modified>
+      <Modified>2022-12-23T21:11:56.457</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anis\.nuget\packages\microsoft.maui.controls.ref.win\6.0.547\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

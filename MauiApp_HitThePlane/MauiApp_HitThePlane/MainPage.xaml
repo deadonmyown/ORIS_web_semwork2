@@ -3,121 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:windows="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.WindowsSpecific;assembly=Microsoft.Maui.Controls"
              x:Class="MauiApp_HitThePlane.MainPage"
-             BackgroundColor="LightSkyBlue"
-             Background="black">
+             xmlns:drawable="clr-namespace:MauiApp_HitThePlane">
 
-    <AbsoluteLayout WidthRequest="680"
-                    HeightRequest="400">
+    <ContentPage.Resources>
+        <drawable:GraphicsDrawable x:Key="drawable" />
+    </ContentPage.Resources>
 
-        <VerticalStackLayout Spacing="25"
-                             Padding="30,0"
-                             VerticalOptions="Center">
+    <VerticalStackLayout>
+        <GraphicsView x:Name="canvas"
+                      Drawable="{StaticResource drawable}"
+                      HeightRequest="400"
+                      WidthRequest="680" />
+    </VerticalStackLayout>
 
-
-
-        </VerticalStackLayout>
-
-        <Image Source="scene.png"
-               AbsoluteLayout.LayoutBounds="0, 0, 680, 400" />
-
-        <Image  x:Name="plane_1"
-                Source="green_plane.png"
-                AbsoluteLayout.LayoutBounds="50, 100, 100, 40" />
-
-        <Image  x:Name="plane_2"
-                Source="red_plane.png"
-                AbsoluteLayout.LayoutBounds="50, 150, 100, 40" />
-
-        <Image x:Name="projectile"
-               Source="explosion.gif"
-               AbsoluteLayout.LayoutBounds="50, 150, 30, 30" />
-
-        <Entry x:Name="PlayerText"
-               Background="blue"
-               AbsoluteLayout.LayoutBounds="200, 150" />
-        <Button x:Name="PlayerBtn"
-                Text="Click me"
-                Clicked="OnAddPlayerClicked"
-                Background="blue"
-                AbsoluteLayout.LayoutBounds="200, 100" />
-
-        <Button x:Name="StartBtn"
-                Text="Start timer"
-                Clicked="StartTimer"
-                AbsoluteLayout.LayoutBounds="300, 100, 100, 40" />
-
-        <Button x:Name="StopBtn"
-                Text="Stop timer"
-                Clicked="StopTimer"
-                AbsoluteLayout.LayoutBounds="300, 150, 100, 40" />
-
-    </AbsoluteLayout>
 </ContentPage>
-
-
-<!--<ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
-
-            <Entry 
-                x:Name="PlayerText"
-                VerticalOptions="End"
-                HorizontalOptions="Center"/>
-
-            <Button
-                x:Name="PlayerBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnAddPlayerClicked"
-                HorizontalOptions="Center" />
-
-            <Label
-                x:Name="Nickname"
-                Text="No nick"
-                SemanticProperties.HeadingLevel="Level2"
-                HorizontalOptions="Center"/>
-
-            <Rectangle x:Name="plane_1" Fill="LightGreen" WidthRequest="100" HeightRequest="40" Margin="10" />
-            <Rectangle x:Name="plane_2" Fill="LightPink" WidthRequest="100" HeightRequest="40" RadiusX="15" RadiusY="15" Margin="10" />
-
-            <HorizontalStackLayout 
-                HorizontalOptions="Center">
-                <Button
-                    x:Name="StartBtn"
-                    Text="Start timer"
-                    Clicked="StartTimer"
-                    HorizontalOptions="Center"
-                    VerticalOptions="End"/>
-
-                <Button
-                    x:Name="StopBtn"
-                    Text="Stop timer"
-                    Clicked="StopTimer"
-                    HorizontalOptions="Center"
-                    VerticalOptions="End"/>
-            </HorizontalStackLayout>
-
-            <HorizontalStackLayout 
-                HorizontalOptions="Center">
-                <Button 
-                    x:Name="UpBtn"
-                    Text="Up"
-                    Pressed="UpButtonHold"
-                    Released="UpButtonReleased"
-                    windows:VisualElement.AccessKey="W"
-                    HorizontalOptions="Center"
-                    VerticalOptions="End"/>
-
-                <Button 
-                    x:Name="DownBtn"
-                    Text="Down"
-                    Pressed="DownButtonHold"
-                    Released="DownButtonReleased"
-                    windows:VisualElement.AccessKey="S"
-                    HorizontalOptions="Center"
-                    VerticalOptions="End"/>
-            </HorizontalStackLayout>
-        </VerticalStackLayout>
-    </ScrollView>-->
