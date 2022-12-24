@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>XProtocol</RootNamespace>
     <AssemblyName>XProtocol</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -48,6 +49,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XPacketField.cs" />
     <Compile Include="XPacketHandshake.cs" />
+    <Compile Include="XPacketPlayer.cs" />
     <Compile Include="XPacketType.cs" />
     <Compile Include="XPacketTypeManager.cs" />
     <Compile Include="XProtocolEncryptor.cs" />

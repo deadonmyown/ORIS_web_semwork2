@@ -10,3 +10,15 @@ C:\Users\xPr1e\source\repos\MauiApp_HitThePlane\HitThePlaneLibrary\obj\Debug\net
 C:\Users\xPr1e\source\repos\MauiApp_HitThePlane\HitThePlaneLibrary\obj\Debug\net6.0\refint\HitThePlaneLibrary.dll
 C:\Users\xPr1e\source\repos\MauiApp_HitThePlane\HitThePlaneLibrary\obj\Debug\net6.0\HitThePlaneLibrary.pdb
 C:\Users\xPr1e\source\repos\MauiApp_HitThePlane\HitThePlaneLibrary\obj\Debug\net6.0\ref\HitThePlaneLibrary.dll
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlaneLibrary\bin\Debug\net6.0\HitThePlaneLibrary.deps.json
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlaneLibrary\bin\Debug\net6.0\HitThePlaneLibrary.dll
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlaneLibrary\bin\Debug\net6.0\HitThePlaneLibrary.pdb
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlaneLibrary\obj\Debug\net6.0\HitThePlaneLibrary.csproj.AssemblyReference.cache
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlaneLibrary\obj\Debug\net6.0\HitThePlaneLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlaneLibrary\obj\Debug\net6.0\HitThePlaneLibrary.AssemblyInfoInputs.cache
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlaneLibrary\obj\Debug\net6.0\HitThePlaneLibrary.AssemblyInfo.cs
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlaneLibrary\obj\Debug\net6.0\HitThePlaneLibrary.csproj.CoreCompileInputs.cache
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlaneLibrary\obj\Debug\net6.0\HitThePlaneLibrary.dll
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlaneLibrary\obj\Debug\net6.0\refint\HitThePlaneLibrary.dll
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlaneLibrary\obj\Debug\net6.0\HitThePlaneLibrary.pdb
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlaneLibrary\obj\Debug\net6.0\ref\HitThePlaneLibrary.dll

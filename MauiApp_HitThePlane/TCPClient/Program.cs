@@ -18,12 +18,12 @@ namespace TCPClient
             client.OnPacketRecieve += OnPacketRecieve;
             client.Connect("127.0.0.1", 4910);
 
-            var rand = new Random();
-            _handshakeMagic = rand.Next();
+            /*var rand = new Random();
+            _handshakeMagic = rand.Next();*/
 
             Thread.Sleep(1000);
             
-            Console.WriteLine("Sending handshake packet..");
+            /*Console.WriteLine("Sending handshake packet..");
 
             client.QueuePacketSend(
                 XPacketConverter.Serialize(
@@ -32,7 +32,9 @@ namespace TCPClient
                     {
                         MagicHandshakeNumber = _handshakeMagic
                     })
-                    .ToPacket());
+                    .ToPacket());*/
+
+            client.QueuePacketSend(XPacketConverter.Serialize(XPacketType.Player, new XPacketPlayer { PosX = 0}).ToPacket());
 
             while(true) {}
         }
@@ -56,11 +58,23 @@ namespace TCPClient
                 case XPacketType.Handshake:
                     ProcessHandshake(packet);
                     break;
+                case XPacketType.Player:
+                    ProcessPlayer(packet);
+                    break;
                 case XPacketType.Unknown:
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
             }
+        }
+
+        private static void ProcessPlayer(XPacket packet)
+        {
+            var player = XPacketConverter.Deserialize<XPacketPlayer>(packet);
+
+            Console.WriteLine("Get player packet");
+            if(player.PosX != 0)
+                Console.WriteLine("player move");
         }
 
         private static void ProcessHandshake(XPacket packet)

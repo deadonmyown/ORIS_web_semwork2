@@ -1,57 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:windows="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.WindowsSpecific;assembly=Microsoft.Maui.Controls"
              x:Class="MauiApp_HitThePlane.MainPage"
-             BackgroundColor="LightSkyBlue">
+             xmlns:drawable="clr-namespace:MauiApp_HitThePlane">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+    <ContentPage.Resources>
+        <drawable:GraphicsDrawable x:Key="drawable" />
+    </ContentPage.Resources>
 
-            <Entry 
-                x:Name="PlayerText"
-                VerticalOptions="End"
-                HorizontalOptions="Center"/>
-
-            <Button
-                x:Name="PlayerBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnAddPlayerClicked"
-                HorizontalOptions="Center" />
-
-            <Label
-                x:Name="Nickname"
-                Text="No nick"
-                SemanticProperties.HeadingLevel="Level2"
-                HorizontalOptions="Center"/>
-            
-            <Rectangle x:Name="plane_1" Fill="LightGreen" WidthRequest="200" HeightRequest="70" Margin="10" />
-            <Rectangle x:Name="plane_2" Fill="LightPink" WidthRequest="200" HeightRequest="70" RadiusX="15" RadiusY="15" Margin="10" />
-
-            <!--<Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="End" />
-
-            <Label
-                Text="Someone fucking help me already, see this robot above the text??? I wanna fuck it"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="End" />
-
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="End" />-->
-
-        </VerticalStackLayout>
-    </ScrollView>
+    <VerticalStackLayout>
+        <GraphicsView x:Name="canvas"
+                      Drawable="{StaticResource drawable}"
+                      HeightRequest="400"
+                      WidthRequest="680" />
+    </VerticalStackLayout>
 
 </ContentPage>
