@@ -6320,11 +6320,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj",
+      "projectUniqueName": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj",
       "projectName": "MAUILibrary",
-      "projectPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj",
+      "projectPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj",
       "packagesPath": "C:\\Users\\anis\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\obj\\",
+      "outputPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

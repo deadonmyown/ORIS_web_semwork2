@@ -9,12 +9,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="Sprites\" />
+    <Compile Remove="Models\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <None Remove="Models\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Sprites\bullet.png">
+    <Folder Include="Sprites\" />
+    <Folder Include="Engine\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Sprites\Explosion\bullet.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Sprites\Explosion\explosion1.png">

@@ -9,6 +9,7 @@ namespace HitThePlane.Entities
 {
     public abstract class GameObject
     {
+        public const int ScaleRatio = 2;
         public Vector2 Position { get; set; }
         public abstract float DirectionAngle { get; set; }
         public abstract Size ModelSize { get; }

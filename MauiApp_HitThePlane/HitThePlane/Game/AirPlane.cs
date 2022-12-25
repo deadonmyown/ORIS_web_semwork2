@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Runtime.Intrinsics;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Numerics;
 
 namespace HitThePlane.Entities
 {
@@ -20,7 +14,7 @@ namespace HitThePlane.Entities
 
     public class AirPlane : GameObject
     {
-        public static readonly Size _modelSize = new Size(52 * 2, 22 * 2);
+        public static readonly Size _modelSize = new Size(52 * ScaleRatio, 22 * ScaleRatio);
         public override Size ModelSize => _modelSize;
         public override Image Sprite => _sprite;
 
@@ -47,14 +41,14 @@ namespace HitThePlane.Entities
 
         public float _angleChange { get; set; }
 
-        public Image _sprite { get; set; }
+        private Image _sprite;
 
         private Vector2 DisplacementVector =>
             new Vector2((float)(Speed * Math.Cos(DirectionAngle * Math.PI / 180)),
                     Speed * (float)(Math.Sin(DirectionAngle * Math.PI / 180)));
 
         private Vector2 GravityVector =>
-            new Vector2(0, Scene.GravityValue * (Speed < 1 ? 1 : 1 / Speed));
+            new Vector2(0, Scene.GravityValue * (Speed < 1 ? 1 : 1 / (float)Math.Sqrt(Speed)));
 
         private float _directionAngle;
         public override float DirectionAngle
@@ -66,7 +60,7 @@ namespace HitThePlane.Entities
                     return;
                 if (State == PlaneState.Takeoff)
                 {
-                    if (value > _directionAngle)
+                    if (value > _directionAngle || _speed < SpeedBoost * 20)
                         return;
                 }
                 _directionAngle = value;
@@ -96,6 +90,7 @@ namespace HitThePlane.Entities
 
         public void Move()
         {
+            Speed -= Scene.AirResistance;
             Position += DisplacementVector + GravityVector;
             CheckBorders();
             if (State == PlaneState.Takeoff && Position.Y < Scene.GroundHeigth - 50)
@@ -109,7 +104,7 @@ namespace HitThePlane.Entities
             if (Position.X > Form1.defaultWidth)
                 Position = new Vector2(0, Position.Y);
             if (Position.Y < 20)
-                Speed -= SpeedBoost * 2;
+                Speed -= SpeedBoost * 4;
 
 
             if (Position.Y > Scene.GroundHeigth - ModelSize.Height / 2)
@@ -123,6 +118,7 @@ namespace HitThePlane.Entities
                 Destroy();
 
         }
+
 
         public void Shoot()
         {

@@ -9,10 +9,10 @@ namespace HitThePlane.Entities
 {
     public class Bullet : GameObject
     {
-        public static readonly Size _modelSize = new Size(21 * 2, 21  * 2);
+        public static readonly Size _modelSize = new Size(21 * ScaleRatio, 21  * ScaleRatio);
         public static readonly Image[] ExplosionAnim = new Image[]
         {
-            Image.FromFile("Sprites/bullet.png"),
+            Image.FromFile("Sprites/Explosion/bullet.png"),
             Image.FromFile("Sprites/Explosion/Explosion1.png"),
             Image.FromFile("Sprites/Explosion/Explosion2.png"),
             Image.FromFile("Sprites/Explosion/Explosion3.png"),
@@ -47,7 +47,7 @@ namespace HitThePlane.Entities
         {
             Position = Position + DisplacementVector;
             if (!collided) CheckCollide();
-            else if (frameCounter++ == ExplosionAnim.Length)
+            else if (++frameCounter == ExplosionAnim.Length)
                 Destroy();
         }
 
