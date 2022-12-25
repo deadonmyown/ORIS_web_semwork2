@@ -12,6 +12,7 @@ namespace HitThePlane.Entities
         public static AirPlane MyPlane { get; set; }
         public static AirPlane EnemyPlane { get; set; }
         public static float GravityValue { get; set; }
+        public static float AirResistance { get; set; }
         public static HashSet<Bullet> Bullets { get; set; }
         public static Rectangle House { get; set; }
         public static Rectangle Ground { get; set; }

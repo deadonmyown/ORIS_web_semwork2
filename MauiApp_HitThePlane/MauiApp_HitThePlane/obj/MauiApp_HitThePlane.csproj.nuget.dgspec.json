@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\MauiApp_HitThePlane.csproj": {}
+    "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\MauiApp_HitThePlane.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\MauiApp_HitThePlane.csproj": {
+    "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\MauiApp_HitThePlane.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\MauiApp_HitThePlane.csproj",
+        "projectUniqueName": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\MauiApp_HitThePlane.csproj",
         "projectName": "MauiApp_HitThePlane",
-        "projectPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\MauiApp_HitThePlane.csproj",
+        "projectPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\MauiApp_HitThePlane.csproj",
         "packagesPath": "C:\\Users\\anis\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\obj\\",
+        "outputPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MauiApp_HitThePlane\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -37,68 +37,68 @@
           "net6.0-android31.0": {
             "targetAlias": "net6.0-android",
             "projectReferences": {
-              "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj": {
-                "projectPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj"
+              "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj": {
+                "projectPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj"
               },
-              "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
-                "projectPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
+              "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
+                "projectPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
               },
-              "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
-                "projectPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj"
+              "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
+                "projectPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj"
               },
-              "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
-                "projectPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
+              "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
+                "projectPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
               }
             }
           },
           "net6.0-ios16.0": {
             "targetAlias": "net6.0-ios",
             "projectReferences": {
-              "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj": {
-                "projectPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj"
+              "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj": {
+                "projectPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj"
               },
-              "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
-                "projectPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
+              "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
+                "projectPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
               },
-              "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
-                "projectPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj"
+              "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
+                "projectPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj"
               },
-              "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
-                "projectPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
+              "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
+                "projectPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
               }
             }
           },
           "net6.0-maccatalyst15.4": {
             "targetAlias": "net6.0-maccatalyst",
             "projectReferences": {
-              "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj": {
-                "projectPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj"
+              "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj": {
+                "projectPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj"
               },
-              "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
-                "projectPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
+              "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
+                "projectPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
               },
-              "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
-                "projectPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj"
+              "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
+                "projectPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj"
               },
-              "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
-                "projectPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
+              "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
+                "projectPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
               }
             }
           },
           "net6.0-windows10.0.19041": {
             "targetAlias": "net6.0-windows10.0.19041.0",
             "projectReferences": {
-              "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj": {
-                "projectPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj"
+              "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj": {
+                "projectPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj"
               },
-              "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
-                "projectPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
+              "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
+                "projectPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj"
               },
-              "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
-                "projectPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj"
+              "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
+                "projectPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj"
               },
-              "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
-                "projectPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
+              "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
+                "projectPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
               }
             }
           }
@@ -512,14 +512,14 @@
         }
       }
     },
-    "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj": {
+    "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj",
+        "projectUniqueName": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj",
         "projectName": "MAUILibrary",
-        "projectPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj",
+        "projectPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj",
         "packagesPath": "C:\\Users\\anis\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\obj\\",
+        "outputPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -935,16 +935,16 @@
         }
       }
     },
-    "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
+    "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj": {
       "restore": {
-        "projectUniqueName": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj",
+        "projectUniqueName": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj",
         "projectName": "TCPClient",
-        "projectPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj",
+        "projectPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClient\\TCPClient.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {
-              "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
-                "projectPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
+              "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
+                "projectPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
               }
             }
           }
@@ -954,16 +954,16 @@
         "net48": {}
       }
     },
-    "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
+    "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj": {
       "restore": {
-        "projectUniqueName": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj",
+        "projectUniqueName": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj",
         "projectName": "TCPServer",
-        "projectPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj",
+        "projectPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServer\\TCPServer.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {
-              "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
-                "projectPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
+              "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
+                "projectPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj"
               }
             }
           }
@@ -973,11 +973,11 @@
         "net48": {}
       }
     },
-    "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
+    "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj": {
       "restore": {
-        "projectUniqueName": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj",
+        "projectUniqueName": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj",
         "projectName": "XProtocol",
-        "projectPath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj",
+        "projectPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocol\\XProtocol.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {}

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yE/1oHYGxExZlYHtQxGzPHaBytxCsSwfGyFSTyX6DNQZ9wExwVMqAy2QiJLU/PO7qfWQ8cmtzbLT9zGT8UWaQQ==",
+  "dgSpecHash": "922mYqs54Se9N8TMi18xsPtToPbSQnj02983kPcJFMYryEekXAGRE/88l6lAJsQdYuEeX04JebPYWQKQqd+WVg==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj",
+  "projectFilePath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\MAUILibrary\\MAUILibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\anis\\.nuget\\packages\\googlegson\\2.9.0.1\\googlegson.2.9.0.1.nupkg.sha512",
     "C:\\Users\\anis\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",

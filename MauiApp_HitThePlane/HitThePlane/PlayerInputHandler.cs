@@ -12,29 +12,52 @@ namespace HitThePlane
     {
         private static AirPlane Plane => Scene.MyPlane;
 
-        public static void KeyboardPressed(object sender, KeyEventArgs e)
+        private static bool isAdowm = false;
+        private static bool isDdown = false;
+        private static bool isWdowm = false;
+        private static bool isSdown = false;
+        private static bool mustShoot = false;
+
+        public static void KeyPressed(object sender, KeyEventArgs e)
         {
-            switch (e.KeyCode)
+            if (e.KeyCode == Keys.A)
+                isAdowm = true;
+            if (e.KeyCode == Keys.D)
+                isDdown = true;
+            if (e.KeyCode == Keys.W)
+                isWdowm = true;
+            if (e.KeyCode == Keys.S)
+                isSdown = true;
+        }
+
+        public static void KeyReleased(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.A)
+                isAdowm = false;
+            if (e.KeyCode == Keys.D)
+                isDdown = false;
+            if (e.KeyCode == Keys.W)
+                isWdowm = false;
+            if (e.KeyCode == Keys.S)
+                isSdown = false;
+        }
+
+        public static void MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+                mustShoot = true;
+        }
+
+        public static void Apply()
+        {
+            if (isAdowm) Plane.Rotate(PlaneDirection.Down);
+            if (isDdown) Plane.Rotate(PlaneDirection.Up);
+            if (isWdowm) Plane.Speed += Plane.SpeedBoost;
+            if (isSdown) Plane.Speed -= Plane.SpeedBoost;
+            if (mustShoot)
             {
-                case Keys.A:
-                    Plane.Rotate(PlaneDirection.Down);
-                    break;
-
-                case Keys.D:
-                    Plane.Rotate(PlaneDirection.Up);
-                    break;
-
-                case Keys.W:
-                    Plane.Speed += Plane.SpeedBoost;
-                    break;
-
-                case Keys.S:
-                    Plane.Speed -= Plane.SpeedBoost;
-                    break;
-
-                case Keys.Space:
-                    Plane.Shoot();
-                    break;
+                Plane.Shoot();
+                mustShoot = false;
             }
         }
     }
