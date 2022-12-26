@@ -4,6 +4,8 @@
     {
         Unknown,
         Handshake,
-        Player
+        PlayerTest,
+        Player,
+        PlayerInput
     }
 }

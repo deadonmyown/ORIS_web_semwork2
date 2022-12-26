@@ -1,30 +1,86 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {}
+    "net6.0-windows7.0": {
+      "TCPClientNET6.0/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "XProtocolNET6.0": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TCPClientNET6.0.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TCPClientNET6.0.dll": {}
+        }
+      },
+      "TCPServerNET6.0/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "XProtocolNET6.0": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TCPServerNET6.0.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TCPServerNET6.0.dll": {}
+        }
+      },
+      "XProtocolNET6.0/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/XProtocolNET6.0.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/XProtocolNET6.0.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "TCPClientNET6.0/1.0.0": {
+      "type": "project",
+      "path": "../TCPClientNET6.0/TCPClientNET6.0.csproj",
+      "msbuildProject": "../TCPClientNET6.0/TCPClientNET6.0.csproj"
+    },
+    "TCPServerNET6.0/1.0.0": {
+      "type": "project",
+      "path": "../TCPServerNET6.0/TCPServerNET6.0.csproj",
+      "msbuildProject": "../TCPServerNET6.0/TCPServerNET6.0.csproj"
+    },
+    "XProtocolNET6.0/1.0.0": {
+      "type": "project",
+      "path": "../XProtocolNET6.0/XProtocolNET6.0.csproj",
+      "msbuildProject": "../XProtocolNET6.0/XProtocolNET6.0.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": []
+    "net6.0-windows7.0": [
+      "TCPClientNET6.0 >= 1.0.0",
+      "TCPServerNET6.0 >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\anis\\.nuget\\packages\\": {},
+    "C:\\Users\\xPr1e\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlane\\HitThePlane.csproj",
+      "projectUniqueName": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlane\\HitThePlane.csproj",
       "projectName": "HitThePlane",
-      "projectPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlane\\HitThePlane.csproj",
-      "packagesPath": "C:\\Users\\anis\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\sw2\\test\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlane\\obj\\",
+      "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlane\\HitThePlane.csproj",
+      "packagesPath": "C:\\Users\\xPr1e\\.nuget\\packages\\",
+      "outputPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlane\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\anis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\xPr1e\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -34,12 +90,20 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://dotnet.myget.org/feed/dotnet-core/package/nuget/Microsoft.NET.Sdk.IL": {}
       },
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClientNET6.0\\TCPClientNET6.0.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClientNET6.0\\TCPClientNET6.0.csproj"
+            },
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServerNET6.0\\TCPServerNET6.0.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServerNET6.0\\TCPServerNET6.0.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -70,7 +134,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

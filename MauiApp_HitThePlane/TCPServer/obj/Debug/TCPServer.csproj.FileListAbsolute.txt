@@ -39,3 +39,4 @@ D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\TCPServer\obj\Debug\TCPServer.
 D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\TCPServer\obj\Debug\TCPServer.csproj.CopyComplete
 D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\TCPServer\obj\Debug\TCPServer.exe
 D:\Projects\ORIS_web_semwork2\MauiApp_HitThePlane\TCPServer\obj\Debug\TCPServer.pdb
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPServer\obj\Debug\TCPServer.csproj.SuggestedBindingRedirects.cache

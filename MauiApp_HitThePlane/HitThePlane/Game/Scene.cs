@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HitThePlane.Entities
+﻿namespace HitThePlane.Game
 {
     public static class Scene
     {
@@ -17,5 +10,17 @@ namespace HitThePlane.Entities
         public static Rectangle House { get; set; }
         public static Rectangle Ground { get; set; }
         public static int GroundHeigth { get; set; }
+
+        public static void Initialize(float gravityValue, float airResistance, HashSet<Bullet> bullets, Rectangle house, Rectangle ground, int groundHeigth, AirPlane myPlane, AirPlane enemyPlane = null)
+        {
+            GravityValue = gravityValue;
+            AirResistance = airResistance;
+            Bullets = bullets;
+            House = house;
+            Ground = ground;
+            GroundHeigth = groundHeigth;
+            MyPlane = myPlane;
+            EnemyPlane = enemyPlane;
+        }
     }
 }

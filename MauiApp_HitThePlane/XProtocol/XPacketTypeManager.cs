@@ -10,8 +10,10 @@ namespace XProtocol
 
         static XPacketTypeManager()
         {
-            RegisterType(XPacketType.Player, 1, 0);
-            RegisterType(XPacketType.Handshake, 2, 0);
+            RegisterType(XPacketType.Handshake, 1, 0);
+            RegisterType(XPacketType.PlayerTest, 2, 0);
+            RegisterType(XPacketType.Player, 3, 0);
+            RegisterType(XPacketType.PlayerInput, 4, 0);
         }
 
         public static void RegisterType(XPacketType type, byte btype, byte bsubtype)

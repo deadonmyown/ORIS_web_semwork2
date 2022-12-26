@@ -1,10 +1,10 @@
 ﻿using System.Numerics;
 
-namespace HitThePlane.Entities
+namespace HitThePlane.Game
 {
     public enum PlaneDirection
     {
-        Up, Down
+        Up, Forward, Down
     }
 
     public enum PlaneState
@@ -47,8 +47,10 @@ namespace HitThePlane.Entities
             new Vector2((float)(Speed * Math.Cos(DirectionAngle * Math.PI / 180)),
                     Speed * (float)(Math.Sin(DirectionAngle * Math.PI / 180)));
 
+        private float _gravityValue;
+
         private Vector2 GravityVector =>
-            new Vector2(0, Scene.GravityValue * (Speed < 1 ? 1 : 1 / (float)Math.Sqrt(Speed)));
+            new Vector2(0, _gravityValue * (Speed < 1 ? 1 : 1 / (float)Math.Sqrt(Speed)));
 
         private float _directionAngle;
         public override float DirectionAngle
@@ -67,8 +69,10 @@ namespace HitThePlane.Entities
             }
         }
 
+        public PlaneDirection Direction { get; set; }
 
-        public AirPlane(Vector2 position, int health, float speed, float speedBoost, float maxSpeed, float directionAngle, float angleChange, Image sprite)
+
+        public AirPlane(Vector2 position, int health, float speed, float speedBoost, float maxSpeed, float gravityValue, float directionAngle, float angleChange, Image sprite)
         {
             Position = position;
             Health = health;
@@ -76,32 +80,34 @@ namespace HitThePlane.Entities
             SpeedBoost = speedBoost;
             _maxSpeed = maxSpeed;
             _angleChange = angleChange;
+            _gravityValue = gravityValue;
             _directionAngle = directionAngle;
             _sprite = sprite;
         }
 
-        public void Rotate(PlaneDirection dir)
+        private void Rotate()
         {
-            if (dir == PlaneDirection.Up)
+            if (Direction == PlaneDirection.Up)
                 DirectionAngle += _angleChange;
-            else
+            else if (Direction == PlaneDirection.Down)
                 DirectionAngle -= _angleChange;
         }
 
-        public void Move()
+        public void Move(int formX)
         {
             Speed -= Scene.AirResistance;
+            Rotate();
             Position += DisplacementVector + GravityVector;
-            CheckBorders();
+            CheckBorders(formX);
             if (State == PlaneState.Takeoff && Position.Y < Scene.GroundHeigth - 50)
                 State = PlaneState.Flight;
         }
 
-        private void CheckBorders()
+        private void CheckBorders(int formX)
         {
             if (Position.X < 0)
-                Position = new Vector2(Form1.defaultWidth, Position.Y);
-            if (Position.X > Form1.defaultWidth)
+                Position = new Vector2(formX, Position.Y);
+            if (Position.X > formX)
                 Position = new Vector2(0, Position.Y);
             if (Position.Y < 20)
                 Speed -= SpeedBoost * 4;
@@ -128,13 +134,13 @@ namespace HitThePlane.Entities
         public void TakeDamage(int damage)
         {
             Health -= damage;
-            if (Health < 0)
+            if (Health <= 0)
                 State = PlaneState.Destroyed;
         }
 
         private void Destroy()
         {
-            Scene.GravityValue = 0;
+            _gravityValue = 0;
             Speed = 0;
             Health = 0;
             State = PlaneState.Destroyed;

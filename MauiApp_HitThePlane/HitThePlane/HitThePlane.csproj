@@ -20,6 +20,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TCPClientNET6.0\TCPClientNET6.0.csproj" />
+    <ProjectReference Include="..\TCPServerNET6.0\TCPServerNET6.0.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="Sprites\Explosion\bullet.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

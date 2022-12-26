@@ -1,13 +1,16 @@
-using HitThePlane.Entities;
 using System.Drawing.Drawing2D;
 using System.Numerics;
-using System.Windows.Forms;
-using static System.Windows.Forms.DataFormats;
+using TCPClient;
+using HitThePlane.Game;
+using SceneServer = TCPServerNET6._0.Game.Scene;
+using BulletServer = TCPServerNET6._0.Game.Bullet;
 
 namespace HitThePlane
 {
     public partial class Form1 : Form
     {
+        private XClient _client;
+
         public const int backGroundScaleRatio = 4;
         public const int defaultWidth = 306 * backGroundScaleRatio;
         public const int defaultHeight = 200 * backGroundScaleRatio;
@@ -18,6 +21,9 @@ namespace HitThePlane
         public Form1()
         {
             InitializeComponent();
+
+            _client= new XClient();
+            _client.Connect("127.0.0.1", 4910);
 
             Width = defaultWidth;
             Height = defaultHeight;
@@ -47,14 +53,21 @@ namespace HitThePlane
         private void InitScene()
         {
             var groundHeigth = 280;
-            Scene.GroundHeigth = Height - groundHeigth;
+            var gravityValue = 8;
             var sprite = Image.FromFile("Sprites/green_plane.png");
-            Scene.MyPlane = new AirPlane(new Vector2(100, Height - groundHeigth - AirPlane._modelSize.Height / 2), 100, 0, 0.5f, 20, -15, 10, sprite);
-            Scene.GravityValue = 8;
+            Scene.GroundHeigth = Height - groundHeigth;
+            Scene.GravityValue = gravityValue;
             Scene.Ground = new Rectangle(0, Height - groundHeigth, Width, groundHeigth);
             Scene.House = new Rectangle(500, 310, 260, 210);
             Scene.Bullets = new HashSet<Bullet>();
             Scene.AirResistance = 0.05f;
+            Scene.MyPlane = new AirPlane(new Vector2(100, Height - groundHeigth - AirPlane._modelSize.Height / 2), 100, 0, 0.5f, 20, gravityValue, -15, 10, sprite);
+
+            /*Scene.Initialize(8, 0.05f, new HashSet<Bullet>(), new Rectangle(500, 310, 260, 210),
+                new Rectangle(0, Height - groundHeigth, Width, groundHeigth), Height - groundHeigth,
+                new AirPlane(new Vector2(100, Height - groundHeigth - AirPlane._modelSize.Height / 2), 100, 0, 0.5f, 20, gravityValue, -15, 10, sprite));*/
+            SceneServer.Initialize(8, 0.05f, new HashSet<BulletServer>(), new Rectangle(500, 310, 260, 210),
+                new Rectangle(0, Height - groundHeigth, Width, groundHeigth), Height - groundHeigth);
         }
 
 
@@ -68,10 +81,10 @@ namespace HitThePlane
 
         private void Update(object sender, EventArgs e)
         {
-            PlayerInputHandler.Apply();
+            PlayerInputHandler.Apply(_client);
             if (Scene.MyPlane.State == PlaneState.Destroyed)
                 StopGame();
-            Scene.MyPlane.Move();
+            Scene.MyPlane.Move(defaultWidth);
             foreach (var bullet in Scene.Bullets)
                 bullet.Move();
             Invalidate();

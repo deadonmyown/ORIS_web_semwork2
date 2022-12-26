@@ -5,7 +5,7 @@ using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HitThePlane.Entities
+namespace HitThePlane.Game
 {
     public abstract class GameObject
     {

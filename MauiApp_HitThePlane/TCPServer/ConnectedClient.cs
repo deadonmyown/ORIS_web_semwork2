@@ -19,8 +19,8 @@ namespace TCPServer
         {
             Client = client;
 
-            Task.Run((Action) ProcessIncomingPackets);
-            Task.Run((Action) SendPackets);
+            Task.Run((Action)ProcessIncomingPackets);
+            Task.Run((Action)SendPackets);
         }
 
         private void ProcessIncomingPackets()
@@ -34,7 +34,7 @@ namespace TCPServer
                 {
                     if (b != 0xFF) return true;
                     return buff[i + 1] != 0;
-                }).Concat(new byte[] {0xFF, 0}).ToArray();
+                }).Concat(new byte[] { 0xFF, 0 }).ToArray();
 
                 var parsed = XPacket.Parse(buff);
 
@@ -54,8 +54,11 @@ namespace TCPServer
                 case XPacketType.Handshake:
                     ProcessHandshake(packet);
                     break;
-                case XPacketType.Player: 
-                    ProcessPlayer(packet); 
+                case XPacketType.Player:
+                    ProcessPlayer(packet);
+                    break;
+                case XPacketType.PlayerInput:
+                    ProcessInput(packet);
                     break;
                 case XPacketType.Unknown:
                     break;
@@ -70,7 +73,7 @@ namespace TCPServer
 
             var handshake = XPacketConverter.Deserialize<XPacketHandshake>(packet);
             handshake.MagicHandshakeNumber -= 15;
-            
+
             Console.WriteLine("Answering..");
 
             QueuePacketSend(XPacketConverter.Serialize(XPacketType.Handshake, handshake).ToPacket());
@@ -80,12 +83,23 @@ namespace TCPServer
         {
             Console.WriteLine("Received player packet.");
 
-            var player = XPacketConverter.Deserialize<XPacketPlayer>(packet);
-            player.PosX += 1;
+            var player = XPacketConverter.Deserialize<XPacketPlayerTest>(packet);
+
+            player.PosX = player.PosX + player.Speed * Math.Cos(player.Rotation * Math.PI / 180) * player.DeltaTime;
+            player.PosY = player.PosY + player.Speed * Math.Sin(player.Rotation * Math.PI / 180) * player.DeltaTime;
 
             Console.WriteLine("Answering...");
 
-            QueuePacketSend(XPacketConverter.Serialize(XPacketType.Player, player).ToPacket());
+            SendPacketsToAll(XPacketConverter.Serialize(XPacketType.Player, player).ToPacket());
+        }
+
+        private void ProcessInput(XPacket packet)
+        {
+            Console.WriteLine("Get input");
+
+            var input = XPacketConverter.Deserialize<XPacketPlayerInput>(packet);
+
+
         }
 
         public void QueuePacketSend(byte[] packet)
@@ -104,15 +118,31 @@ namespace TCPServer
             {
                 if (_packetSendingQueue.Count == 0)
                 {
-                    Thread.Sleep(100);
+                    Thread.Sleep(10);
                     continue;
                 }
 
                 var packet = _packetSendingQueue.Dequeue();
                 Client.Send(packet);
 
-                Thread.Sleep(100);
+                Thread.Sleep(10);
             }
+        }
+
+        public static void SendPacketsToAll(byte[] packet)
+        {
+            foreach (var kvp in XServer.Clients)
+            {
+                var index = kvp.Key;
+                var client = kvp.Value;
+                client.Client.Send(packet);
+            }
+        }
+
+        public static void SendPacketsToClient(byte[] packet, int id)
+        {
+            if (XServer.Clients.TryGetValue(id, out ConnectedClient client))
+                client.Client.Send(packet);
         }
     }
 }

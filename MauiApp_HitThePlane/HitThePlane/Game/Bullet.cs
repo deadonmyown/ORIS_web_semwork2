@@ -5,11 +5,11 @@ using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HitThePlane.Entities
+namespace HitThePlane.Game
 {
     public class Bullet : GameObject
     {
-        public static readonly Size _modelSize = new Size(21 * ScaleRatio, 21  * ScaleRatio);
+        public static readonly Size _modelSize = new Size(21 * ScaleRatio, 21 * ScaleRatio);
         public static readonly Image[] ExplosionAnim = new Image[]
         {
             Image.FromFile("Sprites/Explosion/bullet.png"),
