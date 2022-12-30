@@ -1,4 +1,8 @@
-﻿using HitThePlane.Entities;
+﻿using TCPClient;
+using XProtocol.Serializator;
+using XProtocol;
+using HitThePlane.Entities;
+
 
 namespace HitThePlane.Engine
 {
@@ -13,20 +17,27 @@ namespace HitThePlane.Engine
             _form = form;
         }
 
-        private static bool isAdowm = false;
+        private static bool isAdown = false;
         private static bool isDdown = false;
-        private static bool isWdowm = false;
+        private static bool isWdown = false;
         private static bool isSdown = false;
         private static bool mustShoot = false;
+
+        public static void SendInput(XClient client, Player player)
+        {
+            client.QueuePacketSendUpdate(XPacketConverter.Serialize(XPacketType.PlayerInput,
+                new XPacketPlayerInput(player.Plane.Speed, client.Id, isAdown, isDdown, isWdown, isSdown))
+                .ToPacket());
+        }
 
         public static void KeyPressed(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.A)
-                isAdowm = true;
+                isAdown = true;
             if (e.KeyCode == Keys.D)
                 isDdown = true;
             if (e.KeyCode == Keys.W)
-                isWdowm = true;
+                isWdown = true;
             if (e.KeyCode == Keys.S)
                 isSdown = true;
             if (e.KeyCode == Keys.K)
@@ -41,11 +52,11 @@ namespace HitThePlane.Engine
         public static void KeyReleased(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.A)
-                isAdowm = false;
+                isAdown = false;
             if (e.KeyCode == Keys.D)
                 isDdown = false;
             if (e.KeyCode == Keys.W)
-                isWdowm = false;
+                isWdown = false;
             if (e.KeyCode == Keys.S)
                 isSdown = false;
             if (e.KeyCode == Keys.K)
@@ -59,7 +70,7 @@ namespace HitThePlane.Engine
                 mustShoot = true;
         }
 
-        public static void Apply()
+        /*public static void Apply()
         {
             if (isAdowm) _plane.Rotate(PlaneDirection.Up);
             if (isDdown) _plane.Rotate(PlaneDirection.Down);
@@ -67,6 +78,11 @@ namespace HitThePlane.Engine
             if (isSdown) _plane.Speed -= _plane.SpeedBoost;
             //TODO
             if (mustShoot) _plane.Shoot();
+        }*/
+
+        public static void Apply()
+        {
+            SendInput(NetworkManager.Instance.Client, NetworkManager.Instance.Player);
         }
     }
 }

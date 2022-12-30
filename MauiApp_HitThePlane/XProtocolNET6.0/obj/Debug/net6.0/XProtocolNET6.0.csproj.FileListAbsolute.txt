@@ -1,0 +1,12 @@
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\XProtocolNET6.0\bin\Debug\net6.0\XProtocolNET6.0.deps.json
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\XProtocolNET6.0\bin\Debug\net6.0\XProtocolNET6.0.dll
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\XProtocolNET6.0\bin\Debug\net6.0\XProtocolNET6.0.pdb
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\XProtocolNET6.0\obj\Debug\net6.0\XProtocolNET6.0.csproj.AssemblyReference.cache
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\XProtocolNET6.0\obj\Debug\net6.0\XProtocolNET6.0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\XProtocolNET6.0\obj\Debug\net6.0\XProtocolNET6.0.AssemblyInfoInputs.cache
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\XProtocolNET6.0\obj\Debug\net6.0\XProtocolNET6.0.AssemblyInfo.cs
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\XProtocolNET6.0\obj\Debug\net6.0\XProtocolNET6.0.csproj.CoreCompileInputs.cache
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\XProtocolNET6.0\obj\Debug\net6.0\XProtocolNET6.0.dll
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\XProtocolNET6.0\obj\Debug\net6.0\refint\XProtocolNET6.0.dll
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\XProtocolNET6.0\obj\Debug\net6.0\XProtocolNET6.0.pdb
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\XProtocolNET6.0\obj\Debug\net6.0\ref\XProtocolNET6.0.dll

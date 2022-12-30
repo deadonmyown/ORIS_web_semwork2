@@ -1,5 +1,9 @@
 ﻿using HitThePlane.Engine;
 using System.Numerics;
+using TCPClient;
+using XProtocol.Serializator;
+using XProtocol;
+using ClassLibrary;
 
 namespace HitThePlane.Entities
 {
@@ -96,9 +100,12 @@ namespace HitThePlane.Entities
             }
         }
 
-        private Level _level;
+        public PlaneDirection Direction { get; set; }
 
-        public AirPlane(Level level, Vector2 position, float speedBoost, float maxSpeed, float directionAngle, float angleChange, int reloadTime ,string[] spriteSheet, string turnFrame)
+        private LevelStruct _level;
+
+
+        public AirPlane(LevelStruct level, Vector2 position, float speedBoost, float maxSpeed, float directionAngle, float angleChange, int reloadTime, string[] spriteSheet, string turnFrame)
         {
             _level = level;
             Position = position;
@@ -113,6 +120,37 @@ namespace HitThePlane.Entities
             looksLeft = Math.Cos(directionAngle * Math.PI / 180) < 0;
         }
 
+        public void SendMove(XClient client, int formX)
+        {
+            client.QueuePacketSendUpdate(XPacketConverter.Serialize(XPacketType.PlayerController,
+                new XPacketPlayerController(Position, DirectionAngle, Speed, (int)State, (int)Direction, _level.GravityValue, client.Id, formX, _level)).ToPacket()); ;
+        }
+
+        public void Move(XPacketPlayerController movement)
+        {
+            Position = movement.Position;
+            DirectionAngle = movement.DirectionAngle;
+            Speed = movement.Speed;
+            State = (PlaneState)movement.State;
+            Direction = (PlaneDirection)movement.Direction;
+        }
+
+        public void GetInputResult(XPacketPlayerInputResult res)
+        {
+            Speed = res.Speed;
+            Direction = (PlaneDirection)res.Direction;
+        }
+
+        private void Rotate()
+        {
+            if (Direction == PlaneDirection.Up)
+                DirectionAngle += AngleChange;
+            else if (Direction == PlaneDirection.Down)
+                DirectionAngle -= AngleChange;
+        }
+
+
+        //+
         public void Rotate(PlaneDirection dir)
         {
             if (dir == PlaneDirection.Up)
@@ -154,12 +192,12 @@ namespace HitThePlane.Entities
         }
 
 
-        public void Shoot()
+        /*public void Shoot()
         {
             if (_reloadCounter != 0) return;
             Bullet.Create(_level, this);
             _reloadCounter++;
-        }
+        }*/
 
         public void TakeDamage(int damage)
         {

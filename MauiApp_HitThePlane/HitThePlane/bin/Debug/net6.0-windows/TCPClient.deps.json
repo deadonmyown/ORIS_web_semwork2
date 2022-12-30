@@ -1,0 +1,64 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "TCPClient/1.0.0": {
+        "dependencies": {
+          "TCPServer": "1.0.0",
+          "XProtocol": "1.0.0"
+        },
+        "runtime": {
+          "TCPClient.dll": {}
+        }
+      },
+      "ClassLibrary/1.0.0": {
+        "runtime": {
+          "ClassLibrary.dll": {}
+        }
+      },
+      "TCPServer/1.0.0": {
+        "dependencies": {
+          "ClassLibrary": "1.0.0",
+          "XProtocol": "1.0.0"
+        },
+        "runtime": {
+          "TCPServer.dll": {}
+        }
+      },
+      "XProtocol/1.0.0": {
+        "dependencies": {
+          "ClassLibrary": "1.0.0"
+        },
+        "runtime": {
+          "XProtocol.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TCPClient/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ClassLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TCPServer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "XProtocol/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

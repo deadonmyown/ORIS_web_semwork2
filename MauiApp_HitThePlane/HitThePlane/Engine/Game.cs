@@ -18,7 +18,7 @@ class Game
         _level = new Level(6, 0.01f);
         BindKeys(_level.PlayerPlane);
         _gameTimer = new Timer();
-        _gameTimer.Interval = 25;
+        _gameTimer.Interval = 50;
         _gameTimer.Tick += UpdateLevel;
         _gameTimer.Start();
     }
