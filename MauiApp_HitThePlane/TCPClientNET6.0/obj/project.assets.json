@@ -65,23 +65,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\xPr1e\\.nuget\\packages\\": {},
+    "C:\\Users\\anis\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClientNET6.0\\TCPClient.csproj",
+      "projectUniqueName": "D:\\Projects\\sw2\\v4\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClientNET6.0\\TCPClient.csproj",
       "projectName": "TCPClient",
-      "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClientNET6.0\\TCPClient.csproj",
-      "packagesPath": "C:\\Users\\xPr1e\\.nuget\\packages\\",
-      "outputPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClientNET6.0\\obj\\",
+      "projectPath": "D:\\Projects\\sw2\\v4\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClientNET6.0\\TCPClient.csproj",
+      "packagesPath": "C:\\Users\\anis\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\sw2\\v4\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClientNET6.0\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\xPr1e\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\anis\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -91,18 +91,17 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://dotnet.myget.org/feed/dotnet-core/package/nuget/Microsoft.NET.Sdk.IL": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServerNET6.0\\TCPServer.csproj": {
-              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServerNET6.0\\TCPServer.csproj"
+            "D:\\Projects\\sw2\\v4\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServerNET6.0\\TCPServer.csproj": {
+              "projectPath": "D:\\Projects\\sw2\\v4\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServerNET6.0\\TCPServer.csproj"
             },
-            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocolNET6.0\\XProtocol.csproj": {
-              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocolNET6.0\\XProtocol.csproj"
+            "D:\\Projects\\sw2\\v4\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocolNET6.0\\XProtocol.csproj": {
+              "projectPath": "D:\\Projects\\sw2\\v4\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocolNET6.0\\XProtocol.csproj"
             }
           }
         }
@@ -132,7 +131,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

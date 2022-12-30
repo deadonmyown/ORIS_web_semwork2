@@ -25,7 +25,6 @@ namespace HitThePlane
         {
             this.Enabled = true;
             this.Visible = true;
-            Console.WriteLine(Width);
         }
 
         public void Hide()
@@ -44,6 +43,7 @@ namespace HitThePlane
         {
             this.Width = 256 * 4;
             this.Height = 140 * 4;
+            this.ForeColor = Color.FromArgb(210, 201, 165);
             this.BackgroundImage = R.GetImage(R.MENU_BACKGROUND);
             this.BackgroundImageLayout = ImageLayout.Stretch;
 

@@ -21,7 +21,8 @@ namespace HitThePlane
             SetSizes();
             _game = new Game(this, gameCanvas);
             Render.DrawBackground();
-            joinMenu.Show();
+            //joinMenu.Show();
+            gameOver.Show();
         }
 
         public void StartGame()
@@ -53,6 +54,7 @@ namespace HitThePlane
             gameCanvas.Size = defaultSize;
             ToCenter(joinMenu);
             ToCenter(gameMenu);
+            ToCenter(gameOver);
         }
 
         private void ToCenter(UserControl control)

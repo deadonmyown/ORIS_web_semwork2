@@ -1,6 +1,6 @@
 ﻿namespace HitThePlane
 {
-    partial class JoinMenu
+    partial class GameOver
     {
         /// <summary> 
         /// Обязательная переменная конструктора.
@@ -30,14 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // JoinMenu
+            // GameOver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.DoubleBuffered = true;
             this.Name = "JoinMenu";
             this.ResumeLayout(false);
-
         }
 
         #endregion

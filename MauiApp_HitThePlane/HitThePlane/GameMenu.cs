@@ -80,7 +80,7 @@ namespace HitThePlane
             this.BackgroundImage = R.GetImage(R.MENU_BACKGROUND);
             this.BackgroundImageLayout = ImageLayout.Stretch;
 
-            var gameLabel = new System.Windows.Forms.Label();
+            var gameLabel = new Label();
             gameLabel.Width = this.Width;
             gameLabel.Height = 140;
             Location = new Point(0, 20);
@@ -103,7 +103,7 @@ namespace HitThePlane
             playersLabel.UseCompatibleTextRendering = true;
 
 
-            prepareBtn = new System.Windows.Forms.Button();
+            prepareBtn = new Button();
             prepareBtn.Size = new Size(300, 80);
             prepareBtn.Location = new Point(Width / 2 - prepareBtn.Width / 2, 440);
             prepareBtn.Text = "Готов";

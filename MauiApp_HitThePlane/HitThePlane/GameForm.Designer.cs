@@ -33,6 +33,7 @@ namespace HitThePlane
             this.gameCanvas = new System.Windows.Forms.PictureBox();
             this.joinMenu = new HitThePlane.JoinMenu();
             this.gameMenu = new HitThePlane.GameMenu();
+            this.gameOver = new HitThePlane.GameOver();
             ((System.ComponentModel.ISupportInitialize)(this.gameCanvas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,12 +62,21 @@ namespace HitThePlane
             this.gameMenu.TabIndex = 2;
             this.gameMenu.Visible = false;
             // 
+            // gameOver
+            // 
+            this.gameOver.Enabled = false;
+            this.gameOver.Name = "gameOver";
+            this.gameOver.BackColor = Color.Transparent;
+            this.gameOver.TabIndex = 3;
+            this.gameOver.Visible = false;
+            // 
             // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(282, 253);
+            this.Controls.Add(this.gameOver);
             this.Controls.Add(this.gameMenu);
             this.Controls.Add(this.joinMenu);
             this.Controls.Add(this.gameCanvas);
@@ -86,5 +96,6 @@ namespace HitThePlane
         private PictureBox gameCanvas;
         private JoinMenu joinMenu;
         private GameMenu gameMenu;
+        private GameOver gameOver;
     }
 }
