@@ -10,8 +10,6 @@ class Game
     public Game(GameForm form, PictureBox canvas)
     {
         _form = form;
-        _gameTimer = new Timer();
-        _gameTimer.Interval = 25;
         Render.Canvas = canvas;
     }
 
@@ -19,6 +17,8 @@ class Game
     {
         _level = new Level(6, 0.01f);
         BindKeys(_level.PlayerPlane);
+        _gameTimer = new Timer();
+        _gameTimer.Interval = 25;
         _gameTimer.Tick += UpdateLevel;
         _gameTimer.Start();
     }
@@ -30,7 +30,10 @@ class Game
 
     public void Resume()
     {
-        _gameTimer.Start();
+        if (_gameTimer == null)
+            Run();
+        else
+            _gameTimer.Start();
     }
 
     private void UpdateLevel(object sender, EventArgs e)

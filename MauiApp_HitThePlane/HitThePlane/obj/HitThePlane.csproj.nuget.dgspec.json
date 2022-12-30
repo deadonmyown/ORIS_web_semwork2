@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\sw2\\test2\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlane\\HitThePlane.csproj": {}
+    "D:\\Projects\\sw2\\v3\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlane\\HitThePlane.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\sw2\\test2\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlane\\HitThePlane.csproj": {
+    "D:\\Projects\\sw2\\v3\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlane\\HitThePlane.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\sw2\\test2\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlane\\HitThePlane.csproj",
+        "projectUniqueName": "D:\\Projects\\sw2\\v3\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlane\\HitThePlane.csproj",
         "projectName": "HitThePlane",
-        "projectPath": "D:\\Projects\\sw2\\test2\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlane\\HitThePlane.csproj",
+        "projectPath": "D:\\Projects\\sw2\\v3\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlane\\HitThePlane.csproj",
         "packagesPath": "C:\\Users\\anis\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\sw2\\test2\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlane\\obj\\",
+        "outputPath": "D:\\Projects\\sw2\\v3\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlane\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -77,5 +77,13 @@ namespace HitThePlane.Engine
             g.Clear(Color.White);
             Canvas.Image = bmp;
         }
+
+        public static void DrawBackground()
+        {
+            if (Canvas.Image == null)
+                Clear();
+            using var g = Graphics.FromImage(Canvas.Image);
+            g.DrawImage(R.GetImage(R.MAIN_LEVEL_BG), 0, 0, Resolution.Width, Resolution.Height);
+        }
     }
 }
