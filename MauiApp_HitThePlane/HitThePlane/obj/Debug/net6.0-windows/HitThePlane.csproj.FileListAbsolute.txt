@@ -70,3 +70,5 @@ D:\Projects\sw2\test2\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlane\obj\Debu
 D:\Projects\sw2\test2\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlane\obj\Debug\net6.0-windows\ref\HitThePlane.dll
 D:\Projects\sw2\test2\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlane\obj\Debug\net6.0-windows\HitThePlane.GameForm.resources
 D:\Projects\sw2\test2\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlane\obj\Debug\net6.0-windows\HitThePlane.Properties.Resources.resources
+D:\Projects\sw2\test2\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlane\obj\Debug\net6.0-windows\HitThePlane.GameMenu.resources
+D:\Projects\sw2\test2\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlane\obj\Debug\net6.0-windows\HitThePlane.JoinMenu.resources
