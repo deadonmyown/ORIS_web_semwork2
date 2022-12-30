@@ -1,4 +1,8 @@
 ﻿using System.Numerics;
+using TCPClient;
+using XProtocol;
+using XProtocol.Serializator;
+using ClassLibrary;
 
 namespace HitThePlane.Game
 {
@@ -69,10 +73,12 @@ namespace HitThePlane.Game
             }
         }
 
+        private SceneStruct _scene;
+
         public PlaneDirection Direction { get; set; }
 
 
-        public AirPlane(Vector2 position, int health, float speed, float speedBoost, float maxSpeed, float gravityValue, float directionAngle, float angleChange, Image sprite)
+        public AirPlane(Vector2 position, int health, float speed, float speedBoost, float maxSpeed, float gravityValue, float directionAngle, float angleChange, Image sprite, SceneStruct scene)
         {
             Position = position;
             Health = health;
@@ -83,6 +89,29 @@ namespace HitThePlane.Game
             _gravityValue = gravityValue;
             _directionAngle = directionAngle;
             _sprite = sprite;
+            _scene = scene;
+        }
+
+        public void SendMove(XClient client, int formX) 
+        {
+            client.QueuePacketSendUpdate(XPacketConverter.Serialize(XPacketType.PlayerMovement, 
+                new XPacketPlayerMovement(Position, DirectionAngle, Speed, (int)State, (int)Direction, _gravityValue, client.Id, formX, _scene)).ToPacket());
+        }
+
+        public void Move(XPacketPlayerMovement movement)
+        {
+            Position = movement.Position;
+            DirectionAngle = movement.DirectionAngle;
+            Speed = movement.Speed;
+            State = (PlaneState)movement.State;
+            Direction = (PlaneDirection)movement.Direction;
+            _gravityValue = movement.GravityValue;
+        }
+
+        public void GetInputResult(XPacketPlayerInputResult res)
+        {
+            Speed = res.Speed;
+            Direction = (PlaneDirection)res.Direction;
         }
 
         private void Rotate()
@@ -95,11 +124,11 @@ namespace HitThePlane.Game
 
         public void Move(int formX)
         {
-            Speed -= Scene.AirResistance;
+            Speed -= _scene.AirResistance;
             Rotate();
             Position += DisplacementVector + GravityVector;
             CheckBorders(formX);
-            if (State == PlaneState.Takeoff && Position.Y < Scene.GroundHeigth - 50)
+            if (State == PlaneState.Takeoff && Position.Y < _scene.GroundHeigth - 50)
                 State = PlaneState.Flight;
         }
 
@@ -113,23 +142,23 @@ namespace HitThePlane.Game
                 Speed -= SpeedBoost * 4;
 
 
-            if (Position.Y > Scene.GroundHeigth - ModelSize.Height / 2)
+            if (Position.Y > _scene.GroundHeigth - ModelSize.Height / 2)
             {
                 if (State == PlaneState.Flight)
                     Destroy();
-                Position = new Vector2(Position.X, Scene.GroundHeigth - ModelSize.Height / 2);
+                Position = new Vector2(Position.X, _scene.GroundHeigth - ModelSize.Height / 2);
             }
 
-            if (Collide(Scene.House))
+            if (Collide(_scene.House))
                 Destroy();
 
         }
 
 
-        public void Shoot()
+        /*public void Shoot()
         {
             Bullet.Create(this);
-        }
+        }*/
 
         public void TakeDamage(int damage)
         {

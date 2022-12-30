@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
@@ -29,11 +29,11 @@ namespace HitThePlane.Game
         public int Damage { get; set; }
         public override float DirectionAngle { get; set; }
 
-        public static Bullet Create(AirPlane plane)
+        public static Bullet Create(AirPlane plane, SceneStruct scene)
         {
             var instance = new Bullet()
-            { Damage = 20, Speed = 100, DirectionAngle = plane.DirectionAngle, Position = plane.Position };
-            Scene.Bullets.Add(instance);
+            { Damage = 20, Speed = 100, DirectionAngle = plane.DirectionAngle, Position = plane.Position, _scene = scene };
+            _scene.Bullets.Add(instance);
             return instance;
         }
 
@@ -69,3 +69,4 @@ namespace HitThePlane.Game
         }
     }
 }
+*/

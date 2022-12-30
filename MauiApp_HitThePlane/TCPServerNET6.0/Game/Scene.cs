@@ -1,13 +1,13 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TCPServerNET6._0.Game
+namespace TCPServer.Game
 {
-    public static class Scene
+    *//*public static class Scene
     {
         public static float GravityValue { get; set; }
         public static float AirResistance { get; set; }
@@ -25,5 +25,16 @@ namespace TCPServerNET6._0.Game
             Ground = ground;
             GroundHeigth = groundHeigth;
         }
+    }*//*
+
+    public struct SceneStruct
+    {
+        public float GravityValue { get; set; }
+        public float AirResistance { get; set; }
+        //public HashSet<Bullet> Bullets { get; set; }
+        public Rectangle House { get; set; }
+        public Rectangle Ground { get; set; }
+        public int GroundHeigth { get; set; }
     }
 }
+*/

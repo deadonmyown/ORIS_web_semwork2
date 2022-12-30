@@ -1,8 +1,9 @@
 ﻿using System.Drawing;
 using System.Numerics;
-using TCPServerNET6._0.Game;
+using TCPServer.Game;
 using XProtocol;
 using XProtocol.Serializator;
+using ClassLibrary;
 
 namespace TCPServer
 {
@@ -62,16 +63,29 @@ namespace TCPServer
         protected bool Collide(Rectangle rect) =>
             BoundingRectangle.IntersectsWith(rect);
 
+        private SceneStruct _scene;
+
+        public PlayerMovement(Vector2 position, float speed, float gravityValue, float directionAngle, PlaneState state, PlaneDirection direction, SceneStruct scene)
+        {
+            Position = position;
+            _speed = speed;
+            GravityValue = gravityValue;
+            _directionAngle = directionAngle;
+            State = state;
+            Direction = direction;
+            _scene = scene;
+        }
+
         public void Move(int formX)
         {
-            Speed -= Scene.AirResistance;
+            Speed -= _scene.AirResistance;
             Rotate();
             Position += DisplacementVector + GravityVector;
             CheckBorders(formX);
-            if (State == PlaneState.Takeoff && Position.Y < Scene.GroundHeigth - 50)
+            if (State == PlaneState.Takeoff && Position.Y < _scene.GroundHeigth - 50)
                 State = PlaneState.Flight;
 
-            SendMovement();
+            //SendMovement();
         }
 
         private void Rotate()
@@ -92,14 +106,14 @@ namespace TCPServer
                 Speed -= GameManager.SpeedBoost * 4;
 
 
-            if (Position.Y > Scene.GroundHeigth - GameManager.ModelSize.Height / 2)
+            if (Position.Y > _scene.GroundHeigth - GameManager.ModelSize.Height / 2)
             {
                 if (State == PlaneState.Flight)
                     Destroy();
-                Position = new Vector2(Position.X, Scene.GroundHeigth - GameManager.ModelSize.Height / 2);
+                Position = new Vector2(Position.X, _scene.GroundHeigth - GameManager.ModelSize.Height / 2);
             }
 
-            if (Collide(Scene.House))
+            if (Collide(_scene.House))
                 Destroy();
 
         }
@@ -111,10 +125,10 @@ namespace TCPServer
             State = PlaneState.Destroyed;
         }
 
-        private void SendMovement()
+        /*private void SendMovement()
         {
             ConnectedClient.SendPacketsToAll(XPacketConverter.Serialize(XPacketType.PlayerMovement, 
                 new XPacketPlayerMovement(Position, DirectionAngle, Speed, (int)State, (int)Direction, GravityValue)).ToPacket());
-        }
+        }*/
     }
 }

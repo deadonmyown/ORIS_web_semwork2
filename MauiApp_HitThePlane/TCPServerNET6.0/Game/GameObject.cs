@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
+﻿using System.Drawing;
 using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace TCPServerNET6._0.Game
+namespace TCPServer.Game
 {
     public abstract class GameObject
     {

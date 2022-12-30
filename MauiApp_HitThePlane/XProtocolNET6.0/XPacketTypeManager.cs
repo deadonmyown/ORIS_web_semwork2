@@ -16,6 +16,7 @@ namespace XProtocol
             RegisterType(XPacketType.PlayerInput, 4, 0);
             RegisterType(XPacketType.PlayerInputResult, 5, 0);
             RegisterType(XPacketType.PlayerMovement, 6, 0);
+            RegisterType(XPacketType.PlayerDisconnect, 7, 0);
         }
 
         public static void RegisterType(XPacketType type, byte btype, byte bsubtype)

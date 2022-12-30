@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "ClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ClassLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ClassLibrary.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ClassLibrary/1.0.0": {
+      "type": "project",
+      "path": "../ClassLibrary/ClassLibrary.csproj",
+      "msbuildProject": "../ClassLibrary/ClassLibrary.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "ClassLibrary >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\xPr1e\\.nuget\\packages\\": {},
@@ -14,9 +33,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocolNET6.0\\XProtocolNET6.0.csproj",
-      "projectName": "XProtocolNET6.0",
-      "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocolNET6.0\\XProtocolNET6.0.csproj",
+      "projectUniqueName": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocolNET6.0\\XProtocol.csproj",
+      "projectName": "XProtocol",
+      "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocolNET6.0\\XProtocol.csproj",
       "packagesPath": "C:\\Users\\xPr1e\\.nuget\\packages\\",
       "outputPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocolNET6.0\\obj\\",
       "projectStyle": "PackageReference",
@@ -40,7 +59,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\ClassLibrary\\ClassLibrary.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\ClassLibrary\\ClassLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

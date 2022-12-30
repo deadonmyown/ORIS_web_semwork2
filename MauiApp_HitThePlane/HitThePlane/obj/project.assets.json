@@ -2,65 +2,86 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
-      "TCPClientNET6.0/1.0.0": {
+      "ClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ClassLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ClassLibrary.dll": {}
+        }
+      },
+      "TCPClient/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "XProtocolNET6.0": "1.0.0"
+          "TCPServer": "1.0.0",
+          "XProtocol": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/TCPClientNET6.0.dll": {}
+          "bin/placeholder/TCPClient.dll": {}
         },
         "runtime": {
-          "bin/placeholder/TCPClientNET6.0.dll": {}
+          "bin/placeholder/TCPClient.dll": {}
         }
       },
-      "TCPServerNET6.0/1.0.0": {
+      "TCPServer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "XProtocolNET6.0": "1.0.0"
+          "ClassLibrary": "1.0.0",
+          "XProtocol": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/TCPServerNET6.0.dll": {}
+          "bin/placeholder/TCPServer.dll": {}
         },
         "runtime": {
-          "bin/placeholder/TCPServerNET6.0.dll": {}
+          "bin/placeholder/TCPServer.dll": {}
         }
       },
-      "XProtocolNET6.0/1.0.0": {
+      "XProtocol/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ClassLibrary": "1.0.0"
+        },
         "compile": {
-          "bin/placeholder/XProtocolNET6.0.dll": {}
+          "bin/placeholder/XProtocol.dll": {}
         },
         "runtime": {
-          "bin/placeholder/XProtocolNET6.0.dll": {}
+          "bin/placeholder/XProtocol.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "TCPClientNET6.0/1.0.0": {
+    "ClassLibrary/1.0.0": {
       "type": "project",
-      "path": "../TCPClientNET6.0/TCPClientNET6.0.csproj",
-      "msbuildProject": "../TCPClientNET6.0/TCPClientNET6.0.csproj"
+      "path": "../ClassLibrary/ClassLibrary.csproj",
+      "msbuildProject": "../ClassLibrary/ClassLibrary.csproj"
     },
-    "TCPServerNET6.0/1.0.0": {
+    "TCPClient/1.0.0": {
       "type": "project",
-      "path": "../TCPServerNET6.0/TCPServerNET6.0.csproj",
-      "msbuildProject": "../TCPServerNET6.0/TCPServerNET6.0.csproj"
+      "path": "../TCPClientNET6.0/TCPClient.csproj",
+      "msbuildProject": "../TCPClientNET6.0/TCPClient.csproj"
     },
-    "XProtocolNET6.0/1.0.0": {
+    "TCPServer/1.0.0": {
       "type": "project",
-      "path": "../XProtocolNET6.0/XProtocolNET6.0.csproj",
-      "msbuildProject": "../XProtocolNET6.0/XProtocolNET6.0.csproj"
+      "path": "../TCPServerNET6.0/TCPServer.csproj",
+      "msbuildProject": "../TCPServerNET6.0/TCPServer.csproj"
+    },
+    "XProtocol/1.0.0": {
+      "type": "project",
+      "path": "../XProtocolNET6.0/XProtocol.csproj",
+      "msbuildProject": "../XProtocolNET6.0/XProtocol.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "TCPClientNET6.0 >= 1.0.0",
-      "TCPServerNET6.0 >= 1.0.0"
+      "ClassLibrary >= 1.0.0",
+      "TCPClient >= 1.0.0",
+      "TCPServer >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -97,11 +118,14 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClientNET6.0\\TCPClientNET6.0.csproj": {
-              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClientNET6.0\\TCPClientNET6.0.csproj"
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\ClassLibrary\\ClassLibrary.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\ClassLibrary\\ClassLibrary.csproj"
             },
-            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServerNET6.0\\TCPServerNET6.0.csproj": {
-              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServerNET6.0\\TCPServerNET6.0.csproj"
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClientNET6.0\\TCPClient.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClientNET6.0\\TCPClient.csproj"
+            },
+            "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServerNET6.0\\TCPServer.csproj": {
+              "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServerNET6.0\\TCPServer.csproj"
             }
           }
         }

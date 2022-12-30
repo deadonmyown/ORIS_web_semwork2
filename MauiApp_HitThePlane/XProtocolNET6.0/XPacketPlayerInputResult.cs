@@ -10,7 +10,7 @@ namespace XProtocol
     public class XPacketPlayerInputResult
     {
         [XField(1)]
-        public int Rotation;
+        public int Direction;
         [XField(2)]
         public float Speed;
         [XField(3)]
@@ -18,9 +18,11 @@ namespace XProtocol
 
         public XPacketPlayerInputResult(int rotation, float speed, int id)
         {
-            Rotation = rotation;
+            Direction = rotation;
             Speed = speed;
             Id = id;
-        }   
+        }  
+        
+        public XPacketPlayerInputResult() { }
     }
 }

@@ -5,6 +5,7 @@ using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using XProtocol.Serializator;
+using ClassLibrary;
 
 namespace XProtocol
 {
@@ -13,15 +14,15 @@ namespace XProtocol
         [XField(1)]
         public int Id;
         [XField(2)]
-        public string Name;
-        [XField(3)]
         public Vector2 Position;
+        [XField(3)]
+        public SceneStruct Scene;
 
-        public XPacketPlayer(int id, string name, Vector2 position)
+        public XPacketPlayer(int id, Vector2 position, SceneStruct scene)
         {
             Id = id;
-            Name = name;
             Position = position;
+            Scene = scene;
         }
 
         public XPacketPlayer() { }

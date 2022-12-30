@@ -3,55 +3,53 @@ using System.Collections.Generic;
 using XProtocol.Serializator;
 using XProtocol;
 using System.Numerics;
+using ClassLibrary;
 
 namespace TCPServer
 {
     public class Player
     {
-        public static Dictionary<int, Player> list = new Dictionary<int, Player>();
+        public static Dictionary<int, Player> Players = new Dictionary<int, Player>();
 
         public int Id { get; set; }
-        public string Name { get; set; }
         public Vector2 Position { get; set; }
 
         public PlayerMovement Movement { get; set; }
 
-        public Player(int id,string name, Vector2 position)
+        public Player(int id, Vector2 position)
         {
             Id = id;
-            Name = name;
             Position = position;
         }
 
-        public Player(int id, string name, Vector2 position, PlayerMovement movement)
+        public Player(int id,  Vector2 position, PlayerMovement movement)
         {
             Id = id;
-            Name = name;
             Position = position;
             Movement = movement;
         }
 
-        public static void Spawn(int id, string name, Vector2 position)
+        public static void Spawn(int id, Vector2 position, SceneStruct scene)
         {
-            foreach (var otherPlayer in list.Values)
-                otherPlayer.SendSpawned(id, otherPlayer);
+            foreach (var otherPlayer in Players.Values)
+                otherPlayer.SendSpawned(id, otherPlayer, scene);
 
-            Player player = new Player(id, string.IsNullOrEmpty(name) ? $"anon {id}": name, position);
+            Player player = new Player(id, position);
 
-            player.SendSpawned();
-            list.Add(id, player);
+            player.SendSpawned(scene);
+            Players.Add(id, player);
         }
 
-        public static void OnDestroy(int id) => list.Remove(id);
+        public static void OnDestroy(int id) => Players.Remove(id);
 
-        private void SendSpawned()
+        private void SendSpawned(SceneStruct scene)
         {
-            ConnectedClient.SendPacketsToAll(XPacketConverter.Serialize(XPacketType.Player, new XPacketPlayer(Id, Name, Position)).ToPacket());
+            ConnectedClient.SendPacketsToAll(XPacketConverter.Serialize(XPacketType.Player, new XPacketPlayer(Id, Position, scene)).ToPacket());
         }
 
-        private void SendSpawned(int currPlayer, Player player)
+        private void SendSpawned(int currPlayer, Player player, SceneStruct scene)
         {
-            ConnectedClient.SendPacketsToClient(XPacketConverter.Serialize(XPacketType.Player, new XPacketPlayer(player.Id, player.Name, player.Position)).ToPacket(), currPlayer);
+            ConnectedClient.SendPacketsToClient(XPacketConverter.Serialize(XPacketType.Player, new XPacketPlayer(player.Id, player.Position, scene)).ToPacket(), currPlayer);
         }
     }
 }

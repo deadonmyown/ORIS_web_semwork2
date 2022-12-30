@@ -4,98 +4,18 @@ using System.Runtime.InteropServices;
 using System.Threading;
 using XProtocol;
 using XProtocol.Serializator;
+using TCPServer;
 
 namespace TCPClient
 {
     internal class Program
     {
-        private static int _handshakeMagic;
-        private static XClient client = new XClient();
-        private static double posX = 0;
-        private static double posY = 0;
-        private static Player _player = new Player("igrok", 100, 700, 1000, 25, 20);
-        private static double _rotation = 10;
-
         private static void Main()
         {
-            /*Time.Instance.StartTime.Restart();
-            Console.Title = "XClient";
-            Console.ForegroundColor = ConsoleColor.White;
-            
-            client.OnPacketRecieve += OnPacketRecieve;
-            client.Connect("127.0.0.1", 4910);
-            Console.WriteLine($"PlayerID = {client.ClientID}");
-            _player.PlayerId = client.ClientID;
-            var timer = new GameTimer();
-            timer.Start(Time.Instance.IntervalMs, Update);
-            var rand = new Random();
-            _handshakeMagic = rand.Next();
-            Thread.Sleep(1000);
-            Console.WriteLine("Sending handshake packet..");
-            client.QueuePacketSend(
-                XPacketConverter.Serialize(
-                    XPacketType.Handshake,
-                    new XPacketHandshake
-                    {
-                        MagicHandshakeNumber = _handshakeMagic
-                    })
-                    .ToPacket());*/
-            var test = new TestClient();
-            test.Start();
-        }
-
-        private static void OnPacketRecieve(byte[] packet)
-        {
-            var parsed = XPacket.Parse(packet);
-
-            if (parsed != null)
-            {
-                ProcessIncomingPacket(parsed);
-            }
-        }
-
-        private static void ProcessIncomingPacket(XPacket packet)
-        {
-            var type = XPacketTypeManager.GetTypeFromPacket(packet);
-
-            switch (type)
-            {
-                case XPacketType.Handshake:
-                    ProcessHandshake(packet);
-                    break;
-                case XPacketType.Player:
-                    ProcessPlayer(packet);
-                    break;
-                case XPacketType.Unknown:
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }
-        }
-
-        private static void ProcessPlayer(XPacket packet)
-        {
-            var player = XPacketConverter.Deserialize<XPacketPlayerTest>(packet);
-            posX = player.PosX; posY = player.PosY;
-            Console.WriteLine($"PosX: {Math.Round(player.PosX, 3)} PosY: {Math.Round(player.PosY, 3)} PlayerID: {player.Index}");
-        }
-
-        private static void ProcessHandshake(XPacket packet)
-        {
-            var handshake = XPacketConverter.Deserialize<XPacketHandshake>(packet);
-
-            if (_handshakeMagic - handshake.MagicHandshakeNumber == 15)
-            {
-                Console.WriteLine("Handshake successful!");
-            }
-        }
-
-        private static void Update()
-        {
-            //Console.WriteLine("Update Function");
-            client.QueuePacketSendUpdate(XPacketConverter.Serialize(XPacketType.Player,
-                new XPacketPlayerTest { PosX = posX, PosY = posY, Speed = _player.Speed, Rotation = _rotation, DeltaTime = Time.Instance.DeltaTime, Index = _player.PlayerId })
-                .ToPacket());
+            var test1 = new TestClient();
+            test1.Start();
+            var test2 = new TestClient();
+            test2.Start();
         }
     }
 
@@ -104,7 +24,7 @@ namespace TCPClient
         public XClient client = new XClient();
         public double posX = 0;
         public double posY = 0;
-        public Player _player = new Player("igrok", 100, 700, 1000, 25, 20);
+        public Player _player = new Player("igrok", 100, 2, 5, 1, 10);
         public double _rotation = 10;
 
         internal void Start()
@@ -117,10 +37,8 @@ namespace TCPClient
             client.OnPacketRecieve += OnPacketRecieve;
             client.Connect("127.0.0.1", 4910);
 
-            Console.WriteLine($"PlayerID = {client.ClientID}");
-            _player.PlayerId = client.ClientID;
             var timer = new GameTimer();
-            timer.Start(Time.Instance.IntervalMs, Update);
+            timer.Start(Time.Instance.IntervalMs * 100, Update);
         }
 
         private void OnPacketRecieve(byte[] packet)
@@ -139,8 +57,11 @@ namespace TCPClient
 
             switch (type)
             {
-                case XPacketType.Player:
-                    ProcessPlayer(packet);
+                case XPacketType.Handshake:
+                    ProcessHandshake(packet);
+                    break;
+                case XPacketType.PlayerTest:
+                    ProcessPlayerTest(packet);
                     break;
                 case XPacketType.Unknown:
                     break;
@@ -149,18 +70,32 @@ namespace TCPClient
             }
         }
 
-        private void ProcessPlayer(XPacket packet)
+        private void ProcessHandshake(XPacket packet)
+        {
+            var playerConnection = XPacketConverter.Deserialize<XPacketHandshake>(packet);
+
+            _player.PlayerId = playerConnection.PlayerId;
+            Console.WriteLine($"player with id = {playerConnection.PlayerId} connected");
+
+        }
+
+        private void ProcessPlayerTest(XPacket packet)
         {
             var player = XPacketConverter.Deserialize<XPacketPlayerTest>(packet);
-            posX = player.PosX; posY = player.PosY;
-            Console.WriteLine($"PosX: {Math.Round(player.PosX, 3)} PosY: {Math.Round(player.PosY, 3)} PlayerID: {player.Index}");
+            if(_player.PlayerId == player.PlayerId)
+            {
+                posX = player.PosX;
+                posY = player.PosY;
+                _rotation = player.Rotation;
+            }
+            Console.WriteLine($"player with id = {_player.PlayerId} get position({Math.Round(player.PosX, 3)} {Math.Round(player.PosY, 3)}) of player with id = {player.PlayerId}");
         }
 
         private void Update()
         {
             //Console.WriteLine("Update Function");
-            client.QueuePacketSendUpdate(XPacketConverter.Serialize(XPacketType.Player,
-                new XPacketPlayerTest { PosX = posX, PosY = posY, Speed = _player.Speed, Rotation = _rotation, DeltaTime = Time.Instance.DeltaTime, Index = _player.PlayerId })
+            client.QueuePacketSendUpdate(XPacketConverter.Serialize(XPacketType.PlayerTest,
+                new XPacketPlayerTest { PosX = posX, PosY = posY, Speed = _player.Speed, Rotation = _rotation, DeltaTime = Time.Instance.DeltaTime, PlayerId = _player.PlayerId })
                 .ToPacket());
         }
     }

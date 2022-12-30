@@ -1,0 +1,12 @@
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\ClassLibrary\bin\Debug\net6.0\ClassLibrary.deps.json
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\ClassLibrary\bin\Debug\net6.0\ClassLibrary.dll
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\ClassLibrary\bin\Debug\net6.0\ClassLibrary.pdb
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\ClassLibrary\obj\Debug\net6.0\ClassLibrary.csproj.AssemblyReference.cache
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\ClassLibrary\obj\Debug\net6.0\ClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\ClassLibrary\obj\Debug\net6.0\ClassLibrary.AssemblyInfoInputs.cache
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\ClassLibrary\obj\Debug\net6.0\ClassLibrary.AssemblyInfo.cs
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\ClassLibrary\obj\Debug\net6.0\ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\ClassLibrary\obj\Debug\net6.0\ClassLibrary.dll
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\ClassLibrary\obj\Debug\net6.0\refint\ClassLibrary.dll
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\ClassLibrary\obj\Debug\net6.0\ClassLibrary.pdb
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\ClassLibrary\obj\Debug\net6.0\ref\ClassLibrary.dll

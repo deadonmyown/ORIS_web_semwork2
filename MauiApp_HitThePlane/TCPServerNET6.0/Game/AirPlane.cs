@@ -1,8 +1,8 @@
-﻿
+﻿using ClassLibrary;
 using System.Drawing;
 using System.Numerics;
 
-namespace TCPServerNET6._0.Game
+namespace TCPServer.Game
 {
     public class AirPlane : GameObject
     {
@@ -60,8 +60,10 @@ namespace TCPServerNET6._0.Game
 
         public PlaneDirection Direction { get; set; }
 
+        private SceneStruct _scene;
 
-        public AirPlane(Vector2 position, int health, float speed, float speedBoost, float maxSpeed, float gravityValue, float directionAngle, float angleChange)
+
+        public AirPlane(Vector2 position, int health, float speed, float speedBoost, float maxSpeed, float gravityValue, float directionAngle, float angleChange, SceneStruct scene)
         {
             Position = position;
             Health = health;
@@ -71,6 +73,7 @@ namespace TCPServerNET6._0.Game
             _angleChange = angleChange;
             _gravityValue = gravityValue;
             _directionAngle = directionAngle;
+            _scene = scene;
         }
 
         private void Rotate()
@@ -83,11 +86,11 @@ namespace TCPServerNET6._0.Game
 
         public void Move(int formX)
         {
-            Speed -= Scene.AirResistance;
+            Speed -= _scene.AirResistance;
             Rotate();
             Position += DisplacementVector + GravityVector;
             CheckBorders(formX);
-            if (State == PlaneState.Takeoff && Position.Y < Scene.GroundHeigth - 50)
+            if (State == PlaneState.Takeoff && Position.Y < _scene.GroundHeigth - 50)
                 State = PlaneState.Flight;
         }
 
@@ -101,23 +104,23 @@ namespace TCPServerNET6._0.Game
                 Speed -= SpeedBoost * 4;
 
 
-            if (Position.Y > Scene.GroundHeigth - ModelSize.Height / 2)
+            if (Position.Y > _scene.GroundHeigth - ModelSize.Height / 2)
             {
                 if (State == PlaneState.Flight)
                     Destroy();
-                Position = new Vector2(Position.X, Scene.GroundHeigth - ModelSize.Height / 2);
+                Position = new Vector2(Position.X, _scene.GroundHeigth - ModelSize.Height / 2);
             }
 
-            if (Collide(Scene.House))
+            if (Collide(_scene.House))
                 Destroy();
 
         }
 
 
-        public void Shoot()
+        /*public void Shoot()
         {
             Bullet.Create(this);
-        }
+        }*/
 
         public void TakeDamage(int damage)
         {

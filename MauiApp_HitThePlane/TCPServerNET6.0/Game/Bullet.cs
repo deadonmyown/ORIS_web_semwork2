@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace TCPServerNET6._0.Game
+namespace TCPServer.Game
 {
     public class Bullet : GameObject
     {
@@ -64,3 +64,4 @@ namespace TCPServerNET6._0.Game
         }
     }
 }
+*/

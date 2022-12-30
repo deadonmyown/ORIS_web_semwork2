@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cBkwoOClJ18JBqXzxup3OVBx5e6PPqyw5Xh7ezOKuZZ5mTKZjzi3huvSiLzvWZ0Kdg4bNkYFMQyfQH6KzjI11Q==",
+  "dgSpecHash": "waDhyOwmD1EkK1S7veQtKNeGCwij4Cl6D773YhpKYQA42Ryxzxc9DrLaCFVUoBPnroxuCJUl7XfeUvmSHmBZbw==",
   "success": true,
-  "projectFilePath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClientNET6.0\\TCPClientNET6.0.csproj",
+  "projectFilePath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClientNET6.0\\TCPClient.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

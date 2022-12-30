@@ -5,14 +5,15 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using System.Threading.Tasks;
+using TCPServer;
+using XProtocol;
+using XProtocol.Serializator;
 
 namespace TCPClient
 {
-    public class XClient
+    public class XClient : IDisposable
     {
-        private static readonly object Locker = new object();
-
-        public int ClientID { get; private set; }
+        public int Id { get; set; }
 
         public Action<byte[]> OnPacketRecieve { get; set; }
 
@@ -92,6 +93,15 @@ namespace TCPClient
 
                 Thread.Sleep(10);
             }
+        }
+
+        public void Dispose()
+        {
+            Console.WriteLine($"client{Id} disconnected");
+            _packetSendingQueue.Clear();
+            _socket.Send(XPacketConverter.Serialize(XPacketType.PlayerDisconnect, new XPacketPlayerDisconnect() { Id = Id }).ToPacket());
+            _socket.Dispose();
+            GC.SuppressFinalize(this);
         }
     }
 }

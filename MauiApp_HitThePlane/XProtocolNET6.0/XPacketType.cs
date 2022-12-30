@@ -8,6 +8,7 @@
         Player,
         PlayerInput,
         PlayerInputResult,
-        PlayerMovement
+        PlayerMovement,
+        PlayerDisconnect
     }
 }

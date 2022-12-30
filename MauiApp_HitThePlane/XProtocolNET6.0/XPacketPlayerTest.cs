@@ -20,6 +20,6 @@ namespace XProtocol
         [XField(5)]
         public double DeltaTime;
         [XField(6)]
-        public int Index;
+        public int PlayerId;
     }
 }

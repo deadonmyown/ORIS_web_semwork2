@@ -34,8 +34,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocolNET6.0\\XProtocolNET6.0.csproj": {
-                "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocolNET6.0\\XProtocolNET6.0.csproj"
+              "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocolNET6.0\\XProtocol.csproj": {
+                "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocolNET6.0\\XProtocol.csproj"
               }
             }
           }
@@ -69,12 +69,12 @@
         }
       }
     },
-    "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocolNET6.0\\XProtocolNET6.0.csproj": {
+    "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocolNET6.0\\XProtocol.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocolNET6.0\\XProtocolNET6.0.csproj",
-        "projectName": "XProtocolNET6.0",
-        "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocolNET6.0\\XProtocolNET6.0.csproj",
+        "projectUniqueName": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocolNET6.0\\XProtocol.csproj",
+        "projectName": "XProtocol",
+        "projectPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocolNET6.0\\XProtocol.csproj",
         "packagesPath": "C:\\Users\\xPr1e\\.nuget\\packages\\",
         "outputPath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocolNET6.0\\obj\\",
         "projectStyle": "PackageReference",

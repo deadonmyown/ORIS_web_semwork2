@@ -31,5 +31,7 @@ namespace XProtocol
             isWdown = inputs[2];
             isSdown = inputs[3];
         }
+
+        public XPacketPlayerInput() { }
     }
 }

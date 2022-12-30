@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Numerics;
 using XProtocol.Serializator;
+using ClassLibrary;
 
 namespace XProtocol
 {
@@ -22,8 +23,14 @@ namespace XProtocol
         public int Direction;
         [XField(6)]
         public float GravityValue;
+        [XField(7)]
+        public int Id;
+        [XField(8)]
+        public int FormX;
+        [XField(9)]
+        public SceneStruct Scene;
 
-        public XPacketPlayerMovement(Vector2 position, float directionAngle, float speed, int state, int direction, float gravityValue)
+        public XPacketPlayerMovement(Vector2 position, float directionAngle, float speed, int state, int direction, float gravityValue, int playerId, int formX, SceneStruct scene)
         {
             Position = position;
             DirectionAngle = directionAngle;
@@ -31,6 +38,11 @@ namespace XProtocol
             State = state;
             Direction = direction;
             GravityValue = gravityValue;
+            Id = playerId;
+            FormX = formX;
+            Scene = scene;
         }
+
+        public XPacketPlayerMovement() { }
     }
 }

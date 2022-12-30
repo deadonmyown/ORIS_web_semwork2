@@ -20,8 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TCPClientNET6.0\TCPClientNET6.0.csproj" />
-    <ProjectReference Include="..\TCPServerNET6.0\TCPServerNET6.0.csproj" />
+    <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj" />
+    <ProjectReference Include="..\TCPClientNET6.0\TCPClient.csproj" />
+    <ProjectReference Include="..\TCPServerNET6.0\TCPServer.csproj" />
   </ItemGroup>
 
   <ItemGroup>

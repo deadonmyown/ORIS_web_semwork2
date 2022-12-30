@@ -7,18 +7,16 @@ namespace HitThePlane
 {
     public static class PlayerInputHandler
     {
-        private static AirPlane Plane => Scene.MyPlane;
-
         private static bool isAdown = false;
         private static bool isDdown = false;
         private static bool isWdown = false;
         private static bool isSdown = false;
         private static bool mustShoot = false;
 
-        public static void SendInput(XClient client)
+        public static void SendInput(XClient client, Player player)
         {
             client.QueuePacketSendUpdate(XPacketConverter.Serialize(XPacketType.PlayerInput,
-                new XPacketPlayerInput(Plane.SpeedBoost, isAdown, isDdown, isWdown, isSdown))
+                new XPacketPlayerInput(player.Plane.Speed, client.Id, isAdown, isDdown, isWdown, isSdown))
                 .ToPacket());
         }
 
@@ -65,9 +63,9 @@ namespace HitThePlane
             }
         }*/
 
-        public static void Apply(XClient client)
+        public static void Apply()
         {
-            SendInput(client);
+            SendInput(NetworkManager.Instance.Client, NetworkManager.Instance.Player);
         }
     }
 }

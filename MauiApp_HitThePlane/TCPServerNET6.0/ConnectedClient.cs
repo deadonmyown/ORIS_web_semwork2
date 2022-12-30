@@ -5,7 +5,7 @@ using System.Net.Sockets;
 using System.Numerics;
 using System.Threading;
 using System.Threading.Tasks;
-using TCPServerNET6._0.Game;
+using TCPServer.Game;
 using XProtocol;
 using XProtocol.Serializator;
 
@@ -54,13 +54,19 @@ namespace TCPServer
             switch (type)
             {
                 case XPacketType.Handshake:
-                    ProcessHandshake(packet);
+                    ProcessPlayerHandshake(packet);
                     break;
-                case XPacketType.PlayerTest:
-                    ProcessPlayerTest(packet);
+                case XPacketType.Player:
+                    ProcessPlayerSpawn(packet);
+                    break;
+                case XPacketType.PlayerMovement:
+                    ProcessPlayerMovement(packet);
                     break;
                 case XPacketType.PlayerInput:
-                    ProcessInput(packet);
+                    ProcessPlayerInput(packet);
+                    break;
+                case XPacketType.PlayerDisconnect: 
+                    ProcessPlayerDisconnect(packet);
                     break;
                 case XPacketType.Unknown:
                     break;
@@ -69,45 +75,56 @@ namespace TCPServer
             }
         }
 
-        private void ProcessHandshake(XPacket packet)
+        private void ProcessPlayerHandshake(XPacket packet)
         {
-            Console.WriteLine("Recieved handshake packet.");
-
-            var handshake = XPacketConverter.Deserialize<XPacketHandshake>(packet);
-            handshake.MagicHandshakeNumber -= 15;
-
-            Console.WriteLine("Answering..");
-
-            QueuePacketSend(XPacketConverter.Serialize(XPacketType.Handshake, handshake).ToPacket());
+            Console.WriteLine("cho");
         }
 
-        private void ProcessPlayerTest(XPacket packet)
+        private void ProcessPlayerDisconnect(XPacket packet)
         {
-            Console.WriteLine("Received player packet.");
+            var disconnect = XPacketConverter.Deserialize<XPacketPlayerDisconnect>(packet);
 
-            var playerTest = XPacketConverter.Deserialize<XPacketPlayerTest>(packet);
-
-            playerTest.PosX = playerTest.PosX + playerTest.Speed * Math.Cos(playerTest.Rotation * Math.PI / 180) * playerTest.DeltaTime;
-            playerTest.PosY = playerTest.PosY + playerTest.Speed * Math.Sin(playerTest.Rotation * Math.PI / 180) * playerTest.DeltaTime;
-
-            Console.WriteLine("Answering...");
-
-            SendPacketsToAll(XPacketConverter.Serialize(XPacketType.PlayerTest, playerTest).ToPacket());
+            NetworkManager.Instance.PlayerDisconnect(disconnect.Id);
         }
 
-        private void ProcessInput(XPacket packet)
+        private void ProcessPlayerSpawn(XPacket packet)
         {
-            Console.WriteLine("Get input");
+            var player = XPacketConverter.Deserialize<XPacketPlayer>(packet);
+
+            Player.Spawn(player.Id, player.Position, player.Scene);
+        }
+
+        private void ProcessPlayerMovement(XPacket packet)
+        {
+            var playerMove = XPacketConverter.Deserialize<XPacketPlayerMovement>(packet);
+
+            PlayerMovement move = new PlayerMovement(playerMove.Position, playerMove.Speed, playerMove.GravityValue, playerMove.DirectionAngle, (PlaneState)playerMove.State, (PlaneDirection)playerMove.Direction, playerMove.Scene);
+            Console.WriteLine($"player start moving: {move.Position} {move.GravityValue}");
+
+            move.Move(playerMove.FormX);
+
+            Console.WriteLine($"player moved: {move.Position} {move.GravityValue}");
+
+            SendPacketsToAll(XPacketConverter.Serialize(XPacketType.PlayerMovement, 
+                new XPacketPlayerMovement(move.Position, move.DirectionAngle, move.Speed, 
+                (int)move.State, (int)move.Direction, move.GravityValue, playerMove.Id, playerMove.FormX, playerMove.Scene)).ToPacket()); 
+        }
+
+        private void ProcessPlayerInput(XPacket packet)
+        {
 
             var input = XPacketConverter.Deserialize<XPacketPlayerInput>(packet);
 
             PlaneDirection direction = PlaneDirection.Forward; 
             float speed = input.Speed;
+            Console.WriteLine($"Get input: {input.Id} {input.Speed}, A:{input.isAdown}, D:{input.isDdown}, W:{input.isWdown}, S:{input.isSdown}");
 
             if (input.isAdown) direction = PlaneDirection.Down;
             if (input.isDdown) direction = PlaneDirection.Up;
             if (input.isWdown) speed += GameManager.SpeedBoost;
             if (input.isSdown) speed -= GameManager.SpeedBoost;
+
+            Console.WriteLine($"Speed: {speed}, Direction:{direction}");
 
             SendPacketsToClient(XPacketConverter.Serialize(XPacketType.PlayerInputResult, new XPacketPlayerInputResult((int)direction, speed, input.Id)).ToPacket(), input.Id);
         }

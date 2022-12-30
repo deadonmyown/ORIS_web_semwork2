@@ -2,28 +2,31 @@ using System.Drawing.Drawing2D;
 using System.Numerics;
 using TCPClient;
 using HitThePlane.Game;
-using SceneServer = TCPServerNET6._0.Game.Scene;
-using BulletServer = TCPServerNET6._0.Game.Bullet;
+/*using SceneServer = TCPServer.Game.Scene;
+using BulletServer = TCPServer.Game.Bullet;*/
+using XProtocol.Serializator;
+using XProtocol;
+using ClassLibrary;
 
 namespace HitThePlane
 {
     public partial class Form1 : Form
     {
-        private XClient _client;
-
         public const int backGroundScaleRatio = 4;
         public const int defaultWidth = 306 * backGroundScaleRatio;
         public const int defaultHeight = 200 * backGroundScaleRatio;
 
         private Rectangle _bounding = new Rectangle(0, 0, defaultWidth, defaultHeight);
 
+        private int _groundHeigth = 280;
+        private int _gravityValue = 8;
+
+        private SceneStruct _scene = new SceneStruct();
+
 
         public Form1()
         {
             InitializeComponent();
-
-            _client= new XClient();
-            _client.Connect("127.0.0.1", 4910);
 
             Width = defaultWidth;
             Height = defaultHeight;
@@ -35,39 +38,40 @@ namespace HitThePlane
             this.MinimizeBox = false;
             button1.Visible = false;
 
-            InitScene();
+            InitScene(_groundHeigth, _gravityValue);
             KeyDown += new KeyEventHandler(PlayerInputHandler.KeyPressed);
             KeyUp += new KeyEventHandler(PlayerInputHandler.KeyReleased);
             MouseDown += new MouseEventHandler(PlayerInputHandler.MouseClick);
             KeyPreview = true;
             InitTimer();
+
+            NetworkManager.Instance.Start(4910);
+
+            while(NetworkManager.Instance.Client.Id == 0) { }
+            NetworkManager.Instance.Client.QueuePacketSend(XPacketConverter.Serialize(XPacketType.Player,
+                new XPacketPlayer(NetworkManager.Instance.Client.Id, new Vector2(100, Height - _groundHeigth - AirPlane._modelSize.Height / 2), _scene)).ToPacket());
+            while(NetworkManager.Instance.Player == null) { }
+
             timer1.Start();
         }
 
         private void InitTimer()
         {
-            timer1.Interval = 20;
+            timer1.Interval = 50;
             timer1.Tick += new EventHandler(Update);
         }
 
-        private void InitScene()
+        private void InitScene(int groundHeigth, int gravityValue)
         {
-            var groundHeigth = 280;
-            var gravityValue = 8;
-            var sprite = Image.FromFile("Sprites/green_plane.png");
-            Scene.GroundHeigth = Height - groundHeigth;
-            Scene.GravityValue = gravityValue;
-            Scene.Ground = new Rectangle(0, Height - groundHeigth, Width, groundHeigth);
-            Scene.House = new Rectangle(500, 310, 260, 210);
-            Scene.Bullets = new HashSet<Bullet>();
-            Scene.AirResistance = 0.05f;
-            Scene.MyPlane = new AirPlane(new Vector2(100, Height - groundHeigth - AirPlane._modelSize.Height / 2), 100, 0, 0.5f, 20, gravityValue, -15, 10, sprite);
+            _scene.GroundHeigth = Height - groundHeigth;
+            _scene.GravityValue = gravityValue;
+            _scene.Ground = new Rectangle(0, Height - groundHeigth, Width, groundHeigth);
+            _scene.House = new Rectangle(500, 310, 260, 210);
+            //scene.Bullets = new HashSet<Bullet>();
+            _scene.AirResistance = 0.05f;
 
-            /*Scene.Initialize(8, 0.05f, new HashSet<Bullet>(), new Rectangle(500, 310, 260, 210),
-                new Rectangle(0, Height - groundHeigth, Width, groundHeigth), Height - groundHeigth,
-                new AirPlane(new Vector2(100, Height - groundHeigth - AirPlane._modelSize.Height / 2), 100, 0, 0.5f, 20, gravityValue, -15, 10, sprite));*/
-            SceneServer.Initialize(8, 0.05f, new HashSet<BulletServer>(), new Rectangle(500, 310, 260, 210),
-                new Rectangle(0, Height - groundHeigth, Width, groundHeigth), Height - groundHeigth);
+            //var sprite = Image.FromFile("Sprites/green_plane.png");
+            //_player = new Player("", new AirPlane(new Vector2(100, Height - groundHeigth - AirPlane._modelSize.Height / 2), 100, 0, 0.5f, 20, gravityValue, -15, 10, sprite));
         }
 
 
@@ -81,29 +85,32 @@ namespace HitThePlane
 
         private void Update(object sender, EventArgs e)
         {
-            PlayerInputHandler.Apply(_client);
-            if (Scene.MyPlane.State == PlaneState.Destroyed)
+            NetworkManager.Instance.Player.Plane.SendMove(NetworkManager.Instance.Client, defaultWidth);
+            PlayerInputHandler.Apply();
+            if (NetworkManager.Instance.Player.Plane.State == PlaneState.Destroyed)
                 StopGame();
-            Scene.MyPlane.Move(defaultWidth);
-            foreach (var bullet in Scene.Bullets)
-                bullet.Move();
+            /*foreach (var bullet in _scene.Bullets)
+                bullet.Move();*/
             Invalidate();
         }
 
         private void OnPaint(object sender, PaintEventArgs e)
         {
             var g = e.Graphics;
-            DrawEntity(g, Scene.MyPlane);
-            g.DrawRectangle(Pens.Red, Scene.Ground);
-            g.DrawRectangle(Pens.Red, Scene.House);
-            foreach (var bullet in Scene.Bullets)
+            foreach(var player in Player.Players.Values)
+            {
+                DrawEntity(g, player.Plane);
+            }
+            g.DrawRectangle(Pens.Red, _scene.Ground);
+            g.DrawRectangle(Pens.Red, _scene.House);
+            /*foreach (var bullet in _scene.Bullets)
             {
                 if (!_bounding.IntersectsWith(
                     new Rectangle(new Point((int)bullet.Position.X, (int)bullet.Position.Y), bullet.ModelSize)))
                     bullet.Destroy();
                 else
                     DrawEntity(g, bullet);
-            }
+            }*/
         }
 
         private void DrawEntity(Graphics g, GameObject obj)
@@ -123,9 +130,16 @@ namespace HitThePlane
         {
             button1.Visible = false;
             button1.Enabled = false;
-            InitScene();
+            InitScene(_groundHeigth, _gravityValue);
             timer1.Start();
             this.Focus();
+        }
+
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+            Player.OnDestroy(NetworkManager.Instance.Player.Id);
+            NetworkManager.Instance.Client.Dispose();
         }
     }
 }

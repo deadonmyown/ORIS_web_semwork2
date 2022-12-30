@@ -1,24 +1,52 @@
-﻿namespace HitThePlane.Game
+﻿using System.Numerics;
+using System.Security.Policy;
+using TCPServer;
+using ClassLibrary;
+
+namespace HitThePlane.Game
 {
-    class Player
+    public class Player
     {
-        public static Dictionary<int, Player> list = new Dictionary<int, Player>();
+        public static Dictionary<int, Player> Players = new Dictionary<int, Player>();
+
+        public static readonly Dictionary<int, Image> Sprites = new Dictionary<int, Image>() 
+        {
+            {0, Image.FromFile("Sprites/green_plane.png") },
+            {1, Image.FromFile("Sprites/green_plane.png") } //red_plane
+        };
 
         public int Id { get; set; }
-        public string PlayerName { get; set; }
+        public bool IsLocal { get; set; }
         public AirPlane Plane { get; set; }
 
-        public Player(string playerName, AirPlane plane)
+        public Player()
         {
-            PlayerName = playerName;
+        }
+
+        public Player(int id, bool isLocal, AirPlane plane)
+        {
+            Id = id;
+            IsLocal = isLocal;
             Plane = plane;
         }
 
-        public Player(int id, string playerName, AirPlane plane)
+
+        public static void Spawn(int id, Vector2 position, SceneStruct _scene)
         {
-            Id = id;
-            PlayerName = playerName;
-            Plane = plane;
+            Player player;
+            if (id == NetworkManager.Instance.Client.Id)
+            {
+                player = new Player(id, true, new AirPlane(position, 100, 0, 0.5f, 20, _scene.GravityValue, -15, 10, Sprites[id - 1], _scene));
+                NetworkManager.Instance.Player = player;
+            }
+            else
+            {
+                player = new Player(id, false, new AirPlane(position, 100, 0, 0.5f, 20, _scene.GravityValue, -15, 10, Sprites[id - 1], _scene));
+            }
+
+            Players.Add(id, player);
         }
+
+        public static void OnDestroy(int id) => Players.Remove(id);
     }
 }
