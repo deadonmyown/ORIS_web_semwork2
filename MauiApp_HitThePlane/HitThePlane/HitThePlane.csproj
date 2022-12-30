@@ -15,11 +15,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Sprites\" />
-    <Folder Include="Engine\" />
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
     <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj" />
     <ProjectReference Include="..\TCPClientNET6.0\TCPClient.csproj" />
     <ProjectReference Include="..\TCPServerNET6.0\TCPServer.csproj" />
@@ -56,6 +60,12 @@
     <None Update="Sprites\scene.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+=======
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+>>>>>>> 907ad22a08d66e88274dcb5c94a165096c23842a
   </ItemGroup>
 
 </Project>

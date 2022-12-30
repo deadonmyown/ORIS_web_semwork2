@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "ybZG8n7hqx9H7RySlortdat9BR/Y0UP4hz4Kmjed/ASEBVxQnnIijpz12xjEB/L21I0qrxYskOlsG807uFy/nw==",
   "success": true,
   "projectFilePath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlane\\HitThePlane.csproj",
+=======
+  "dgSpecHash": "igOkra7Q4aeheYq6YmqSHHo7HnYDy+TGOKMriGyqKb0mPNISjXCb/MHJpUZp2MFJLCXrMduM2ZdIzDC3tiweiQ==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\sw2\\v3\\ORIS_web_semwork2\\MauiApp_HitThePlane\\HitThePlane\\HitThePlane.csproj",
+>>>>>>> 907ad22a08d66e88274dcb5c94a165096c23842a
   "expectedPackageFiles": [],
   "logs": []
 }
