@@ -48,18 +48,16 @@ namespace HitThePlane
             // joinMenu
             // 
             this.joinMenu.Enabled = false;
-            this.joinMenu.Location = new System.Drawing.Point(0, 0);
             this.joinMenu.Name = "joinMenu";
-            this.joinMenu.Size = new System.Drawing.Size(397, 213);
             this.joinMenu.TabIndex = 1;
+            this.joinMenu.BackColor = Color.Transparent;
             this.joinMenu.Visible = false;
             // 
             // gameMenu
             // 
             this.gameMenu.Enabled = false;
-            this.gameMenu.Location = new System.Drawing.Point(-126, -18);
             this.gameMenu.Name = "gameMenu";
-            this.gameMenu.Size = new System.Drawing.Size(606, 314);
+            this.gameMenu.BackColor = Color.Transparent;
             this.gameMenu.TabIndex = 2;
             this.gameMenu.Visible = false;
             // 

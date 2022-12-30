@@ -1,4 +1,6 @@
 ﻿using System.Drawing.Imaging;
+using System.Drawing.Text;
+using System.Runtime.InteropServices;
 
 namespace HitThePlane.Resources;
 static class R
@@ -24,11 +26,16 @@ static class R
     public const string EXPLOSION6 = "Frames\\BulletExplosion\\explosion6.png";
     public const string EXPLOSION7 = "Frames\\BulletExplosion\\explosion7.png";
 
+    public const string MENU_BACKGROUND = "Frames\\menuBg.png";
+
+    public static readonly PrivateFontCollection Fonts = new PrivateFontCollection();
+
     private static readonly Dictionary<string, Image> images = new Dictionary<string, Image>();
     private static readonly Dictionary<string, Image> flipped = new Dictionary<string, Image>();
     static R()
     {
         images = FileLoader.LoadFrames();
+        FileLoader.LoadFont("Fonts\\pixel.ttf", Fonts);
     }
 
     public static Image GetImage(string resource) =>

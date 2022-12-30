@@ -19,12 +19,13 @@ namespace HitThePlane
         {
             InitializeComponent();
             SetSizes();
+            _game = new Game(this, gameCanvas);
+            Render.DrawBackground();
             joinMenu.Show();
         }
 
         public void StartGame()
         {
-            _game = new Game(this, gameCanvas);
             _game.Run();
             KeyPreview = true;
         }
@@ -37,7 +38,7 @@ namespace HitThePlane
         public void Pause()
         {
             _game.Pause();
-            joinMenu.Show();
+            gameMenu.Show();
         }
 
         public void Resume()
