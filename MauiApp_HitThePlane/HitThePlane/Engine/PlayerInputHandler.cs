@@ -1,19 +1,13 @@
-<<<<<<< HEAD:MauiApp_HitThePlane/HitThePlane/PlayerInputHandler.cs
 ﻿using TCPClient;
 using XProtocol.Serializator;
 using XProtocol;
-using HitThePlane.Game;
-=======
-﻿using HitThePlane.Entities;
->>>>>>> 907ad22a08d66e88274dcb5c94a165096c23842a:MauiApp_HitThePlane/HitThePlane/Engine/PlayerInputHandler.cs
+using HitThePlane.Entities;
+
 
 namespace HitThePlane.Engine
 {
     public static class PlayerInputHandler
     {
-<<<<<<< HEAD:MauiApp_HitThePlane/HitThePlane/PlayerInputHandler.cs
-        private static bool isAdown = false;
-=======
         private static AirPlane _plane;
         private static GameForm _form;
 
@@ -23,8 +17,7 @@ namespace HitThePlane.Engine
             _form = form;
         }
 
-        private static bool isAdowm = false;
->>>>>>> 907ad22a08d66e88274dcb5c94a165096c23842a:MauiApp_HitThePlane/HitThePlane/Engine/PlayerInputHandler.cs
+        private static bool isAdown = false;
         private static bool isDdown = false;
         private static bool isWdown = false;
         private static bool isSdown = false;
@@ -79,29 +72,17 @@ namespace HitThePlane.Engine
 
         /*public static void Apply()
         {
-<<<<<<< HEAD:MauiApp_HitThePlane/HitThePlane/PlayerInputHandler.cs
-            if (isAdown) Plane.Direction = PlaneDirection.Down;
-            if (isDdown) Plane.Direction = PlaneDirection.Up;
-            if (isWdown) Plane.Speed += Plane.SpeedBoost;
-            if (isSdown) Plane.Speed -= Plane.SpeedBoost;
-            if (mustShoot)
-            {
-                Plane.Shoot();
-                mustShoot = false;
-            }
-        }*/
-
-        public static void Apply()
-        {
-            SendInput(NetworkManager.Instance.Client, NetworkManager.Instance.Player);
-=======
             if (isAdowm) _plane.Rotate(PlaneDirection.Up);
             if (isDdown) _plane.Rotate(PlaneDirection.Down);
             if (isWdowm) _plane.Speed += _plane.SpeedBoost;
             if (isSdown) _plane.Speed -= _plane.SpeedBoost;
             //TODO
             if (mustShoot) _plane.Shoot();
->>>>>>> 907ad22a08d66e88274dcb5c94a165096c23842a:MauiApp_HitThePlane/HitThePlane/Engine/PlayerInputHandler.cs
+        }*/
+
+        public static void Apply()
+        {
+            SendInput(NetworkManager.Instance.Client, NetworkManager.Instance.Player);
         }
     }
 }

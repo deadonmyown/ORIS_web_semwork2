@@ -10,7 +10,7 @@
         "dependencies": {
           "ClassLibrary": "1.0.0",
           "TCPClient": "1.0.0",
-          "TCPServer": "1.0.0"
+          "XProtocol": "1.0.0"
         },
         "runtime": {
           "HitThePlane.dll": {}

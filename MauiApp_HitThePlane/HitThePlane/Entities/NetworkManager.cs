@@ -9,7 +9,7 @@ using XProtocol.Serializator;
 using XProtocol;
 using System.Net.Sockets;
 
-namespace HitThePlane.Game
+namespace HitThePlane.Entities
 {
     public class NetworkManager
     {
@@ -55,11 +55,11 @@ namespace HitThePlane.Game
                 case XPacketType.Player:
                     ProcessPlayerSpawn(packet);
                     break;
-                case XPacketType.PlayerMovement:
+                case XPacketType.PlayerController:
                     ProcessPlayerMovement(packet);
                     break;
                 case XPacketType.PlayerInputResult:
-                    ProcessPlayerInputGet(packet); 
+                    ProcessPlayerInputGet(packet);
                     break;
                 case XPacketType.PlayerDisconnect:
                     ProcessPlayerDisconnect(packet);
@@ -84,12 +84,12 @@ namespace HitThePlane.Game
         {
             var playerSpawn = XPacketConverter.Deserialize<XPacketPlayer>(packet);
 
-            Player.Spawn(playerSpawn.Id, playerSpawn.Position, playerSpawn.Scene);
+            Player.Spawn(playerSpawn.Id, playerSpawn.Level, playerSpawn.Position);
         }
 
         private void ProcessPlayerMovement(XPacket packet)
         {
-            var playerMovement = XPacketConverter.Deserialize<XPacketPlayerMovement>(packet);
+            var playerMovement = XPacketConverter.Deserialize<XPacketPlayerController>(packet);
 
             if (Player.Players[playerMovement.Id].IsLocal)
             {

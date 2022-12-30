@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Text.Json;
+using System.Text;
 
 namespace XProtocol
 {
@@ -34,42 +36,19 @@ namespace XProtocol
             return GetField(id) != null;
         }
 
-        private T ByteArrayToFixedObject<T>(byte[] bytes) where T: struct 
+        private T ByteArrayToFixedObject<T>(byte[] bytes)
         {
-            T structure;
-            
-            var handle = GCHandle.Alloc(bytes, GCHandleType.Pinned);
-            
-            try
-            {
-                structure = (T) Marshal.PtrToStructure(handle.AddrOfPinnedObject(), typeof(T));
-            }
-            finally
-            {
-                handle.Free();
-            }
-
-            return structure;
+            var json = Encoding.UTF8.GetString(bytes);
+            return JsonSerializer.Deserialize<T>(json)!;
         }
 
         public byte[] FixedObjectToByteArray(object value)
         {
-            var rawsize = Marshal.SizeOf(value);
-            var rawdata = new byte[rawsize];
-
-            var handle =
-                GCHandle.Alloc(rawdata,
-                    GCHandleType.Pinned);
-
-            Marshal.StructureToPtr(value,
-                handle.AddrOfPinnedObject(),
-                false);
-
-            handle.Free();
-            return rawdata;
+            var json = JsonSerializer.Serialize(value);
+            return Encoding.UTF8.GetBytes(json);
         }
 
-        public T GetValue<T>(byte id) where T : struct
+        public T GetValue<T>(byte id)
         {
             var field = GetField(id);
 
@@ -78,24 +57,11 @@ namespace XProtocol
                 throw new Exception($"Field with ID {id} wasn't found.");
             }
 
-            var neededSize = Marshal.SizeOf(typeof(T));
-
-            if (field.FieldSize != neededSize)
-            {
-                throw new Exception($"Can't convert field to type {typeof(T).FullName}.\n" +
-                                    $"We have {field.FieldSize} bytes but we need exactly {neededSize}.");
-            }
-
             return ByteArrayToFixedObject<T>(field.Contents);
         }
 
         public void SetValue(byte id, object structure)
         {
-            if (!structure.GetType().IsValueType)
-            {
-                throw new Exception("Only value types are available.");
-            }
-
             var field = GetField(id);
 
             if (field == null)

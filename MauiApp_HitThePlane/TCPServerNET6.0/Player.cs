@@ -14,7 +14,7 @@ namespace TCPServer
         public int Id { get; set; }
         public Vector2 Position { get; set; }
 
-        public PlayerMovement Movement { get; set; }
+        public PlayerController Movement { get; set; }
 
         public Player(int id, Vector2 position)
         {
@@ -22,14 +22,14 @@ namespace TCPServer
             Position = position;
         }
 
-        public Player(int id,  Vector2 position, PlayerMovement movement)
+        public Player(int id,  Vector2 position, PlayerController movement)
         {
             Id = id;
             Position = position;
             Movement = movement;
         }
 
-        public static void Spawn(int id, Vector2 position, SceneStruct scene)
+        public static void Spawn(int id, Vector2 position, LevelStruct scene)
         {
             foreach (var otherPlayer in Players.Values)
                 otherPlayer.SendSpawned(id, otherPlayer, scene);
@@ -42,12 +42,12 @@ namespace TCPServer
 
         public static void OnDestroy(int id) => Players.Remove(id);
 
-        private void SendSpawned(SceneStruct scene)
+        private void SendSpawned(LevelStruct scene)
         {
             ConnectedClient.SendPacketsToAll(XPacketConverter.Serialize(XPacketType.Player, new XPacketPlayer(Id, Position, scene)).ToPacket());
         }
 
-        private void SendSpawned(int currPlayer, Player player, SceneStruct scene)
+        private void SendSpawned(int currPlayer, Player player, LevelStruct scene)
         {
             ConnectedClient.SendPacketsToClient(XPacketConverter.Serialize(XPacketType.Player, new XPacketPlayer(player.Id, player.Position, scene)).ToPacket(), currPlayer);
         }

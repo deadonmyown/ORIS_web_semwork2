@@ -15,7 +15,7 @@ namespace XProtocol
             RegisterType(XPacketType.Player, 3, 0);
             RegisterType(XPacketType.PlayerInput, 4, 0);
             RegisterType(XPacketType.PlayerInputResult, 5, 0);
-            RegisterType(XPacketType.PlayerMovement, 6, 0);
+            RegisterType(XPacketType.PlayerController, 6, 0);
             RegisterType(XPacketType.PlayerDisconnect, 7, 0);
         }
 

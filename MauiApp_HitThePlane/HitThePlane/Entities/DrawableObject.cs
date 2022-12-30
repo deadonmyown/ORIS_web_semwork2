@@ -6,7 +6,7 @@ using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HitThePlane.Game
+namespace HitThePlane.Entities
 {
     public abstract class DrawableObject
     {

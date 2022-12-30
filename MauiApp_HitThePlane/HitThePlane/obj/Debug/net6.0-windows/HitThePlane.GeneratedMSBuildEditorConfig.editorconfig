@@ -14,8 +14,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HitThePlane
-<<<<<<< HEAD
 build_property.ProjectDir = C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlane\
-=======
-build_property.ProjectDir = D:\Projects\sw2\v3\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlane\
->>>>>>> 907ad22a08d66e88274dcb5c94a165096c23842a

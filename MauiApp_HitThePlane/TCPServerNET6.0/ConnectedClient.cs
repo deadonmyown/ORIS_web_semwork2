@@ -59,7 +59,7 @@ namespace TCPServer
                 case XPacketType.Player:
                     ProcessPlayerSpawn(packet);
                     break;
-                case XPacketType.PlayerMovement:
+                case XPacketType.PlayerController:
                     ProcessPlayerMovement(packet);
                     break;
                 case XPacketType.PlayerInput:
@@ -91,22 +91,22 @@ namespace TCPServer
         {
             var player = XPacketConverter.Deserialize<XPacketPlayer>(packet);
 
-            Player.Spawn(player.Id, player.Position, player.Scene);
+            Player.Spawn(player.Id, player.Position, player.Level);
         }
 
         private void ProcessPlayerMovement(XPacket packet)
         {
-            var playerMove = XPacketConverter.Deserialize<XPacketPlayerMovement>(packet);
+            var playerMove = XPacketConverter.Deserialize<XPacketPlayerController>(packet);
 
-            PlayerMovement move = new PlayerMovement(playerMove.Position, playerMove.Speed, playerMove.GravityValue, playerMove.DirectionAngle, (PlaneState)playerMove.State, (PlaneDirection)playerMove.Direction, playerMove.Scene);
+            PlayerController move = new PlayerController(playerMove.Position, playerMove.Speed, playerMove.GravityValue, playerMove.DirectionAngle, (PlaneState)playerMove.State, (PlaneDirection)playerMove.Direction, playerMove.Scene);
             Console.WriteLine($"player start moving: {move.Position} {move.GravityValue}");
 
             move.Move(playerMove.FormX);
 
             Console.WriteLine($"player moved: {move.Position} {move.GravityValue}");
 
-            SendPacketsToAll(XPacketConverter.Serialize(XPacketType.PlayerMovement, 
-                new XPacketPlayerMovement(move.Position, move.DirectionAngle, move.Speed, 
+            SendPacketsToAll(XPacketConverter.Serialize(XPacketType.PlayerController, 
+                new XPacketPlayerController(move.Position, move.DirectionAngle, move.Speed, 
                 (int)move.State, (int)move.Direction, move.GravityValue, playerMove.Id, playerMove.FormX, playerMove.Scene)).ToPacket()); 
         }
 

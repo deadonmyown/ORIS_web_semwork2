@@ -1,4 +1,4 @@
-﻿using ClassLibrary;
+﻿/*using ClassLibrary;
 using System.Drawing;
 using System.Numerics;
 
@@ -60,10 +60,10 @@ namespace TCPServer.Game
 
         public PlaneDirection Direction { get; set; }
 
-        private SceneStruct _scene;
+        private LevelStruct _scene;
 
 
-        public AirPlane(Vector2 position, int health, float speed, float speedBoost, float maxSpeed, float gravityValue, float directionAngle, float angleChange, SceneStruct scene)
+        public AirPlane(Vector2 position, int health, float speed, float speedBoost, float maxSpeed, float gravityValue, float directionAngle, float angleChange, LevelStruct scene)
         {
             Position = position;
             Health = health;
@@ -117,10 +117,10 @@ namespace TCPServer.Game
         }
 
 
-        /*public void Shoot()
+        *//*public void Shoot()
         {
             Bullet.Create(this);
-        }*/
+        }*//*
 
         public void TakeDamage(int damage)
         {
@@ -138,3 +138,4 @@ namespace TCPServer.Game
         }
     }
 }
+*/

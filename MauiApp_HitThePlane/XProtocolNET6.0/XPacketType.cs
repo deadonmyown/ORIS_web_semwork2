@@ -8,7 +8,7 @@
         Player,
         PlayerInput,
         PlayerInputResult,
-        PlayerMovement,
+        PlayerController,
         PlayerDisconnect
     }
 }
