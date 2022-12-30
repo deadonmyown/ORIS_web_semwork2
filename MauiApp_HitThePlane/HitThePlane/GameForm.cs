@@ -22,7 +22,7 @@ namespace HitThePlane
             _game = new Game(this, gameCanvas);
             Render.DrawBackground();
             //joinMenu.Show();
-            gameOver.Show();
+            gameOver.Show("test");
         }
 
         public void StartGame()

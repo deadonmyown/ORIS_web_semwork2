@@ -13,14 +13,16 @@ namespace HitThePlane
 {
     public partial class GameOver : UserControl
     {
+        private Label _winner;
         public GameOver()
         {
             InitializeComponent();
             InitView();
         }
 
-        public void Show()
+        public void Show(string winner)
         {
+            _winner.Text = winner;
             this.Enabled = true;
             this.Visible = true;
         }
@@ -29,6 +31,7 @@ namespace HitThePlane
         {
             this.Enabled = false;
             this.Visible = false;
+            _winner.Text = "";
         }
 
         public void Restart(object sender, EventArgs e)
@@ -45,7 +48,7 @@ namespace HitThePlane
             this.BackgroundImage = R.GetImage(R.MENU_BACKGROUND);
             this.BackgroundImageLayout = ImageLayout.Stretch;
 
-            var gameLabel = new System.Windows.Forms.Label();
+            var gameLabel = new Label();
             gameLabel.Width = this.Width;
             gameLabel.Height = 140;
             Location = new Point(0, 20);
@@ -67,16 +70,16 @@ namespace HitThePlane
             winnerLabel.Font = new Font(R.Fonts.Families[0], 16);
             winnerLabel.UseCompatibleTextRendering = true;
 
-            var winner = new Label();
-            winner.Width = this.Width;
-            winner.Height = 80;
-            winner.Text = "text";
-            winner.TextAlign = ContentAlignment.MiddleCenter;
-            winner.ForeColor = Color.FromArgb(75, 61, 68);
-            winner.BackColor = Color.Transparent;
-            winner.Location = new Point(0, 140 + 80);
-            winner.Font = new Font(R.Fonts.Families[0], 16);
-            winner.UseCompatibleTextRendering = true;
+            _winner = new Label();
+            _winner.Width = this.Width;
+            _winner.Height = 80;
+            //winner.Text = "text";
+            _winner.TextAlign = ContentAlignment.MiddleCenter;
+            _winner.ForeColor = Color.FromArgb(75, 61, 68);
+            _winner.BackColor = Color.Transparent;
+            _winner.Location = new Point(0, 140 + 80);
+            _winner.Font = new Font(R.Fonts.Families[0], 16);
+            _winner.UseCompatibleTextRendering = true;
 
 
             var restartBtn = new System.Windows.Forms.Button();
@@ -92,7 +95,7 @@ namespace HitThePlane
 
             this.Controls.Add(gameLabel);
             this.Controls.Add(winnerLabel);
-            this.Controls.Add(winner);
+            this.Controls.Add(_winner);
             this.Controls.Add(restartBtn);
         }
     }
