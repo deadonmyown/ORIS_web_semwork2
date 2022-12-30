@@ -4,10 +4,10 @@ using Timer = System.Windows.Forms.Timer;
 namespace HitThePlane.Engine;
 class Game
 {
-    private Form _form;
+    private GameForm _form;
     private Timer _gameTimer;
     private Level _level;
-    public Game(Form form, PictureBox canvas)
+    public Game(GameForm form, PictureBox canvas)
     {
         _form = form;
         _gameTimer = new Timer();
@@ -20,6 +20,16 @@ class Game
         _level = new Level(6, 0.01f);
         BindKeys(_level.PlayerPlane);
         _gameTimer.Tick += UpdateLevel;
+        _gameTimer.Start();
+    }
+
+    public void Pause()
+    {
+        _gameTimer.Stop();
+    }
+
+    public void Resume()
+    {
         _gameTimer.Start();
     }
 
@@ -38,7 +48,7 @@ class Game
 
     private void BindKeys(AirPlane plane)
     {
-        PlayerInputHandler.Bind(plane);
+        PlayerInputHandler.Bind(plane, _form);
         _form.KeyDown += new KeyEventHandler(PlayerInputHandler.KeyPressed);
         _form.KeyUp += new KeyEventHandler(PlayerInputHandler.KeyReleased);
         _form.MouseDown += new MouseEventHandler(PlayerInputHandler.MouseClick);

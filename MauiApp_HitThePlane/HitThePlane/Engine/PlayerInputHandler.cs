@@ -5,10 +5,12 @@ namespace HitThePlane.Engine
     public static class PlayerInputHandler
     {
         private static AirPlane _plane;
+        private static GameForm _form;
 
-        public static void Bind(AirPlane plane)
+        public static void Bind(AirPlane plane, GameForm form)
         {
             _plane = plane;
+            _form = form;
         }
 
         private static bool isAdowm = false;
@@ -29,6 +31,11 @@ namespace HitThePlane.Engine
                 isSdown = true;
             if (e.KeyCode == Keys.K)
                 mustShoot = true;
+
+            if (e.KeyCode == Keys.Escape)
+                _form.Pause();
+
+            e.SuppressKeyPress = true;
         }
 
         public static void KeyReleased(object sender, KeyEventArgs e)

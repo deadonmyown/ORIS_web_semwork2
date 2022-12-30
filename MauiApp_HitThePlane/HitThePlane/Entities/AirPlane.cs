@@ -151,7 +151,6 @@ namespace HitThePlane.Entities
 
             //if (Collide(_level.House))
             //    Destroy();
-
         }
 
 
