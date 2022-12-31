@@ -7,16 +7,6 @@ using ClassLibrary;
 
 namespace HitThePlane.Entities
 {
-    public enum PlaneDirection
-    {
-        Up, Down
-    }
-
-    public enum PlaneState
-    {
-        Takeoff, Flight, Destroyed
-    }
-
     public class AirPlane : DrawableObject
     {
         public static readonly Size _modelSize = new Size(52 * ScaleRatio, 22 * ScaleRatio);
@@ -55,7 +45,7 @@ namespace HitThePlane.Entities
 
         public float SpeedBoost;
         private float _maxSpeed;
-        private float _speed = 0;
+        private float _speed;
 
         public float Speed
         {
@@ -73,7 +63,7 @@ namespace HitThePlane.Entities
 
         public float AngleChange { get; set; }
         private int ReloadTime { get; set; }
-        private int _reloadCounter = 0;
+        public int ReloadCounter { get; private set; } = 0;
 
         private Vector2 DirectionVector =>
             new Vector2((float)Math.Cos(DirectionAngle * Math.PI / 180),
@@ -120,19 +110,19 @@ namespace HitThePlane.Entities
             looksLeft = Math.Cos(directionAngle * Math.PI / 180) < 0;
         }
 
-        public void SendMove(XClient client, int formX)
+        public void SendMove(XClient client)
         {
             client.QueuePacketSendUpdate(XPacketConverter.Serialize(XPacketType.PlayerController,
-                new XPacketPlayerController(Position, DirectionAngle, Speed, (int)State, (int)Direction, _level.GravityValue, client.Id, formX, _level)).ToPacket()); ;
+                new XPacketPlayerController(Position, DirectionAngle, Speed, (int)State, (int)Direction, client.Id, Render.Resolution.Width, Render.Resolution.Height, _level)).ToPacket()); ;
         }
 
-        public void Move(XPacketPlayerController movement)
+        public void Move(XPacketPlayerController controller)
         {
-            Position = movement.Position;
-            DirectionAngle = movement.DirectionAngle;
-            Speed = movement.Speed;
-            State = (PlaneState)movement.State;
-            Direction = (PlaneDirection)movement.Direction;
+            Position = controller.Position;
+            DirectionAngle = controller.DirectionAngle;
+            Speed = controller.Speed;
+            State = (PlaneState)controller.State;
+            Direction = (PlaneDirection)controller.Direction;
         }
 
         public void GetInputResult(XPacketPlayerInputResult res)
@@ -141,7 +131,7 @@ namespace HitThePlane.Entities
             Direction = (PlaneDirection)res.Direction;
         }
 
-        private void Rotate()
+        /*private void Rotate()
         {
             if (Direction == PlaneDirection.Up)
                 DirectionAngle += AngleChange;
@@ -149,20 +139,10 @@ namespace HitThePlane.Entities
                 DirectionAngle -= AngleChange;
         }
 
-
-        //+
-        public void Rotate(PlaneDirection dir)
-        {
-            if (dir == PlaneDirection.Up)
-                DirectionAngle += AngleChange;
-            else
-                DirectionAngle -= AngleChange;
-        }
-
         public void Move()
         {
-            if (_reloadCounter > 0) _reloadCounter++;
-            if (_reloadCounter >= ReloadTime) _reloadCounter = 0;
+            if (ReloadCounter > 0) ReloadCounter++;
+            if (ReloadCounter >= ReloadTime) ReloadCounter = 0;
             Speed -= _level.AirResistance;
             Position += Speed * DirectionVector + GravityVector;
             CheckBorders();
@@ -192,12 +172,12 @@ namespace HitThePlane.Entities
         }
 
 
-        /*public void Shoot()
+        *//*public void Shoot()
         {
             if (_reloadCounter != 0) return;
             Bullet.Create(_level, this);
             _reloadCounter++;
-        }*/
+        }*//*
 
         public void TakeDamage(int damage)
         {
@@ -210,6 +190,6 @@ namespace HitThePlane.Entities
         {
             Health = 0;
             State = PlaneState.Destroyed;
-        }
+        }*/
     }
 }

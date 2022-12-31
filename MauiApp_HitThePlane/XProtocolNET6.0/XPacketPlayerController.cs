@@ -22,27 +22,27 @@ namespace XProtocol
         [XField(5)]
         public int Direction;
         [XField(6)]
-        public float GravityValue;
-        [XField(7)]
         public int Id;
+        [XField(7)]
+        public int Width;
         [XField(8)]
-        public int FormX;
+        public int Height;
         [XField(9)]
-        public LevelStruct Scene;
+        public LevelStruct Level;
 
-        public XPacketPlayerController(Vector2 position, float directionAngle, float speed, int state, int direction, float gravityValue, int playerId, int formX, LevelStruct scene)
+        public XPacketPlayerController() { }
+
+        public XPacketPlayerController(Vector2 position, float directionAngle, float speed, int state, int direction, int id, int width, int height, LevelStruct scene)
         {
             Position = position;
             DirectionAngle = directionAngle;
             Speed = speed;
             State = state;
             Direction = direction;
-            GravityValue = gravityValue;
-            Id = playerId;
-            FormX = formX;
-            Scene = scene;
+            Id = id;
+            Width = width;
+            Height = height;
+            Level = scene;
         }
-
-        public XPacketPlayerController() { }
     }
 }

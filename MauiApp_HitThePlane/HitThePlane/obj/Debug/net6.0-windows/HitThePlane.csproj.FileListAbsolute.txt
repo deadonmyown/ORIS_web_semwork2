@@ -127,3 +127,5 @@ C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlane\bin\
 C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlane\bin\Debug\net6.0-windows\XProtocol.pdb
 C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlane\bin\Debug\net6.0-windows\TCPServer.pdb
 C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlane\obj\Debug\net6.0-windows\HitThePlane.csproj.CopyComplete
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlane\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\HitThePlane\bin\Debug\net6.0-windows\Newtonsoft.Json.Bson.dll

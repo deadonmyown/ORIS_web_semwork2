@@ -10,4 +10,14 @@ namespace ClassLibrary
         public Collider House { get; set; }
         public Collider Ground { get; set; }
     }
+
+    public enum PlaneDirection
+    {
+        Up, Forward, Down
+    }
+
+    public enum PlaneState
+    {
+        Takeoff, Flight, Destroyed
+    }
 }

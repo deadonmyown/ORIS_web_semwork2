@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassLibrary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets;
@@ -60,7 +61,7 @@ namespace TCPServer
                     ProcessPlayerSpawn(packet);
                     break;
                 case XPacketType.PlayerController:
-                    ProcessPlayerMovement(packet);
+                    ProcessPlayerController(packet);
                     break;
                 case XPacketType.PlayerInput:
                     ProcessPlayerInput(packet);
@@ -91,23 +92,23 @@ namespace TCPServer
         {
             var player = XPacketConverter.Deserialize<XPacketPlayer>(packet);
 
-            Player.Spawn(player.Id, player.Position, player.Level);
+            Player.Spawn(player.Id, player.Position, player.Level, player.Name.ToString());
         }
 
-        private void ProcessPlayerMovement(XPacket packet)
+        private void ProcessPlayerController(XPacket packet)
         {
-            var playerMove = XPacketConverter.Deserialize<XPacketPlayerController>(packet);
+            var packetContr = XPacketConverter.Deserialize<XPacketPlayerController>(packet);
 
-            PlayerController move = new PlayerController(playerMove.Position, playerMove.Speed, playerMove.GravityValue, playerMove.DirectionAngle, (PlaneState)playerMove.State, (PlaneDirection)playerMove.Direction, playerMove.Scene);
-            Console.WriteLine($"player start moving: {move.Position} {move.GravityValue}");
+            PlayerController controller = new PlayerController(packetContr.Position, packetContr.Speed, packetContr.DirectionAngle, (PlaneState)packetContr.State, (PlaneDirection)packetContr.Direction, packetContr.Level);
+            Console.WriteLine($"player start moving: {controller.Position} Speed: {controller.Speed}");
 
-            move.Move(playerMove.FormX);
+            controller.Move(packetContr.Height, packetContr.Width);
 
-            Console.WriteLine($"player moved: {move.Position} {move.GravityValue}");
+            Console.WriteLine($"player moved: {controller.Position} Speed: {controller.Speed}");
 
             SendPacketsToAll(XPacketConverter.Serialize(XPacketType.PlayerController, 
-                new XPacketPlayerController(move.Position, move.DirectionAngle, move.Speed, 
-                (int)move.State, (int)move.Direction, move.GravityValue, playerMove.Id, playerMove.FormX, playerMove.Scene)).ToPacket()); 
+                new XPacketPlayerController(controller.Position, controller.DirectionAngle, controller.Speed, 
+                (int)controller.State, (int)controller.Direction, packetContr.Id, packetContr.Width, packetContr.Height, packetContr.Level)).ToPacket()); 
         }
 
         private void ProcessPlayerInput(XPacket packet)

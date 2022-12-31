@@ -8,6 +8,7 @@ using TCPServer;
 using XProtocol.Serializator;
 using XProtocol;
 using System.Net.Sockets;
+using System.Numerics;
 
 namespace HitThePlane.Entities
 {
@@ -75,8 +76,8 @@ namespace HitThePlane.Entities
         {
             var playerConnection = XPacketConverter.Deserialize<XPacketHandshake>(packet);
 
-            Client.Id = playerConnection.PlayerId;
-            Console.WriteLine($"player with id = {playerConnection.PlayerId} connected");
+            Client.Id = playerConnection.Id;
+            Console.WriteLine($"player with id = {playerConnection.Id} connected");
 
         }
 
@@ -84,7 +85,7 @@ namespace HitThePlane.Entities
         {
             var playerSpawn = XPacketConverter.Deserialize<XPacketPlayer>(packet);
 
-            Player.Spawn(playerSpawn.Id, playerSpawn.Level, playerSpawn.Position);
+            Player.Spawn(playerSpawn.Id, playerSpawn.Level, playerSpawn.Position, playerSpawn.Name.ToString());
         }
 
         private void ProcessPlayerMovement(XPacket packet)

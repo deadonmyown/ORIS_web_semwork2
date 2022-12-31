@@ -1,4 +1,7 @@
 ﻿using HitThePlane.Entities;
+using System.Numerics;
+using XProtocol.Serializator;
+using XProtocol;
 using Timer = System.Windows.Forms.Timer;
 
 namespace HitThePlane.Engine;
@@ -16,7 +19,17 @@ class Game
     public void Run()
     {
         _level = new Level(6, 0.01f);
-        BindKeys(_level.PlayerPlane);
+
+        NetworkManager.Instance.Start(4910);
+
+        while (NetworkManager.Instance.Client.Id == 0) { }
+        var position = Level.Positions[NetworkManager.Instance.Client.Id];
+        NetworkManager.Instance.Client.QueuePacketSend(XPacketConverter.Serialize(XPacketType.Player,
+            new XPacketPlayer(NetworkManager.Instance.Client.Id, position, _level.ToLevelStruct(), $"player{NetworkManager.Instance.Client.Id}"[^1])).ToPacket());
+
+        while (NetworkManager.Instance.Player == null) { }
+
+        BindKeys(NetworkManager.Instance.Player.Plane);
         _gameTimer = new Timer();
         _gameTimer.Interval = 50;
         _gameTimer.Tick += UpdateLevel;
@@ -39,8 +52,7 @@ class Game
     private void UpdateLevel(object sender, EventArgs e)
     {
         PlayerInputHandler.Apply();
-        _level.PlayerPlane.Move();
-        _level.EnemyPlane.Move();
+        NetworkManager.Instance.Player.Plane.SendMove(NetworkManager.Instance.Client);
         foreach (var bullet in _level.Bullets)
             bullet.Move();
 

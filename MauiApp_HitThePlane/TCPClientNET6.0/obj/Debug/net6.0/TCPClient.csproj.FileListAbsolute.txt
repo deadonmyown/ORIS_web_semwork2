@@ -23,3 +23,5 @@ C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClientNET6.0\
 C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClientNET6.0\obj\Debug\net6.0\TCPClient.pdb
 C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClientNET6.0\obj\Debug\net6.0\TCPClient.genruntimeconfig.cache
 C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClientNET6.0\obj\Debug\net6.0\ref\TCPClient.dll
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClientNET6.0\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Repositories\ORIS_repo\ORIS_web_semwork2\MauiApp_HitThePlane\TCPClientNET6.0\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

@@ -13,30 +13,23 @@ namespace TCPServer
 
         public int Id { get; set; }
         public Vector2 Position { get; set; }
+        public string Name { get; set; }
 
-        public PlayerController Movement { get; set; }
-
-        public Player(int id, Vector2 position)
+        public Player(int id, Vector2 position, string name)
         {
             Id = id;
             Position = position;
+            Name = name;
         }
 
-        public Player(int id,  Vector2 position, PlayerController movement)
-        {
-            Id = id;
-            Position = position;
-            Movement = movement;
-        }
-
-        public static void Spawn(int id, Vector2 position, LevelStruct scene)
+        public static void Spawn(int id, Vector2 position, LevelStruct level, string name)
         {
             foreach (var otherPlayer in Players.Values)
-                otherPlayer.SendSpawned(id, otherPlayer, scene);
+                otherPlayer.SendSpawned(id, otherPlayer, level);
 
-            Player player = new Player(id, position);
+            Player player = new Player(id, position, name);
 
-            player.SendSpawned(scene);
+            player.SendSpawned(level);
             Players.Add(id, player);
         }
 
@@ -44,12 +37,12 @@ namespace TCPServer
 
         private void SendSpawned(LevelStruct scene)
         {
-            ConnectedClient.SendPacketsToAll(XPacketConverter.Serialize(XPacketType.Player, new XPacketPlayer(Id, Position, scene)).ToPacket());
+            ConnectedClient.SendPacketsToAll(XPacketConverter.Serialize(XPacketType.Player, new XPacketPlayer(Id, Position, scene, Name[^1])).ToPacket());
         }
 
         private void SendSpawned(int currPlayer, Player player, LevelStruct scene)
         {
-            ConnectedClient.SendPacketsToClient(XPacketConverter.Serialize(XPacketType.Player, new XPacketPlayer(player.Id, player.Position, scene)).ToPacket(), currPlayer);
+            ConnectedClient.SendPacketsToClient(XPacketConverter.Serialize(XPacketType.Player, new XPacketPlayer(player.Id, player.Position, scene, player.Name[^1])).ToPacket(), currPlayer);
         }
     }
 }

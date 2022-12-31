@@ -4,6 +4,8 @@ using HitThePlane.Resources;
 using System.Drawing.Drawing2D;
 using System.Numerics;
 using System.Windows.Forms;
+using XProtocol.Serializator;
+using XProtocol;
 using static System.Windows.Forms.DataFormats;
 
 namespace HitThePlane
@@ -58,6 +60,12 @@ namespace HitThePlane
         private void ToCenter(UserControl control)
         {
             control.Location = new Point(defaultWidth / 2 - control.Width / 2, defaultHeight / 2 - control.Height / 2);
+        }
+
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+            NetworkManager.Instance.Client.Dispose();
         }
     }
 }

@@ -2,16 +2,6 @@
 
 namespace TCPServer.Game
 {
-    public enum PlaneDirection
-    {
-        Up, Forward, Down
-    }
-
-    public enum PlaneState  
-    {
-        Takeoff, Flight, Destroyed
-    }
-
     public static class GameManager
     {
         private const int ScaleRatio = 2;
@@ -21,5 +11,6 @@ namespace TCPServer.Game
         public static float SpeedBoost { get; set; }
         public static float MaxSpeed { get; set; }
         public static float AngleChange { get; set; }
+        public static int ReloadTime { get; set; }
     }
 }

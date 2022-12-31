@@ -83,7 +83,7 @@ namespace TCPServer
                     if (!Clients.ContainsKey(i) || !Clients.TryGetValue(i, out _))
                     {
                         Clients.Add(i, c);
-                        c.QueuePacketSend(XPacketConverter.Serialize(XPacketType.Handshake, new XPacketHandshake() { PlayerId = i}).ToPacket());
+                        c.QueuePacketSend(XPacketConverter.Serialize(XPacketType.Handshake, new XPacketHandshake() { Id = i}).ToPacket());
                         Console.WriteLine($"Player at {i} Id connected");
                         break;
                     }

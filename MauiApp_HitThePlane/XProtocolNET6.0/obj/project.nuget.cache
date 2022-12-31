@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "fLcRDARH2Z9u5zgDE8nK4cnNgi4A1Nr6vpuljsIopiJYUVW/8XUjsfKN+Dn1Ucs5kMP4x/g7nFmG5sado+ihtQ==",
+  "dgSpecHash": "Mwwi1PMQ56CjuI88An4hWEunft2YAxtNNjWAoqT6kfjq9GA5ZKIqrT9uiJEAi9PQCPHMsQ358HVX5PREHOEqjQ==",
   "success": true,
   "projectFilePath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\XProtocolNET6.0\\XProtocol.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\xPr1e\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
+    "C:\\Users\\xPr1e\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

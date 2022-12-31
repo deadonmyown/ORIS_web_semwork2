@@ -17,8 +17,10 @@ public class Level
 
     public float GravityValue { get; protected set; }
     public float AirResistance { get; protected set; }
-    public AirPlane PlayerPlane { get; set; }
-    public AirPlane EnemyPlane { get; set; }
+
+    /*public AirPlane PlayerPlane { get; set; }
+    public AirPlane EnemyPlane { get; set; }*/
+    
     public Collider House { get; protected set; }
     public Collider Ground { get; protected set; }
     public HashSet<Bullet> Bullets { get; protected set; }
@@ -28,8 +30,8 @@ public class Level
         GravityValue = gravityValue;
         AirResistance = airResistance;
 
-        PlayerPlane = InitPlayerPlane();
-        EnemyPlane = InitEnemyPlane();
+        /*PlayerPlane = InitPlayerPlane();
+        EnemyPlane = InitEnemyPlane();*/
 
         var groundCenter = new Vector2(Render.Resolution.Width / 2, Render.Resolution.Height - GroundHeight / 2);
         Ground = new Collider(groundCenter, new Size(Render.Resolution.Width, GroundHeight));

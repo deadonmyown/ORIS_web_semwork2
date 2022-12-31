@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text.Json;
-using System.Text;
 
 namespace XProtocol
 {
@@ -16,7 +14,7 @@ namespace XProtocol
         public bool Protected { get; set; }
         private bool ChangeHeaders { get; set; }
 
-        private XPacket() {}
+        private XPacket() { }
 
         public XPacketField GetField(byte id)
         {
@@ -36,19 +34,42 @@ namespace XProtocol
             return GetField(id) != null;
         }
 
-        private T ByteArrayToFixedObject<T>(byte[] bytes)
+        private T ByteArrayToFixedObject<T>(byte[] bytes) where T : struct
         {
-            var json = Encoding.UTF8.GetString(bytes);
-            return JsonSerializer.Deserialize<T>(json)!;
+            T structure;
+
+            var handle = GCHandle.Alloc(bytes, GCHandleType.Pinned);
+
+            try
+            {
+                structure = (T)Marshal.PtrToStructure(handle.AddrOfPinnedObject(), typeof(T));
+            }
+            finally
+            {
+                handle.Free();
+            }
+
+            return structure;
         }
 
         public byte[] FixedObjectToByteArray(object value)
         {
-            var json = JsonSerializer.Serialize(value);
-            return Encoding.UTF8.GetBytes(json);
+            var rawsize = Marshal.SizeOf(value);
+            var rawdata = new byte[rawsize];
+
+            var handle =
+                GCHandle.Alloc(rawdata,
+                    GCHandleType.Pinned);
+
+            Marshal.StructureToPtr(value,
+                handle.AddrOfPinnedObject(),
+                false);
+
+            handle.Free();
+            return rawdata;
         }
 
-        public T GetValue<T>(byte id)
+        public T GetValue<T>(byte id) where T : struct
         {
             var field = GetField(id);
 
@@ -57,11 +78,24 @@ namespace XProtocol
                 throw new Exception($"Field with ID {id} wasn't found.");
             }
 
+            var neededSize = Marshal.SizeOf(typeof(T));
+
+            if (field.FieldSize != neededSize)
+            {
+                throw new Exception($"Can't convert field to type {typeof(T).FullName}.\n" +
+                                    $"We have {field.FieldSize} bytes but we need exactly {neededSize}.");
+            }
+
             return ByteArrayToFixedObject<T>(field.Contents);
         }
 
         public void SetValue(byte id, object structure)
         {
+            if (!structure.GetType().IsValueType)
+            {
+                throw new Exception("Only value types are available.");
+            }
+
             var field = GetField(id);
 
             if (field == null)
@@ -81,7 +115,7 @@ namespace XProtocol
                 throw new Exception("Object is too big. Max length is 255 bytes.");
             }
 
-            field.FieldSize = (byte) bytes.Length;
+            field.FieldSize = (byte)bytes.Length;
             field.Contents = bytes;
         }
 
@@ -116,7 +150,7 @@ namespace XProtocol
                 throw new Exception("Object is too big. Max length is 255 bytes.");
             }
 
-            field.FieldSize = (byte) rawData.Length;
+            field.FieldSize = (byte)rawData.Length;
             field.Contents = rawData;
         }
 
@@ -141,8 +175,8 @@ namespace XProtocol
 
             packet.Write(
                 ChangeHeaders
-                    ? new byte[] {0x95, 0xAA, 0xFF, PacketType, PacketSubtype}
-                    : new byte[] {0xAF, 0xAA, 0xAF, PacketType, PacketSubtype}, 0, 5);
+                    ? new byte[] { 0x95, 0xAA, 0xFF, PacketType, PacketSubtype }
+                    : new byte[] { 0xAF, 0xAA, 0xAF, PacketType, PacketSubtype }, 0, 5);
 
             // Сортируем поля по ID
             var fields = Fields.OrderBy(field => field.FieldID);
@@ -150,12 +184,12 @@ namespace XProtocol
             // Записываем поля
             foreach (var field in fields)
             {
-                packet.Write(new[] {field.FieldID, field.FieldSize}, 0, 2);
+                packet.Write(new[] { field.FieldID, field.FieldSize }, 0, 2);
                 packet.Write(field.Contents, 0, field.Contents.Length);
             }
 
             // Записываем конец пакета
-            packet.Write(new byte[] {0xFF, 0x00}, 0, 2);
+            packet.Write(new byte[] { 0xFF, 0x00 }, 0, 2);
 
             return packet.ToArray();
         }
@@ -202,10 +236,10 @@ namespace XProtocol
             var type = packet[3];
             var subtype = packet[4];
 
-            var xpacket = new XPacket {PacketType = type, PacketSubtype = subtype, Protected = markAsEncrypted};
-            
+            var xpacket = new XPacket { PacketType = type, PacketSubtype = subtype, Protected = markAsEncrypted };
+
             var fields = packet.Skip(5).ToArray();
-            
+
             while (true)
             {
                 if (fields.Length == 2) // Остались последние два байта, завершающие пакет.

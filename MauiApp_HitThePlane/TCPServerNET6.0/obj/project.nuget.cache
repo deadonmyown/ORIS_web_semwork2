@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "jOsif4xUiJMUe1EvbCjWcHU5olhstWM3i3s/CkS2X7qXLWue4tgfTH+5qJJna2QCS2vKrB0ACbFPsXNKH/UvXQ==",
+  "dgSpecHash": "wX3EmPO2wUmRhhJEqchdWoUFbgZLJUjNy1h+fDy67tOOgf2wsNXQgoI5HWX7BJYtLGKewX2QmcRO1NV+Ur5DXA==",
   "success": true,
   "projectFilePath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPServerNET6.0\\TCPServer.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\xPr1e\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
+    "C:\\Users\\xPr1e\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

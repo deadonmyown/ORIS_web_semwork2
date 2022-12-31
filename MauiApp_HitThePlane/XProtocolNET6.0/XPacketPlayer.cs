@@ -15,14 +15,17 @@ namespace XProtocol
         public int Id;
         [XField(2)]
         public Vector2 Position;
-        [XField(3)]
+        [XField(4)]
         public LevelStruct Level;
+        [XField(5)]
+        public char Name;
 
-        public XPacketPlayer(int id, Vector2 position, LevelStruct scene)
+        public XPacketPlayer(int id, Vector2 position, LevelStruct level, char name)
         {
             Id = id;
             Position = position;
-            Level = scene;
+            Level = level;
+            Name = name;
         }
 
         public XPacketPlayer() { }

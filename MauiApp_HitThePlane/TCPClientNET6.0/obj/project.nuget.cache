@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "waDhyOwmD1EkK1S7veQtKNeGCwij4Cl6D773YhpKYQA42Ryxzxc9DrLaCFVUoBPnroxuCJUl7XfeUvmSHmBZbw==",
+  "dgSpecHash": "OJpXn6ExxhnbZnaQRtmO2OZM+x2MXB87WLA7ojgPjAw/1+2u9xZUFAAhJUcAZ7T47fBChnVfWLh9P23mwJCXrg==",
   "success": true,
   "projectFilePath": "C:\\Repositories\\ORIS_repo\\ORIS_web_semwork2\\MauiApp_HitThePlane\\TCPClientNET6.0\\TCPClient.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\xPr1e\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
+    "C:\\Users\\xPr1e\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

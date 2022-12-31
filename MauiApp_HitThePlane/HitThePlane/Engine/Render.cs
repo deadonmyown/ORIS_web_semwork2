@@ -28,8 +28,8 @@ namespace HitThePlane.Engine
             DrawCollider(g, level.Ground);
             DrawCollider(g, level.House);
 
-            DrawObject(g, level.PlayerPlane);
-            DrawObject(g, level.EnemyPlane);
+            foreach (var player in Player.Players.Values)
+                DrawObject(g, player.Plane);
 
             foreach (var bullet in level.Bullets)
             {

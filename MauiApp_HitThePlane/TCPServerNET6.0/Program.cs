@@ -8,8 +8,9 @@ namespace TCPServer
         private static void Main()
         {
             GameManager.SpeedBoost = 0.5f;
-            GameManager.MaxSpeed = 20;
-            GameManager.AngleChange = 10;
+            GameManager.MaxSpeed = 15;
+            GameManager.AngleChange = 8;
+            GameManager.ReloadTime = 8;
             Console.Title = "XServer";
             Console.ForegroundColor = ConsoleColor.White;
 

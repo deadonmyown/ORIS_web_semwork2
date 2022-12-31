@@ -74,8 +74,8 @@ namespace TCPClient
         {
             var playerConnection = XPacketConverter.Deserialize<XPacketHandshake>(packet);
 
-            _player.PlayerId = playerConnection.PlayerId;
-            Console.WriteLine($"player with id = {playerConnection.PlayerId} connected");
+            _player.PlayerId = playerConnection.Id;
+            Console.WriteLine($"player with id = {playerConnection.Id} connected");
 
         }
 
